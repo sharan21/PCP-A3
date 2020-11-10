@@ -1,0 +1,75 @@
+n: 2
+k: 10
+u_1: 0.5
+u_2: 2.5
+
+
+got 0th snapshot at timestamp: 996.799 as:
+0, 0, 
+
+thread 1 wrote a value: 66 at timestamp: 996.799
+thread 0 wrote a value: 5 at timestamp: 996.799
+
+
+got 1th snapshot at timestamp: 996.801 as:
+5, 66, 
+
+thread 1 wrote a value: 92 at timestamp: 996.801
+thread 0 wrote a value: 62 at timestamp: 996.801
+
+
+got 2th snapshot at timestamp: 996.803 as:
+62, 92, 
+
+thread 1 wrote a value: 94 at timestamp: 996.803
+thread 0 wrote a value: 0 at timestamp: 996.803
+
+
+got 3th snapshot at timestamp: 996.805 as:
+0, 94, 
+
+thread 1 wrote a value: 57 at timestamp: 996.805
+thread 0 wrote a value: 25 at timestamp: 996.806
+
+
+got 4th snapshot at timestamp: 996.808 as:
+25, 57, 
+
+thread 1 wrote a value: 49 at timestamp: 996.808
+thread 0 wrote a value: 61 at timestamp: 996.808
+
+
+got 5th snapshot at timestamp: 996.81 as:
+61, 49, 
+
+thread 1 wrote a value: 44 at timestamp: 996.81
+thread 0 wrote a value: 45 at timestamp: 996.811
+
+
+got 6th snapshot at timestamp: 996.813 as:
+45, 44, 
+
+thread 1 wrote a value: 48 at timestamp: 996.813
+thread 0 wrote a value: 2 at timestamp: 996.814
+
+
+got 7th snapshot at timestamp: 996.816 as:
+2, 48, 
+
+thread 1 wrote a value: 39 at timestamp: 996.816
+thread 0 wrote a value: 87 at timestamp: 996.817
+thread 1 wrote a value: 33 at timestamp: 996.818
+
+
+got 8th snapshot at timestamp: 996.818 as:
+87, 39, 
+
+thread 0 wrote a value: 20 at timestamp: 996.82
+
+
+got 9th snapshot at timestamp: 996.821 as:
+20, 33, 
+
+thread 1 wrote a value: 96 at timestamp: 996.821
+thread 0 wrote a value: 32 at timestamp: 996.822
+.973
