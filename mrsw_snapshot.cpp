@@ -11,28 +11,23 @@ using namespace std;
 
 #define MAX_THREADS 100
 
-template <typename T> // https://stackoverflow.com/questions/13193484/how-to-declare-a-vector-of-atomic-in-c
-struct atomwrapper
-{
-  std::atomic<T> val;
+void checkpoint(){
 
-  atomwrapper(): val()
-  {
-  }
+  cout << "here";
+  cout.flush();
+  
+}
 
-  atomwrapper(const std::atomic<T> &val) : val(val.load())
+void copy_b_to_a(int a[], int b[], int size){
+  for (int i = 0; i < size; i++)
   {
+    a[i] = b[i];
   }
+  
+}
 
-  atomwrapper(const atomwrapper &other) : val(other.val.load())
-  {
-  }
 
-  atomwrapper &operator=(const atomwrapper &other) //copy constructor
-  {
-    val.store(other.val.load());
-  }
-};
+
 
 
 class snap_value
@@ -41,7 +36,7 @@ class snap_value
 public:
   int value;
   int label;
-  int snap[];
+  int snap[MAX_THREADS];
   
 
   snap_value(int n) //construction for dummy snap value
@@ -70,19 +65,17 @@ public:
   
 };
 
-void checkpoint(){
 
-  cout << "here";
-  cout.flush();
-  
-}
 
 class mrsw_snapshot_obj
 {
 public:
-  vector<atomwrapper<snap_value> > s_table_snap_values;
+  
 
   int n_threads;
+
+  atomic<snap_value> s_table_snap_values[MAX_THREADS];
+
 
   mrsw_snapshot_obj(int n, float u_1, float u_2)
   {
@@ -90,63 +83,83 @@ public:
     n_threads = n;
     
     snap_value dummy_sv(n_threads);
-    atomwrapper<snap_value> dummy_sv_wrapped(dummy_sv);
 
     for (int i = 0; i < n_threads; i++)
     {
-      s_table_snap_values.push_back(dummy_sv_wrapped);
+      s_table_snap_values[i].store(dummy_sv);
     }
   }
 
   void update(int me, int new_value) // this is invoked after scan()
   {
     
-    // fetch the old snap value stored in register
-    int temp[MAX_THREADS];
-    int *clean_snap = scan(me, temp);
-
-    // cout << new_value << endl;
-
-  
-
-    for (int k = 0; k < n_threads; k++)
-    {
-      cout << clean_snap[k] << endl;
-    }
-
+    // get clean snap
+    int clean_snap[n_threads];
+    scan(me, clean_snap);
     
-    // int clean_snap[100];
-    snap_value old_snap_value = s_table_snap_values[me].val.load();
-    
-    //create and store new snap 
+    snap_value old_snap_value = s_table_snap_values[me].load();
     snap_value new_sv(n_threads, clean_snap, new_value, old_snap_value.label+1);
 
-    cout << new_sv.snap[0] << endl;
-    
-
-
-    atomwrapper<snap_value> new_sv_wrapped(new_sv);
-    // new_sv_wrapped.val.store(new_sv);
-
-
-    cout << new_sv_wrapped.val.load().label << endl;
-    exit(0);
-    // s_table_snap_values.push_back(new_sv_wrapped);
-    s_table_snap_values[me].val.store(new_sv);
+    s_table_snap_values[me].store(new_sv);
 
   }
 
 
 
-  int* scan(int me , int clean_scan[]){ //returns the value states of s_table
+  void scan(int me ,int clean_scan[]){
+
+    
+    int new_copy[n_threads], old_copy[n_threads];
+
+    //get old collect
+    collect(old_copy);
+
+    bool moved[n_threads];
+    
+    for (int i = 0; i < n_threads; i++)
+    {
+      moved[i] = false;
+    }
+
+    while(true){
+
+      while(true){
+
+      //get new collect
+      collect(new_copy);
+
+      for (int i = 0; i < n_threads; i++)
+      {
+        if(old_copy[i] != new_copy[i]){
+          
+          if(moved[i]){ //second move, get snap  of this register
+            
+            copy_b_to_a(clean_scan, s_table_snap_values[i].load().snap, n_threads);
+            return;
+          }
+          else{
+            moved[i] = true;
+            copy_b_to_a(old_copy, new_copy, n_threads); // old_copy = new_copy
+            break;
+          }
+        }
+      }
+      copy_b_to_a(clean_scan, new_copy, n_threads);
+      return;
+      }
+    }
+    
+  }
+
+  void collect(int collected[]){ //returns the value states of s_table
 
     for (int i = 0; i < n_threads; i++)
     {
-      // clean_scan[i] = s_table_snap_values[i].val.load().value;
-      clean_scan[i] = 66;
+      collected[i] = s_table_snap_values[i].load().value;
     }
-    return clean_scan;
+    return;
   }
+
 
   void display()
   {
@@ -159,14 +172,14 @@ public:
     for (int i = 0; i < n_threads; i++)
     {
       cout << "Register: " << i << endl;
-      cout << "has value: " << s_table_snap_values[i].val.load().value << endl;
-      cout << "has label: " << s_table_snap_values[i].val.load().label << endl;
+      cout << "has value: " << s_table_snap_values[i].load().value << endl;
+      cout << "has label: " << s_table_snap_values[i].load().label << endl;
 
       cout << "has snap: " << endl;
       for (int j = 0; j < n_threads; j++)
       {
         // cout << j << endl;
-        cout << s_table_snap_values[i].val.load().snap[j] << ", "; 
+        cout << s_table_snap_values[i].load().snap[j] << ", "; 
       }
       cout << endl << "-------------------------------------------" << endl;
       
@@ -175,23 +188,12 @@ public:
   }
 };
 
-vector<int> collect(mrsw_snapshot_obj m)
-{
 
-  vector<int> state;
-
-  for (int i = 0; i < m.n_threads; i++)
-  {
-    // state.push_back(m.s_table[i].val);
-  }
-
-  return state;
-}
 
 int main()
 {
-
   srand(time(NULL)); //set random seed using time for future random numbers generated
+
 
   double N, count = 0;
   double start_time, end_time;
@@ -239,7 +241,8 @@ int main()
   
         i++;
         int rand_val = rand() % 100;
-        // int rand_val = 66;
+        
+        
         ss.update(id, rand_val);
 
         #pragma omp critical

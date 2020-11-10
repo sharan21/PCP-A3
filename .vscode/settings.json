@@ -2,6 +2,7 @@
     "files.associations": {
         "atomic": "cpp",
         "iosfwd": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "ostream": "cpp"
     }
 }
