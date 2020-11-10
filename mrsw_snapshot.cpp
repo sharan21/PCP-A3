@@ -40,7 +40,7 @@ public:
   int value;
   int label;
   int reg_no;
-  vector<int> snap;
+  int snap[10];
 
   snap_value(int n) //construction for dummy snap value
   {
@@ -113,7 +113,8 @@ public:
     return s_table_atomic_values;
   }
 
-  void scan(){
+  void scan(int me){
+    vector<
 
     
   }
@@ -186,11 +187,13 @@ int main()
       // vector
     }
 
-    else
+    else //writing threads
     {
 
       while (i < 10)
       {
+        sc
+
 
         i++;
         int r = rand() % 100;
