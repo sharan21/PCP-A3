@@ -5,16 +5,18 @@
 #include <vector>
 #include <atomic>
 #include <unistd.h>
+#include <array>
 
 using namespace std;
+
+#define MAX_THREADS 100
 
 template <typename T> // https://stackoverflow.com/questions/13193484/how-to-declare-a-vector-of-atomic-in-c
 struct atomwrapper
 {
   std::atomic<T> val;
 
-  atomwrapper()
-      : val()
+  atomwrapper(): val()
   {
   }
 
@@ -29,9 +31,9 @@ struct atomwrapper
   atomwrapper &operator=(const atomwrapper &other) //copy constructor
   {
     val.store(other.val.load());
-    // return nullptr;
   }
 };
+
 
 class snap_value
 {
@@ -39,8 +41,8 @@ class snap_value
 public:
   int value;
   int label;
-  int reg_no;
-  int snap[10];
+  int snap[];
+  
 
   snap_value(int n) //construction for dummy snap value
   {
@@ -49,30 +51,36 @@ public:
 
     for (int i = 0; i < n; i++)
     {
-      snap.push_back(0);
+      snap[i] = 0;
     }
   }
 
-  snap_value(vector<int> new_snap, int new_value, int new_label) //constructor for actual snap value update
+  snap_value(int n_threads, int new_snap[], int new_value, int new_label) //constructor for actual snap value update
   {
     value = new_value;
     label = new_label;
-    snap = new_snap;
+
+    for (int i = 0; i < n_threads; i++)
+    {
+      snap[i] = new_snap[i];
+    }
+    
   }
 
-  snap_value(const snap_value &s) //copy constructor
-  {
-    value = s.value;
-    label = s.label;
-    snap = s.snap;
-  }
+  
 };
+
+void checkpoint(){
+
+  cout << "here";
+  cout.flush();
+  
+}
 
 class mrsw_snapshot_obj
 {
 public:
-  vector<atomwrapper<int>> s_table_atomic_values;
-  vector<snap_value> s_table_snap_values;
+  vector<atomwrapper<snap_value> > s_table_snap_values;
 
   int n_threads;
 
@@ -80,50 +88,88 @@ public:
   {
 
     n_threads = n;
-    atomwrapper<int> dummy_val(0);
+    
+    snap_value dummy_sv(n_threads);
+    atomwrapper<snap_value> dummy_sv_wrapped(dummy_sv);
 
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n_threads; i++)
     {
-      s_table_atomic_values.push_back(dummy_val);
+      s_table_snap_values.push_back(dummy_sv_wrapped);
     }
   }
 
-  void update(int me, int new_value, vector<int> clean_snap, fstream &times_file) // this is invoked after scan()
+  void update(int me, int new_value) // this is invoked after scan()
   {
-
+    
     // fetch the old snap value stored in register
-    snap_value old_snap = s_table_snap_values[me];
+    int temp[MAX_THREADS];
+    int *clean_snap = scan(me, temp);
 
-    //create and store new snap 
-    snap_value new_snap(clean_snap, new_value, old_snap.label+1);
-    s_table_snap_values.push_back(new_snap);
+    // cout << new_value << endl;
 
-    //update the new value of the atomic register
-    s_table_atomic_values[me].val.store(new_value);
-    
-    // cout << "Thread: " << me << " wrote value: " << value << " at: " << endl;
+  
 
-    #pragma omp critical
+    for (int k = 0; k < n_threads; k++)
     {
-      times_file << "Thread: " << me << " wrote value: " << new_value << " at: " << endl;
+      cout << clean_snap[k] << endl;
     }
-  }
-
-  vector<atomwrapper<int> > collect(){
-    return s_table_atomic_values;
-  }
-
-  void scan(int me){
-    vector<
 
     
+    // int clean_snap[100];
+    snap_value old_snap_value = s_table_snap_values[me].val.load();
+    
+    //create and store new snap 
+    snap_value new_sv(n_threads, clean_snap, new_value, old_snap_value.label+1);
+
+    cout << new_sv.snap[0] << endl;
+    
+
+
+    atomwrapper<snap_value> new_sv_wrapped(new_sv);
+    // new_sv_wrapped.val.store(new_sv);
+
+
+    cout << new_sv_wrapped.val.load().label << endl;
+    exit(0);
+    // s_table_snap_values.push_back(new_sv_wrapped);
+    s_table_snap_values[me].val.store(new_sv);
+
+  }
+
+
+
+  int* scan(int me , int clean_scan[]){ //returns the value states of s_table
+
+    for (int i = 0; i < n_threads; i++)
+    {
+      // clean_scan[i] = s_table_snap_values[i].val.load().value;
+      clean_scan[i] = 66;
+    }
+    return clean_scan;
   }
 
   void display()
   {
+    cout << "------------------printing state of object-----------------" << endl;
+
+    cout << "No of MRSW registers/threads: " << n_threads << endl;
+
+    cout << endl << "-------------------------------------------" << endl;
+
     for (int i = 0; i < n_threads; i++)
     {
-      cout << "Register: " << i << " has value: " << s_table_atomic_values[i].val.load() << endl;
+      cout << "Register: " << i << endl;
+      cout << "has value: " << s_table_snap_values[i].val.load().value << endl;
+      cout << "has label: " << s_table_snap_values[i].val.load().label << endl;
+
+      cout << "has snap: " << endl;
+      for (int j = 0; j < n_threads; j++)
+      {
+        // cout << j << endl;
+        cout << s_table_snap_values[i].val.load().snap[j] << ", "; 
+      }
+      cout << endl << "-------------------------------------------" << endl;
+      
     }
     
   }
@@ -166,39 +212,42 @@ int main()
   input_file >> u_2;
   input_file >> k;
 
+
   mrsw_snapshot_obj ss(n, u_1, u_2);
 
-  // cout << ss.
 
-  // start timer
   start_time = omp_get_wtime();
   omp_set_num_threads(n + 1);
 
-  // int count = 0;
 
 #pragma omp parallel
   {
     int id, i = 0;
     id = omp_get_thread_num();
 
-    if (id == 0)
-    { //collect snapshot
-
-      // vector
+    if (id == n) //snapshot collecting thread executes here
+    { 
+      
+      
     }
 
-    else //writing threads
+    else //writing thread executes her
     {
 
       while (i < 10)
       {
-        sc
-
-
+  
         i++;
-        int r = rand() % 100;
-        ss.update(id - 1, r, times_file);
+        int rand_val = rand() % 100;
+        // int rand_val = 66;
+        ss.update(id, rand_val);
+
+        #pragma omp critical
+        {
+          cout << "Thread: " << id << " wrote value: " << rand_val << " at: " << endl;
+        }
         usleep(100000);
+
       }
     }
   }
