@@ -88,10 +88,8 @@ public:
 
     while (true)
     {
-
       while (true)
       {
-
         //get new collect
         collect(new_copy);
 
@@ -99,7 +97,6 @@ public:
         {
           if (old_copy[i] != new_copy[i])
           {
-
             if (moved[i])
             { //second move, get snap  of this register
               cout << "found second move !" << endl;
@@ -112,7 +109,6 @@ public:
               moved[i] = true;
               // cout << "someone moved!" << endl;
               copy_b_to_a(old_copy, new_copy, n_threads); // old_copy = new_copy
-
               break;
             }
           }
@@ -163,7 +159,7 @@ int main()
 {
 
   int m, n, k;
-  float u_1, u_2;
+  float u_s, u_w;
   bool stop_writing = false;
 
   ifstream input_file;
@@ -175,27 +171,28 @@ int main()
   snapshots_file.open("snapshots_file_mrsw.txt");
 
   input_file >> n;
-  input_file >> u_1;
-  input_file >> u_2;
+  input_file >> u_s;
+  input_file >> u_w;
   input_file >> k;
 
   snapshots_file << "n: " << n << endl;
   snapshots_file << "k: " << k << endl;
-  snapshots_file << "u_1: " << u_1 << endl;
-  snapshots_file << "u_2: " << u_2 << endl;
+  snapshots_file << "u_s: " << u_s << endl;
+  snapshots_file << "u_w: " << u_w << endl;
 
   experiments_file << "n: " << n << endl;
   experiments_file << "k: " << k << endl;
-  experiments_file << "u_1: " << u_1 << endl;
-  experiments_file << "u_2: " << u_2 << endl;
+  experiments_file << "u_s: " << u_s << endl;
+  experiments_file << "u_w: " << u_w << endl;
+  experiments_file << "u_s/u_w: " << u_s/u_w << endl;
 
   //init snapshot object
   mrsw_snapshot_obj ss(n);
 
   //init random generators
   default_random_engine generator;
-  exponential_distribution<double> writer_delay(u_1);
-  exponential_distribution<double> snapshot_delay(u_2);
+  exponential_distribution<double> snapshot_delay(u_s);
+  exponential_distribution<double> writer_delay(u_w);
   srand(time(NULL)); //set random seed using time for future random numbers generated
 
   omp_set_num_threads(n + 1); // n MRSW threads and 1 snapshot thread
@@ -209,16 +206,11 @@ int main()
 
     if (id == n) //snapshot collecting thread executes here
     {
-
       int clean_snap[n];
 
       while (no_of_snapshots < k)
       {
-
         start_time = preprocess_timestamp(omp_get_wtime());
-
-        //wait for rand time
-        rand_time = snapshot_delay(generator);
 
         //scan
         ss.scan(clean_snap);
@@ -239,7 +231,6 @@ int main()
       }
 
       stop_writing = true; //make other threads stop writing
-
       experiments_file << "avg time: " << avg_time / k << ", worst time: " << worst_time << endl;
     }
 

@@ -1,8 +1,8 @@
 n: 10
 m: 10
 k: 10
-u_1: 1.5
-u_2: 2.5
+u_w: 1.5
+u_s: 2.5
 thread 0 wrote a value: 52 at location:6 at timestamp: 538.43seconds
 thread 3 wrote a value: 32 at location:8 at timestamp: 538.43seconds
 thread 2 wrote a value: 84 at location:9 at timestamp: 538.43seconds

@@ -1,0 +1,355 @@
+n: 10
+k: 50
+u_s: 100
+u_w: 10
+u_s/u_w: 10
+avg time: 0.000231857, worst time: 0.000573874
+n: 10
+k: 50
+u_s: 100
+u_w: 10
+u_s/u_w: 10
+avg time: 0.000212946, worst time: 0.000292063
+n: 10
+k: 50
+u_s: 100
+u_w: 10
+u_s/u_w: 10
+avg time: 0.000235324, worst time: 0.00149107
+n: 10
+k: 50
+u_s: 100
+u_w: 10
+u_s/u_w: 10
+avg time: 0.00022542, worst time: 0.000427008
+n: 10
+k: 50
+u_s: 100
+u_w: 10
+u_s/u_w: 10
+avg time: 0.000200768, worst time: 0.000280142
+
+
+
+n: 10
+k: 50
+u_s: 100
+u_w: 12.5
+u_s/u_w: 8
+avg time: 0.000207186, worst time: 0.000396013
+n: 10
+k: 50
+u_s: 100
+u_w: 12.5
+u_s/u_w: 8
+avg time: 0.000206418, worst time: 0.000458002
+n: 10
+k: 50
+u_s: 100
+u_w: 12.5
+u_s/u_w: 8
+avg time: 0.000251155, worst time: 0.000604868
+n: 10
+k: 50
+u_s: 100
+u_w: 12.5
+u_s/u_w: 8
+avg time: 0.000217519, worst time: 0.000602007
+n: 10
+k: 50
+u_s: 100
+u_w: 12.5
+u_s/u_w: 8
+avg time: 0.000196576, worst time: 0.000401974
+
+
+
+
+
+n: 10
+k: 50
+u_s: 100
+u_w: 16.67
+u_s/u_w: 5.9988
+avg time: 0.000226235, worst time: 0.000377178
+n: 10
+k: 50
+u_s: 100
+u_w: 16.67
+u_s/u_w: 5.9988
+avg time: 0.000239758, worst time: 0.000928164
+n: 10
+k: 50
+u_s: 100
+u_w: 16.67
+u_s/u_w: 5.9988
+avg time: 0.00031764, worst time: 0.000749826
+n: 10
+k: 50
+u_s: 100
+u_w: 16.67
+u_s/u_w: 5.9988
+avg time: 0.000194125, worst time: 0.00028491
+n: 10
+k: 50
+u_s: 100
+u_w: 16.67
+u_s/u_w: 5.9988
+avg time: 0.000201554, worst time: 0.000441074
+
+
+n: 10
+k: 50
+u_s: 100
+u_w: 25
+u_s/u_w: 4
+avg time: 0.000240684, worst time: 0.000427008
+n: 10
+k: 50
+u_s: 100
+u_w: 25
+u_s/u_w: 4
+avg time: 0.000226455, worst time: 0.000368834
+n: 10
+k: 50
+u_s: 100
+u_w: 25
+u_s/u_w: 4
+avg time: 0.000350761, worst time: 0.00302505
+n: 10
+k: 50
+u_s: 100
+u_w: 25
+u_s/u_w: 4
+avg time: 0.000257554, worst time: 0.000648022
+n: 10
+k: 50
+u_s: 100
+u_w: 25
+u_s/u_w: 4
+avg time: 0.000260587, worst time: 0.000677109
+
+
+n: 10
+k: 50
+u_s: 100
+u_w: 50
+u_s/u_w: 2
+avg time: 0.000220118, worst time: 0.000554085
+n: 10
+k: 50
+u_s: 100
+u_w: 50
+u_s/u_w: 2
+avg time: 0.000185208, worst time: 0.00024581
+n: 10
+k: 50
+u_s: 100
+u_w: 50
+u_s/u_w: 2
+avg time: 0.000199976, worst time: 0.000404119
+n: 10
+k: 50
+u_s: 100
+u_w: 50
+u_s/u_w: 2
+avg time: 0.000207601, worst time: 0.000983953
+n: 10
+k: 50
+u_s: 100
+u_w: 50
+u_s/u_w: 2
+avg time: 0.000260906, worst time: 0.000738144
+
+
+n: 10
+k: 50
+u_s: 100
+u_w: 100
+u_s/u_w: 1
+avg time: 0.000224695, worst time: 0.000533104
+n: 10
+k: 50
+u_s: 100
+u_w: 100
+u_s/u_w: 1
+avg time: 0.000370998, worst time: 0.00365496
+n: 10
+k: 50
+u_s: 100
+u_w: 100
+u_s/u_w: 1
+avg time: 0.000195045, worst time: 0.000270128
+n: 10
+k: 50
+u_s: 100
+u_w: 100
+u_s/u_w: 1
+avg time: 0.000198045, worst time: 0.000383854
+n: 10
+k: 50
+u_s: 100
+u_w: 100
+u_s/u_w: 1
+avg time: 0.000197935, worst time: 0.000346899
+
+
+n: 10
+k: 50
+u_s: 100
+u_w: 125
+u_s/u_w: 0.8
+avg time: 0.000217652, worst time: 0.00120306
+n: 10
+k: 50
+u_s: 100
+u_w: 125
+u_s/u_w: 0.8
+avg time: 0.000192027, worst time: 0.000457048
+n: 10
+k: 50
+u_s: 100
+u_w: 125
+u_s/u_w: 0.8
+avg time: 0.000212646, worst time: 0.000338793
+n: 10
+k: 50
+u_s: 100
+u_w: 125
+u_s/u_w: 0.8
+avg time: 0.000196691, worst time: 0.000256062
+n: 10
+k: 50
+u_s: 100
+u_w: 125
+u_s/u_w: 0.8
+avg time: 0.000197973, worst time: 0.000303984
+
+n: 10
+k: 50
+u_s: 100
+u_w: 166.67
+u_s/u_w: 0.599988
+avg time: 0.00023499, worst time: 0.000732899
+n: 10
+k: 50
+u_s: 100
+u_w: 166.67
+u_s/u_w: 0.599988
+avg time: 0.000218353, worst time: 0.000356197
+n: 10
+k: 50
+u_s: 100
+u_w: 166.67
+u_s/u_w: 0.599988
+avg time: 0.000215869, worst time: 0.000469923
+n: 10
+k: 50
+u_s: 100
+u_w: 166.67
+u_s/u_w: 0.599988
+avg time: 0.000242391, worst time: 0.000833988
+n: 10
+k: 50
+u_s: 100
+u_w: 166.67
+u_s/u_w: 0.599988
+avg time: 0.000202684, worst time: 0.000486135
+
+
+n: 10
+k: 50
+u_s: 100
+u_w: 250
+u_s/u_w: 0.4
+avg time: 0.000185037, worst time: 0.000248909
+n: 10
+k: 50
+u_s: 100
+u_w: 250
+u_s/u_w: 0.4
+avg time: 0.000197377, worst time: 0.000334978
+n: 10
+k: 50
+u_s: 100
+u_w: 250
+u_s/u_w: 0.4
+avg time: 0.00021163, worst time: 0.000444889
+n: 10
+k: 50
+u_s: 100
+u_w: 250
+u_s/u_w: 0.4
+avg time: 0.0002034, worst time: 0.000550985
+n: 10
+k: 50
+u_s: 100
+u_w: 250
+u_s/u_w: 0.4
+avg time: 0.000204482, worst time: 0.000580072
+
+
+
+n: 10
+k: 50
+u_s: 100
+u_w: 500
+u_s/u_w: 0.2
+avg time: 0.000224476, worst time: 0.000564098
+n: 10
+k: 50
+u_s: 100
+u_w: 500
+u_s/u_w: 0.2
+avg time: 0.000202308, worst time: 0.000681877
+n: 10
+k: 50
+u_s: 100
+u_w: 500
+u_s/u_w: 0.2
+avg time: 0.000193768, worst time: 0.000286102
+n: 10
+k: 50
+u_s: 100
+u_w: 500
+u_s/u_w: 0.2
+avg time: 0.000275989, worst time: 0.00167179
+n: 10
+k: 50
+u_s: 100
+u_w: 500
+u_s/u_w: 0.2
+avg time: 0.000207896, worst time: 0.0004251
+
+
+
+n: 10
+k: 50
+u_s: 100
+u_w: 1000
+u_s/u_w: 0.1
+avg time: 0.000238862, worst time: 0.000872135
+n: 10
+k: 50
+u_s: 100
+u_w: 1000
+u_s/u_w: 0.1
+avg time: 0.00022336, worst time: 0.000454187
+n: 10
+k: 50
+u_s: 100
+u_w: 1000
+u_s/u_w: 0.1
+avg time: 0.000198483, worst time: 0.000338078
+n: 10
+k: 50
+u_s: 100
+u_w: 1000
+u_s/u_w: 0.1
+avg time: 0.000214467, worst time: 0.000540972
+n: 10
+k: 50
+u_s: 100
+u_w: 1000
+u_s/u_w: 0.1
+avg time: 0.000217667, worst time: 0.00097084

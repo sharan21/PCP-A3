@@ -164,7 +164,7 @@ int main()
 {
 
     int m, n, k;
-    float u_1, u_2;
+    float u_s, u_w;
     bool stop_writing = false;
 
     ifstream input_file;
@@ -177,29 +177,33 @@ int main()
 
     input_file >> n;
     input_file >> m;
-    input_file >> u_1;
-    input_file >> u_2;
+    input_file >> u_s;
+    input_file >> u_w;
     input_file >> k;
+
 
     snapshots_file << "n: " << n << endl;
     snapshots_file << "m: " << m << endl;
     snapshots_file << "k: " << k << endl;
-    snapshots_file << "u_1: " << u_1 << endl;
-    snapshots_file << "u_2: " << u_2 << endl;
+    snapshots_file << "u_s: " << u_s << endl;
+    snapshots_file << "u_w: " << u_w << endl;
 
     experiments_file << "n: " << n << endl;
-    experiments_file << "m: " << m << endl;
+    snapshots_file << "m: " << m << endl;
     experiments_file << "k: " << k << endl;
-    experiments_file << "u_1: " << u_1 << endl;
-    experiments_file << "u_2: " << u_2 << endl;
+    experiments_file << "u_s: " << u_s << endl;
+    experiments_file << "u_w: " << u_w << endl;
+    experiments_file << "u_s/u_w: " << u_s/u_w << endl;
+
 
     //init snapshot object
     mrmw_snapshot_obj ss(n, m);
 
     //init random generators
     default_random_engine generator;
-    exponential_distribution<double> writer_delay(u_1);
-    exponential_distribution<double> snapshot_delay(u_2);
+    
+    exponential_distribution<double> snapshot_delay(u_s);
+    exponential_distribution<double> writer_delay(u_w);
     srand(time(NULL)); //set random seed using time for future random numbers generated
 
     omp_set_num_threads(n + 1); // n MRSW threads and 1 snapshot thread
