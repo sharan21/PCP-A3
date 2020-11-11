@@ -1,1512 +1,1183 @@
 n: 10
-m: 5
-k: 100
+m: 10
+k: 10
 u_1: 1.5
 u_2: 2.5
-thread 1 wrote a value: 20 at location:1 at timestamp: 903.723seconds
-thread 0 wrote a value: 27 at location:0 at timestamp: 903.723seconds
-thread 3 wrote a value: 36 at location:3 at timestamp: 903.723seconds
-thread 8 wrote a value: 46 at location:3 at timestamp: 903.723seconds
-thread 7 wrote a value: 1 at location:5 at timestamp: 903.723seconds
-thread 6 wrote a value: 57 at location:3 at timestamp: 903.723seconds
-thread 5 wrote a value: 96 at location:1 at timestamp: 903.723seconds
-
-
-got 0th snapshot at timestamp: 903.723 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 45 at location:6 at timestamp: 903.723seconds
-thread 4 wrote a value: 95 at location:3 at timestamp: 903.723seconds
-thread 2 wrote a value: 54 at location:7 at timestamp: 903.723seconds
-thread 1 wrote a value: 35 at location:2 at timestamp: 903.723seconds
-thread 0 wrote a value: 0 at location:1 at timestamp: 903.723seconds
-thread 3 wrote a value: 43 at location:5 at timestamp: 903.723seconds
-thread 8 wrote a value: 90 at location:2 at timestamp: 903.723seconds
-thread 7 wrote a value: 38 at location:6 at timestamp: 903.723seconds
-thread 6 wrote a value: 19 at location:8 at timestamp: 903.723seconds
-thread 5 wrote a value: 1 at location:3 at timestamp: 903.723seconds
-
-
-got 1th snapshot at timestamp: 903.723 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 61 at location:2 at timestamp: 903.723seconds
-thread 4 wrote a value: 97 at location:6 at timestamp: 903.723seconds
-thread 2 wrote a value: 40 at location:4 at timestamp: 903.723seconds
-thread 1 wrote a value: 7 at location:7 at timestamp: 903.723seconds
-thread 0 wrote a value: 51 at location:0 at timestamp: 903.723seconds
-thread 3 wrote a value: 84 at location:8 at timestamp: 903.723seconds
-thread 8 wrote a value: 65 at location:2 at timestamp: 903.723seconds
-thread 7 wrote a value: 60 at location:9 at timestamp: 903.723seconds
-thread 6 wrote a value: 93 at location:9 at timestamp: 903.723seconds
-thread 5 wrote a value: 42 at location:4 at timestamp: 903.723seconds
-
-
-got 2th snapshot at timestamp: 903.723 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 16 at location:4 at timestamp: 903.723seconds
-thread 4 wrote a value: 98 at location:3 at timestamp: 903.723seconds
-thread 2 wrote a value: 41 at location:3 at timestamp: 903.723seconds
-thread 1 wrote a value: 93 at location:1 at timestamp: 903.723seconds
-thread 0 wrote a value: 7 at location:2 at timestamp: 903.723seconds
-thread 3 wrote a value: 9 at location:8 at timestamp: 903.723seconds
-thread 8 wrote a value: 28 at location:6 at timestamp: 903.724seconds
-thread 7 wrote a value: 78 at location:2 at timestamp: 903.724seconds
-thread 6 wrote a value: 34 at location:3 at timestamp: 903.724seconds
-thread 5 wrote a value: 29 at location:6 at timestamp: 903.724seconds
-
-
-got 3th snapshot at timestamp: 903.724 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 42 at location:2 at timestamp: 903.724seconds
-thread 4 wrote a value: 30 at location:9 at timestamp: 903.724seconds
-thread 2 wrote a value: 78 at location:3 at timestamp: 903.724seconds
-thread 1 wrote a value: 89 at location:4 at timestamp: 903.724seconds
-thread 0 wrote a value: 28 at location:4 at timestamp: 903.724seconds
-thread 3 wrote a value: 71 at location:7 at timestamp: 903.724seconds
-thread 8 wrote a value: 17 at location:9 at timestamp: 903.724seconds
-thread 7 wrote a value: 31 at location:2 at timestamp: 903.724seconds
-thread 6 wrote a value: 68 at location:0 at timestamp: 903.724seconds
-thread 5 wrote a value: 0 at location:1 at timestamp: 903.724seconds
-
-
-got 4th snapshot at timestamp: 903.724 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 75 at location:8 at timestamp: 903.724seconds
-thread 4 wrote a value: 99 at location:8 at timestamp: 903.724seconds
-thread 2 wrote a value: 87 at location:6 at timestamp: 903.724seconds
-thread 1 wrote a value: 87 at location:9 at timestamp: 903.724seconds
-thread 0 wrote a value: 39 at location:3 at timestamp: 903.724seconds
-thread 3 wrote a value: 78 at location:3 at timestamp: 903.724seconds
-thread 8 wrote a value: 96 at location:8 at timestamp: 903.724seconds
-thread 7 wrote a value: 49 at location:9 at timestamp: 903.724seconds
-thread 6 wrote a value: 29 at location:5 at timestamp: 903.724seconds
-thread 5 wrote a value: 42 at location:8 at timestamp: 903.724seconds
-
-
-got 5th snapshot at timestamp: 903.724 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 52 at location:5 at timestamp: 903.724seconds
-thread 4 wrote a value: 72 at location:1 at timestamp: 903.724seconds
-thread 2 wrote a value: 93 at location:7 at timestamp: 903.724seconds
-thread 1 wrote a value: 69 at location:4 at timestamp: 903.724seconds
-thread 0 wrote a value: 60 at location:2 at timestamp: 903.724seconds
-thread 3 wrote a value: 29 at location:4 at timestamp: 903.724seconds
-thread 8 wrote a value: 67 at location:3 at timestamp: 903.724seconds
-thread 7 wrote a value: 57 at location:3 at timestamp: 903.724seconds
-thread 6 wrote a value: 29 at location:0 at timestamp: 903.724seconds
-thread 5 wrote a value: 31 at location:1 at timestamp: 903.724seconds
-
-
-got 6th snapshot at timestamp: 903.724 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 92 at location:8 at timestamp: 903.724seconds
-thread 4 wrote a value: 32 at location:1 at timestamp: 903.724seconds
-thread 2 wrote a value: 96 at location:0 at timestamp: 903.724seconds
-thread 1 wrote a value: 57 at location:4 at timestamp: 903.724seconds
-thread 0 wrote a value: 80 at location:1 at timestamp: 903.724seconds
-thread 3 wrote a value: 84 at location:6 at timestamp: 903.724seconds
-thread 8 wrote a value: 45 at location:2 at timestamp: 903.724seconds
-thread 7 wrote a value: 12 at location:4 at timestamp: 903.724seconds
-thread 6 wrote a value: 89 at location:3 at timestamp: 903.724seconds
-thread 5 wrote a value: 91 at location:9 at timestamp: 903.724seconds
-
-
-got 7th snapshot at timestamp: 903.725 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 74 at location:5 at timestamp: 903.725seconds
-thread 4 wrote a value: 17 at location:7 at timestamp: 903.725seconds
-thread 2 wrote a value: 34 at location:6 at timestamp: 903.725seconds
-thread 1 wrote a value: 8 at location:6 at timestamp: 903.725seconds
-thread 0 wrote a value: 94 at location:4 at timestamp: 903.725seconds
-thread 3 wrote a value: 36 at location:1 at timestamp: 903.725seconds
-thread 8 wrote a value: 63 at location:8 at timestamp: 903.725seconds
-thread 7 wrote a value: 38 at location:4 at timestamp: 903.725seconds
-thread 6 wrote a value: 15 at location:3 at timestamp: 903.725seconds
-thread 5 wrote a value: 53 at location:5 at timestamp: 903.725seconds
-
-
-got 8th snapshot at timestamp: 903.725 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 62 at location:2 at timestamp: 903.725seconds
-thread 4 wrote a value: 32 at location:6 at timestamp: 903.725seconds
-thread 2 wrote a value: 14 at location:0 at timestamp: 903.725seconds
-thread 1 wrote a value: 5 at location:4 at timestamp: 903.725seconds
-thread 0 wrote a value: 95 at location:4 at timestamp: 903.725seconds
-thread 3 wrote a value: 63 at location:5 at timestamp: 903.725seconds
-thread 8 wrote a value: 99 at location:0 at timestamp: 903.725seconds
-thread 7 wrote a value: 91 at location:8 at timestamp: 903.725seconds
-thread 6 wrote a value: 61 at location:3 at timestamp: 903.725seconds
-thread 5 wrote a value: 8 at location:5 at timestamp: 903.725seconds
-
-
-got 9th snapshot at timestamp: 903.725 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 24 at location:0 at timestamp: 903.726seconds
-thread 4 wrote a value: 14 at location:0 at timestamp: 903.726seconds
-thread 2 wrote a value: 48 at location:6 at timestamp: 903.726seconds
-thread 1 wrote a value: 41 at location:9 at timestamp: 903.726seconds
-thread 0 wrote a value: 33 at location:2 at timestamp: 903.726seconds
-thread 3 wrote a value: 13 at location:5 at timestamp: 903.726seconds
-thread 8 wrote a value: 84 at location:4 at timestamp: 903.726seconds
-thread 7 wrote a value: 41 at location:1 at timestamp: 903.726seconds
-thread 6 wrote a value: 14 at location:2 at timestamp: 903.726seconds
-thread 5 wrote a value: 23 at location:8 at timestamp: 903.726seconds
-
-
-got 10th snapshot at timestamp: 903.726 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 99 at location:5 at timestamp: 903.726seconds
-thread 4 wrote a value: 54 at location:0 at timestamp: 903.726seconds
-thread 2 wrote a value: 36 at location:1 at timestamp: 903.726seconds
-thread 1 wrote a value: 76 at location:4 at timestamp: 903.726seconds
-thread 0 wrote a value: 72 at location:3 at timestamp: 903.726seconds
-thread 3 wrote a value: 62 at location:3 at timestamp: 903.726seconds
-thread 8 wrote a value: 38 at location:1 at timestamp: 903.726seconds
-thread 7 wrote a value: 19 at location:5 at timestamp: 903.726seconds
-thread 6 wrote a value: 10 at location:5 at timestamp: 903.726seconds
-thread 5 wrote a value: 26 at location:5 at timestamp: 903.726seconds
-
-
-got 11th snapshot at timestamp: 903.726 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 17 at location:7 at timestamp: 903.726seconds
-thread 4 wrote a value: 72 at location:2 at timestamp: 903.726seconds
-thread 2 wrote a value: 77 at location:9 at timestamp: 903.726seconds
-thread 1 wrote a value: 29 at location:3 at timestamp: 903.726seconds
-thread 0 wrote a value: 25 at location:4 at timestamp: 903.726seconds
-thread 3 wrote a value: 63 at location:8 at timestamp: 903.726seconds
-thread 8 wrote a value: 28 at location:7 at timestamp: 903.726seconds
-thread 7 wrote a value: 14 at location:3 at timestamp: 903.726seconds
-thread 6 wrote a value: 97 at location:8 at timestamp: 903.726seconds
-thread 5 wrote a value: 2 at location:9 at timestamp: 903.726seconds
-
-
-got 12th snapshot at timestamp: 903.727 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 11 at location:6 at timestamp: 903.727seconds
-thread 4 wrote a value: 49 at location:0 at timestamp: 903.727seconds
-thread 2 wrote a value: 37 at location:9 at timestamp: 903.727seconds
-thread 1 wrote a value: 47 at location:9 at timestamp: 903.727seconds
-thread 0 wrote a value: 82 at location:2 at timestamp: 903.727seconds
-thread 3 wrote a value: 79 at location:2 at timestamp: 903.727seconds
-thread 8 wrote a value: 95 at location:2 at timestamp: 903.727seconds
-thread 7 wrote a value: 58 at location:8 at timestamp: 903.727seconds
-thread 6 wrote a value: 79 at location:7 at timestamp: 903.727seconds
-thread 5 wrote a value: 95 at location:0 at timestamp: 903.727seconds
-
-
-got 13th snapshot at timestamp: 903.727 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 15 at location:1 at timestamp: 903.727seconds
-thread 4 wrote a value: 46 at location:8 at timestamp: 903.727seconds
-thread 2 wrote a value: 45 at location:1 at timestamp: 903.727seconds
-thread 1 wrote a value: 89 at location:3 at timestamp: 903.727seconds
-thread 0 wrote a value: 4 at location:0 at timestamp: 903.727seconds
-thread 3 wrote a value: 20 at location:8 at timestamp: 903.727seconds
-thread 8 wrote a value: 10 at location:7 at timestamp: 903.727seconds
-thread 7 wrote a value: 78 at location:3 at timestamp: 903.727seconds
-thread 6 wrote a value: 19 at location:9 at timestamp: 903.727seconds
-thread 5 wrote a value: 4 at location:5 at timestamp: 903.727seconds
-
-
-got 14th snapshot at timestamp: 903.727 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 84 at location:2 at timestamp: 903.727seconds
-thread 4 wrote a value: 51 at location:7 at timestamp: 903.727seconds
-thread 2 wrote a value: 20 at location:4 at timestamp: 903.727seconds
-thread 1 wrote a value: 76 at location:7 at timestamp: 903.727seconds
-thread 0 wrote a value: 44 at location:7 at timestamp: 903.727seconds
-thread 3 wrote a value: 21 at location:7 at timestamp: 903.727seconds
-thread 8 wrote a value: 69 at location:2 at timestamp: 903.727seconds
-thread 7 wrote a value: 53 at location:2 at timestamp: 903.727seconds
-thread 6 wrote a value: 83 at location:6 at timestamp: 903.727seconds
-thread 5 wrote a value: 85 at location:0 at timestamp: 903.727seconds
-
-
-got 15th snapshot at timestamp: 903.727 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 28 at location:9 at timestamp: 903.727seconds
-thread 4 wrote a value: 16 at location:9 at timestamp: 903.727seconds
-thread 2 wrote a value: 87 at location:9 at timestamp: 903.727seconds
-thread 1 wrote a value: 39 at location:0 at timestamp: 903.727seconds
-thread 0 wrote a value: 60 at location:0 at timestamp: 903.727seconds
-thread 3 wrote a value: 64 at location:4 at timestamp: 903.727seconds
-thread 8 wrote a value: 67 at location:2 at timestamp: 903.727seconds
-thread 7 wrote a value: 23 at location:0 at timestamp: 903.727seconds
-thread 6 wrote a value: 2 at location:0 at timestamp: 903.727seconds
-thread 5 wrote a value: 91 at location:1 at timestamp: 903.727seconds
-
-
-got 16th snapshot at timestamp: 903.727 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 52 at location:1 at timestamp: 903.727seconds
-thread 4 wrote a value: 66 at location:2 at timestamp: 903.727seconds
-thread 2 wrote a value: 36 at location:6 at timestamp: 903.727seconds
-thread 1 wrote a value: 90 at location:1 at timestamp: 903.727seconds
-thread 0 wrote a value: 60 at location:6 at timestamp: 903.727seconds
-thread 3 wrote a value: 91 at location:1 at timestamp: 903.727seconds
-thread 8 wrote a value: 47 at location:1 at timestamp: 903.727seconds
-thread 7 wrote a value: 14 at location:5 at timestamp: 903.727seconds
-thread 6 wrote a value: 19 at location:2 at timestamp: 903.727seconds
-thread 5 wrote a value: 7 at location:0 at timestamp: 903.727seconds
-
-
-got 17th snapshot at timestamp: 903.727 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 39 at location:1 at timestamp: 903.727seconds
-thread 4 wrote a value: 45 at location:1 at timestamp: 903.727seconds
-thread 2 wrote a value: 46 at location:4 at timestamp: 903.727seconds
-thread 1 wrote a value: 52 at location:4 at timestamp: 903.727seconds
-thread 0 wrote a value: 88 at location:7 at timestamp: 903.727seconds
-thread 3 wrote a value: 94 at location:0 at timestamp: 903.727seconds
-thread 8 wrote a value: 3 at location:2 at timestamp: 903.728seconds
-thread 7 wrote a value: 40 at location:9 at timestamp: 903.728seconds
-thread 6 wrote a value: 74 at location:8 at timestamp: 903.728seconds
-thread 5 wrote a value: 33 at location:9 at timestamp: 903.728seconds
-
-
-got 18th snapshot at timestamp: 903.728 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 22 at location:4 at timestamp: 903.728seconds
-thread 4 wrote a value: 12 at location:1 at timestamp: 903.728seconds
-thread 2 wrote a value: 28 at location:0 at timestamp: 903.728seconds
-thread 1 wrote a value: 9 at location:5 at timestamp: 903.728seconds
-thread 0 wrote a value: 98 at location:7 at timestamp: 903.728seconds
-thread 3 wrote a value: 84 at location:9 at timestamp: 903.728seconds
-thread 8 wrote a value: 24 at location:4 at timestamp: 903.728seconds
-thread 7 wrote a value: 92 at location:4 at timestamp: 903.728seconds
-thread 6 wrote a value: 72 at location:8 at timestamp: 903.728seconds
-thread 5 wrote a value: 7 at location:3 at timestamp: 903.728seconds
-
-
-got 19th snapshot at timestamp: 903.728 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 55 at location:5 at timestamp: 903.728seconds
-thread 4 wrote a value: 49 at location:0 at timestamp: 903.728seconds
-thread 2 wrote a value: 88 at location:3 at timestamp: 903.728seconds
-thread 1 wrote a value: 11 at location:8 at timestamp: 903.728seconds
-thread 0 wrote a value: 39 at location:7 at timestamp: 903.728seconds
-thread 3 wrote a value: 62 at location:3 at timestamp: 903.728seconds
-thread 8 wrote a value: 7 at location:8 at timestamp: 903.728seconds
-thread 7 wrote a value: 62 at location:9 at timestamp: 903.728seconds
-thread 6 wrote a value: 52 at location:6 at timestamp: 903.728seconds
-thread 5 wrote a value: 57 at location:8 at timestamp: 903.728seconds
-
-
-got 20th snapshot at timestamp: 903.728 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 48 at location:0 at timestamp: 903.728seconds
-thread 4 wrote a value: 73 at location:2 at timestamp: 903.728seconds
-thread 2 wrote a value: 73 at location:4 at timestamp: 903.728seconds
-thread 1 wrote a value: 82 at location:9 at timestamp: 903.728seconds
-thread 0 wrote a value: 3 at location:5 at timestamp: 903.728seconds
-thread 3 wrote a value: 51 at location:0 at timestamp: 903.728seconds
-thread 8 wrote a value: 30 at location:3 at timestamp: 903.728seconds
-thread 7 wrote a value: 75 at location:0 at timestamp: 903.728seconds
-thread 6 wrote a value: 97 at location:6 at timestamp: 903.728seconds
-thread 5 wrote a value: 35 at location:8 at timestamp: 903.728seconds
-
-
-got 21th snapshot at timestamp: 903.728 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 21 at location:3 at timestamp: 903.728seconds
-thread 4 wrote a value: 33 at location:7 at timestamp: 903.728seconds
-thread 2 wrote a value: 45 at location:9 at timestamp: 903.728seconds
-thread 1 wrote a value: 58 at location:9 at timestamp: 903.728seconds
-thread 0 wrote a value: 56 at location:5 at timestamp: 903.728seconds
-thread 3 wrote a value: 91 at location:0 at timestamp: 903.728seconds
-thread 8 wrote a value: 89 at location:6 at timestamp: 903.728seconds
-thread 7 wrote a value: 59 at location:6 at timestamp: 903.728seconds
-thread 6 wrote a value: 86 at location:0 at timestamp: 903.728seconds
-thread 5 wrote a value: 85 at location:0 at timestamp: 903.729seconds
-
-
-got 22th snapshot at timestamp: 903.729 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 72 at location:4 at timestamp: 903.729seconds
-thread 4 wrote a value: 83 at location:6 at timestamp: 903.729seconds
-thread 2 wrote a value: 65 at location:8 at timestamp: 903.729seconds
-thread 1 wrote a value: 85 at location:8 at timestamp: 903.729seconds
-thread 0 wrote a value: 34 at location:1 at timestamp: 903.729seconds
-thread 3 wrote a value: 61 at location:6 at timestamp: 903.729seconds
-thread 8 wrote a value: 72 at location:5 at timestamp: 903.729seconds
-thread 7 wrote a value: 46 at location:4 at timestamp: 903.729seconds
-thread 6 wrote a value: 68 at location:0 at timestamp: 903.729seconds
-thread 5 wrote a value: 19 at location:2 at timestamp: 903.729seconds
-
-
-got 23th snapshot at timestamp: 903.729 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 66 at location:1 at timestamp: 903.729seconds
-thread 4 wrote a value: 38 at location:4 at timestamp: 903.729seconds
-thread 2 wrote a value: 99 at location:9 at timestamp: 903.729seconds
-thread 1 wrote a value: 21 at location:9 at timestamp: 903.729seconds
-thread 0 wrote a value: 9 at location:9 at timestamp: 903.729seconds
-thread 3 wrote a value: 98 at location:5 at timestamp: 903.729seconds
-thread 8 wrote a value: 60 at location:6 at timestamp: 903.729seconds
-thread 7 wrote a value: 18 at location:5 at timestamp: 903.729seconds
-thread 6 wrote a value: 15 at location:5 at timestamp: 903.729seconds
-thread 5 wrote a value: 56 at location:6 at timestamp: 903.729seconds
-
-
-got 24th snapshot at timestamp: 903.729 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 40 at location:0 at timestamp: 903.729seconds
-thread 4 wrote a value: 46 at location:3 at timestamp: 903.729seconds
-thread 2 wrote a value: 50 at location:5 at timestamp: 903.729seconds
-thread 1 wrote a value: 14 at location:7 at timestamp: 903.729seconds
-thread 0 wrote a value: 51 at location:0 at timestamp: 903.729seconds
-thread 3 wrote a value: 13 at location:4 at timestamp: 903.729seconds
-thread 8 wrote a value: 60 at location:5 at timestamp: 903.729seconds
-thread 7 wrote a value: 56 at location:8 at timestamp: 903.729seconds
-thread 6 wrote a value: 99 at location:0 at timestamp: 903.729seconds
-thread 5 wrote a value: 31 at location:5 at timestamp: 903.729seconds
-
-
-got 25th snapshot at timestamp: 903.729 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 71 at location:3 at timestamp: 903.729seconds
-thread 4 wrote a value: 41 at location:3 at timestamp: 903.729seconds
-thread 2 wrote a value: 0 at location:4 at timestamp: 903.729seconds
-thread 1 wrote a value: 51 at location:5 at timestamp: 903.729seconds
-thread 0 wrote a value: 86 at location:3 at timestamp: 903.729seconds
-thread 3 wrote a value: 58 at location:1 at timestamp: 903.729seconds
-thread 8 wrote a value: 75 at location:1 at timestamp: 903.729seconds
-thread 7 wrote a value: 46 at location:7 at timestamp: 903.729seconds
-thread 6 wrote a value: 42 at location:8 at timestamp: 903.729seconds
-thread 5 wrote a value: 33 at location:9 at timestamp: 903.729seconds
-
-
-got 26th snapshot at timestamp: 903.729 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 47 at location:2 at timestamp: 903.729seconds
-thread 4 wrote a value: 93 at location:7 at timestamp: 903.729seconds
-thread 2 wrote a value: 67 at location:9 at timestamp: 903.729seconds
-thread 1 wrote a value: 32 at location:7 at timestamp: 903.729seconds
-thread 0 wrote a value: 87 at location:7 at timestamp: 903.729seconds
-thread 3 wrote a value: 55 at location:9 at timestamp: 903.729seconds
-thread 8 wrote a value: 94 at location:6 at timestamp: 903.729seconds
-thread 7 wrote a value: 62 at location:7 at timestamp: 903.729seconds
-thread 6 wrote a value: 37 at location:5 at timestamp: 903.729seconds
-thread 5 wrote a value: 58 at location:9 at timestamp: 903.729seconds
-
-
-got 27th snapshot at timestamp: 903.729 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 84 at location:5 at timestamp: 903.729seconds
-thread 4 wrote a value: 80 at location:1 at timestamp: 903.729seconds
-thread 2 wrote a value: 84 at location:0 at timestamp: 903.729seconds
-thread 1 wrote a value: 78 at location:1 at timestamp: 903.729seconds
-thread 0 wrote a value: 54 at location:1 at timestamp: 903.729seconds
-thread 3 wrote a value: 60 at location:6 at timestamp: 903.729seconds
-thread 8 wrote a value: 87 at location:4 at timestamp: 903.729seconds
-thread 7 wrote a value: 97 at location:3 at timestamp: 903.73seconds
-thread 6 wrote a value: 13 at location:5 at timestamp: 903.73seconds
-thread 5 wrote a value: 3 at location:1 at timestamp: 903.73seconds
-
-
-got 28th snapshot at timestamp: 903.73 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 73 at location:7 at timestamp: 903.73seconds
-thread 4 wrote a value: 27 at location:0 at timestamp: 903.73seconds
-thread 2 wrote a value: 85 at location:7 at timestamp: 903.73seconds
-thread 1 wrote a value: 3 at location:5 at timestamp: 903.73seconds
-thread 0 wrote a value: 56 at location:3 at timestamp: 903.73seconds
-thread 3 wrote a value: 75 at location:5 at timestamp: 903.73seconds
-thread 8 wrote a value: 55 at location:1 at timestamp: 903.73seconds
-thread 7 wrote a value: 99 at location:5 at timestamp: 903.73seconds
-thread 6 wrote a value: 64 at location:7 at timestamp: 903.73seconds
-thread 5 wrote a value: 0 at location:4 at timestamp: 903.73seconds
-
-
-got 29th snapshot at timestamp: 903.73 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 6 at location:7 at timestamp: 903.73seconds
-thread 4 wrote a value: 33 at location:3 at timestamp: 903.73seconds
-thread 2 wrote a value: 62 at location:6 at timestamp: 903.73seconds
-thread 1 wrote a value: 98 at location:9 at timestamp: 903.73seconds
-thread 0 wrote a value: 57 at location:4 at timestamp: 903.73seconds
-thread 3 wrote a value: 85 at location:3 at timestamp: 903.73seconds
-thread 8 wrote a value: 28 at location:7 at timestamp: 903.73seconds
-thread 7 wrote a value: 99 at location:3 at timestamp: 903.73seconds
-thread 6 wrote a value: 18 at location:2 at timestamp: 903.73seconds
-thread 5 wrote a value: 59 at location:8 at timestamp: 903.73seconds
-
-
-got 30th snapshot at timestamp: 903.73 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 20 at location:7 at timestamp: 903.73seconds
-thread 4 wrote a value: 54 at location:9 at timestamp: 903.73seconds
-thread 2 wrote a value: 91 at location:1 at timestamp: 903.73seconds
-thread 1 wrote a value: 6 at location:5 at timestamp: 903.73seconds
-thread 0 wrote a value: 46 at location:8 at timestamp: 903.73seconds
-thread 3 wrote a value: 24 at location:8 at timestamp: 903.73seconds
-thread 8 wrote a value: 23 at location:8 at timestamp: 903.73seconds
-thread 7 wrote a value: 82 at location:4 at timestamp: 903.73seconds
-thread 6 wrote a value: 79 at location:8 at timestamp: 903.73seconds
-thread 5 wrote a value: 88 at location:8 at timestamp: 903.73seconds
-
-
-got 31th snapshot at timestamp: 903.73 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 23 at location:5 at timestamp: 903.73seconds
-thread 4 wrote a value: 96 at location:4 at timestamp: 903.73seconds
-thread 2 wrote a value: 95 at location:5 at timestamp: 903.73seconds
-thread 1 wrote a value: 7 at location:4 at timestamp: 903.73seconds
-thread 0 wrote a value: 33 at location:4 at timestamp: 903.73seconds
-thread 3 wrote a value: 12 at location:8 at timestamp: 903.73seconds
-thread 8 wrote a value: 53 at location:6 at timestamp: 903.73seconds
-thread 7 wrote a value: 28 at location:5 at timestamp: 903.73seconds
-thread 6 wrote a value: 70 at location:7 at timestamp: 903.73seconds
-thread 5 wrote a value: 8 at location:7 at timestamp: 903.73seconds
-
-
-got 32th snapshot at timestamp: 903.73 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 72 at location:6 at timestamp: 903.73seconds
-thread 4 wrote a value: 41 at location:4 at timestamp: 903.73seconds
-thread 2 wrote a value: 78 at location:3 at timestamp: 903.73seconds
-thread 1 wrote a value: 20 at location:5 at timestamp: 903.73seconds
-thread 0 wrote a value: 92 at location:9 at timestamp: 903.73seconds
-thread 3 wrote a value: 20 at location:6 at timestamp: 903.73seconds
-thread 8 wrote a value: 44 at location:5 at timestamp: 903.73seconds
-thread 7 wrote a value: 97 at location:2 at timestamp: 903.73seconds
-thread 6 wrote a value: 96 at location:8 at timestamp: 903.73seconds
-thread 5 wrote a value: 4 at location:0 at timestamp: 903.73seconds
-
-
-got 33th snapshot at timestamp: 903.73 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 31 at location:1 at timestamp: 903.73seconds
-thread 4 wrote a value: 67 at location:0 at timestamp: 903.73seconds
-thread 2 wrote a value: 38 at location:7 at timestamp: 903.73seconds
-thread 1 wrote a value: 83 at location:8 at timestamp: 903.73seconds
-thread 0 wrote a value: 92 at location:8 at timestamp: 903.731seconds
-thread 3 wrote a value: 7 at location:0 at timestamp: 903.731seconds
-thread 8 wrote a value: 60 at location:8 at timestamp: 903.731seconds
-thread 7 wrote a value: 85 at location:6 at timestamp: 903.731seconds
-thread 6 wrote a value: 15 at location:5 at timestamp: 903.731seconds
-thread 5 wrote a value: 18 at location:2 at timestamp: 903.731seconds
-
-
-got 34th snapshot at timestamp: 903.731 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 9 at location:8 at timestamp: 903.731seconds
-thread 4 wrote a value: 30 at location:7 at timestamp: 903.731seconds
-thread 2 wrote a value: 0 at location:5 at timestamp: 903.731seconds
-thread 1 wrote a value: 68 at location:0 at timestamp: 903.731seconds
-thread 0 wrote a value: 18 at location:1 at timestamp: 903.731seconds
-thread 3 wrote a value: 6 at location:7 at timestamp: 903.731seconds
-thread 8 wrote a value: 97 at location:1 at timestamp: 903.731seconds
-thread 7 wrote a value: 20 at location:4 at timestamp: 903.731seconds
-thread 6 wrote a value: 91 at location:3 at timestamp: 903.731seconds
-thread 5 wrote a value: 14 at location:8 at timestamp: 903.731seconds
-
-
-got 35th snapshot at timestamp: 903.731 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 70 at location:7 at timestamp: 903.731seconds
-thread 4 wrote a value: 93 at location:5 at timestamp: 903.731seconds
-thread 2 wrote a value: 67 at location:3 at timestamp: 903.731seconds
-thread 1 wrote a value: 25 at location:4 at timestamp: 903.731seconds
-thread 0 wrote a value: 62 at location:0 at timestamp: 903.731seconds
-thread 3 wrote a value: 13 at location:6 at timestamp: 903.731seconds
-thread 8 wrote a value: 25 at location:4 at timestamp: 903.731seconds
-thread 7 wrote a value: 90 at location:0 at timestamp: 903.731seconds
-thread 6 wrote a value: 62 at location:4 at timestamp: 903.731seconds
-thread 5 wrote a value: 54 at location:8 at timestamp: 903.731seconds
-
-
-got 36th snapshot at timestamp: 903.731 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 46 at location:6 at timestamp: 903.731seconds
-thread 4 wrote a value: 76 at location:5 at timestamp: 903.731seconds
-thread 2 wrote a value: 15 at location:3 at timestamp: 903.731seconds
-thread 1 wrote a value: 95 at location:9 at timestamp: 903.731seconds
-thread 0 wrote a value: 69 at location:0 at timestamp: 903.731seconds
-thread 3 wrote a value: 7 at location:6 at timestamp: 903.731seconds
-thread 8 wrote a value: 82 at location:7 at timestamp: 903.731seconds
-thread 7 wrote a value: 18 at location:4 at timestamp: 903.731seconds
-thread 6 wrote a value: 10 at location:6 at timestamp: 903.731seconds
-thread 5 wrote a value: 31 at location:5 at timestamp: 903.731seconds
-
-
-got 37th snapshot at timestamp: 903.731 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 40 at location:2 at timestamp: 903.731seconds
-thread 4 wrote a value: 72 at location:3 at timestamp: 903.731seconds
-thread 2 wrote a value: 43 at location:8 at timestamp: 903.731seconds
-thread 1 wrote a value: 50 at location:1 at timestamp: 903.731seconds
-thread 0 wrote a value: 94 at location:0 at timestamp: 903.731seconds
-thread 3 wrote a value: 31 at location:4 at timestamp: 903.731seconds
-thread 8 wrote a value: 55 at location:5 at timestamp: 903.731seconds
-thread 7 wrote a value: 6 at location:8 at timestamp: 903.731seconds
-thread 6 wrote a value: 48 at location:6 at timestamp: 903.731seconds
-thread 5 wrote a value: 0 at location:3 at timestamp: 903.731seconds
-
-
-got 38th snapshot at timestamp: 903.731 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 18 at location:3 at timestamp: 903.731seconds
-thread 4 wrote a value: 12 at location:6 at timestamp: 903.731seconds
-thread 2 wrote a value: 14 at location:0 at timestamp: 903.731seconds
-thread 1 wrote a value: 44 at location:0 at timestamp: 903.731seconds
-thread 0 wrote a value: 61 at location:8 at timestamp: 903.731seconds
-thread 3 wrote a value: 15 at location:9 at timestamp: 903.731seconds
-thread 8 wrote a value: 55 at location:2 at timestamp: 903.731seconds
-thread 7 wrote a value: 78 at location:1 at timestamp: 903.731seconds
-thread 6 wrote a value: 40 at location:6 at timestamp: 903.731seconds
-thread 5 wrote a value: 62 at location:9 at timestamp: 903.731seconds
-
-
-got 39th snapshot at timestamp: 903.731 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 60 at location:1 at timestamp: 903.731seconds
-thread 4 wrote a value: 87 at location:3 at timestamp: 903.732seconds
-thread 2 wrote a value: 42 at location:6 at timestamp: 903.732seconds
-thread 1 wrote a value: 85 at location:8 at timestamp: 903.732seconds
-thread 0 wrote a value: 52 at location:0 at timestamp: 903.732seconds
-thread 3 wrote a value: 66 at location:5 at timestamp: 903.732seconds
-thread 8 wrote a value: 80 at location:8 at timestamp: 903.732seconds
-thread 7 wrote a value: 55 at location:9 at timestamp: 903.732seconds
-thread 6 wrote a value: 92 at location:9 at timestamp: 903.732seconds
-thread 5 wrote a value: 65 at location:5 at timestamp: 903.732seconds
-
-
-got 40th snapshot at timestamp: 903.732 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 26 at location:5 at timestamp: 903.732seconds
-thread 4 wrote a value: 13 at location:9 at timestamp: 903.732seconds
-thread 2 wrote a value: 79 at location:5 at timestamp: 903.732seconds
-thread 1 wrote a value: 8 at location:4 at timestamp: 903.732seconds
-thread 0 wrote a value: 39 at location:4 at timestamp: 903.732seconds
-thread 3 wrote a value: 94 at location:6 at timestamp: 903.732seconds
-thread 8 wrote a value: 70 at location:7 at timestamp: 903.732seconds
-thread 7 wrote a value: 19 at location:7 at timestamp: 903.732seconds
-thread 6 wrote a value: 21 at location:5 at timestamp: 903.732seconds
-thread 5 wrote a value: 14 at location:7 at timestamp: 903.732seconds
-
-
-got 41th snapshot at timestamp: 903.732 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 17 at location:6 at timestamp: 903.732seconds
-thread 4 wrote a value: 66 at location:0 at timestamp: 903.732seconds
-thread 2 wrote a value: 26 at location:5 at timestamp: 903.732seconds
-thread 1 wrote a value: 65 at location:7 at timestamp: 903.732seconds
-thread 0 wrote a value: 29 at location:6 at timestamp: 903.732seconds
-thread 3 wrote a value: 4 at location:0 at timestamp: 903.732seconds
-thread 8 wrote a value: 67 at location:3 at timestamp: 903.732seconds
-thread 7 wrote a value: 92 at location:5 at timestamp: 903.732seconds
-thread 6 wrote a value: 11 at location:7 at timestamp: 903.732seconds
-thread 5 wrote a value: 77 at location:7 at timestamp: 903.732seconds
-
-
-got 42th snapshot at timestamp: 903.732 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 35 at location:6 at timestamp: 903.732seconds
-thread 4 wrote a value: 9 at location:6 at timestamp: 903.732seconds
-thread 2 wrote a value: 75 at location:6 at timestamp: 903.732seconds
-thread 1 wrote a value: 9 at location:1 at timestamp: 903.732seconds
-thread 0 wrote a value: 59 at location:5 at timestamp: 903.732seconds
-thread 3 wrote a value: 28 at location:8 at timestamp: 903.732seconds
-thread 8 wrote a value: 81 at location:4 at timestamp: 903.732seconds
-thread 7 wrote a value: 82 at location:6 at timestamp: 903.732seconds
-thread 6 wrote a value: 40 at location:1 at timestamp: 903.732seconds
-thread 5 wrote a value: 31 at location:1 at timestamp: 903.732seconds
-
-
-got 43th snapshot at timestamp: 903.732 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 13 at location:4 at timestamp: 903.732seconds
-thread 4 wrote a value: 67 at location:6 at timestamp: 903.732seconds
-thread 2 wrote a value: 83 at location:4 at timestamp: 903.732seconds
-thread 1 wrote a value: 94 at location:1 at timestamp: 903.732seconds
-thread 0 wrote a value: 86 at location:6 at timestamp: 903.732seconds
-thread 3 wrote a value: 47 at location:5 at timestamp: 903.732seconds
-thread 8 wrote a value: 14 at location:7 at timestamp: 903.732seconds
-thread 7 wrote a value: 38 at location:7 at timestamp: 903.732seconds
-thread 6 wrote a value: 50 at location:7 at timestamp: 903.732seconds
-thread 5 wrote a value: 64 at location:2 at timestamp: 903.732seconds
-
-
-got 44th snapshot at timestamp: 903.732 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 33 at location:2 at timestamp: 903.732seconds
-thread 4 wrote a value: 42 at location:4 at timestamp: 903.732seconds
-thread 2 wrote a value: 27 at location:7 at timestamp: 903.732seconds
-thread 1 wrote a value: 91 at location:0 at timestamp: 903.732seconds
-thread 0 wrote a value: 85 at location:9 at timestamp: 903.732seconds
-thread 3 wrote a value: 64 at location:1 at timestamp: 903.732seconds
-thread 8 wrote a value: 57 at location:9 at timestamp: 903.733seconds
-thread 7 wrote a value: 8 at location:3 at timestamp: 903.733seconds
-thread 6 wrote a value: 72 at location:7 at timestamp: 903.733seconds
-thread 5 wrote a value: 92 at location:7 at timestamp: 903.733seconds
-
-
-got 45th snapshot at timestamp: 903.733 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 59 at location:5 at timestamp: 903.733seconds
-thread 4 wrote a value: 25 at location:0 at timestamp: 903.733seconds
-thread 2 wrote a value: 82 at location:8 at timestamp: 903.733seconds
-thread 1 wrote a value: 2 at location:1 at timestamp: 903.733seconds
-thread 0 wrote a value: 28 at location:7 at timestamp: 903.733seconds
-thread 3 wrote a value: 28 at location:4 at timestamp: 903.733seconds
-thread 8 wrote a value: 75 at location:8 at timestamp: 903.733seconds
-thread 7 wrote a value: 84 at location:6 at timestamp: 903.733seconds
-thread 6 wrote a value: 18 at location:8 at timestamp: 903.733seconds
-thread 5 wrote a value: 49 at location:9 at timestamp: 903.733seconds
-
-
-got 46th snapshot at timestamp: 903.733 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 47 at location:9 at timestamp: 903.733seconds
-thread 4 wrote a value: 33 at location:8 at timestamp: 903.733seconds
-thread 2 wrote a value: 31 at location:2 at timestamp: 903.733seconds
-thread 1 wrote a value: 32 at location:8 at timestamp: 903.733seconds
-thread 0 wrote a value: 23 at location:9 at timestamp: 903.733seconds
-thread 3 wrote a value: 27 at location:4 at timestamp: 903.733seconds
-thread 8 wrote a value: 89 at location:9 at timestamp: 903.733seconds
-thread 7 wrote a value: 20 at location:8 at timestamp: 903.733seconds
-thread 6 wrote a value: 37 at location:1 at timestamp: 903.733seconds
-thread 5 wrote a value: 67 at location:1 at timestamp: 903.733seconds
-
-
-got 47th snapshot at timestamp: 903.733 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 99 at location:4 at timestamp: 903.733seconds
-thread 4 wrote a value: 27 at location:5 at timestamp: 903.733seconds
-thread 2 wrote a value: 58 at location:4 at timestamp: 903.733seconds
-thread 1 wrote a value: 97 at location:0 at timestamp: 903.733seconds
-thread 0 wrote a value: 33 at location:5 at timestamp: 903.733seconds
-thread 3 wrote a value: 71 at location:7 at timestamp: 903.733seconds
-thread 8 wrote a value: 80 at location:9 at timestamp: 903.733seconds
-thread 7 wrote a value: 13 at location:0 at timestamp: 903.733seconds
-thread 6 wrote a value: 64 at location:3 at timestamp: 903.733seconds
-thread 5 wrote a value: 17 at location:4 at timestamp: 903.733seconds
-
-
-got 48th snapshot at timestamp: 903.733 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 5 at location:9 at timestamp: 903.734seconds
-thread 4 wrote a value: 52 at location:1 at timestamp: 903.734seconds
-thread 2 wrote a value: 42 at location:5 at timestamp: 903.734seconds
-thread 1 wrote a value: 57 at location:1 at timestamp: 903.734seconds
-thread 0 wrote a value: 6 at location:7 at timestamp: 903.734seconds
-thread 3 wrote a value: 85 at location:8 at timestamp: 903.734seconds
-thread 8 wrote a value: 37 at location:4 at timestamp: 903.734seconds
-thread 7 wrote a value: 11 at location:1 at timestamp: 903.734seconds
-thread 6 wrote a value: 58 at location:6 at timestamp: 903.734seconds
-thread 5 wrote a value: 68 at location:5 at timestamp: 903.734seconds
-
-
-got 49th snapshot at timestamp: 903.734 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 80 at location:1 at timestamp: 903.734seconds
-thread 4 wrote a value: 35 at location:9 at timestamp: 903.734seconds
-thread 2 wrote a value: 85 at location:0 at timestamp: 903.734seconds
-thread 1 wrote a value: 64 at location:0 at timestamp: 903.734seconds
-thread 0 wrote a value: 29 at location:9 at timestamp: 903.734seconds
-thread 3 wrote a value: 3 at location:4 at timestamp: 903.734seconds
-thread 8 wrote a value: 38 at location:4 at timestamp: 903.734seconds
-thread 7 wrote a value: 97 at location:2 at timestamp: 903.734seconds
-thread 6 wrote a value: 46 at location:0 at timestamp: 903.734seconds
-thread 5 wrote a value: 61 at location:3 at timestamp: 903.734seconds
-
-
-got 50th snapshot at timestamp: 903.734 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 47 at location:5 at timestamp: 903.734seconds
-thread 4 wrote a value: 46 at location:2 at timestamp: 903.734seconds
-thread 2 wrote a value: 41 at location:8 at timestamp: 903.734seconds
-thread 1 wrote a value: 93 at location:5 at timestamp: 903.734seconds
-thread 0 wrote a value: 53 at location:3 at timestamp: 903.734seconds
-thread 3 wrote a value: 5 at location:8 at timestamp: 903.734seconds
-thread 8 wrote a value: 82 at location:1 at timestamp: 903.734seconds
-thread 7 wrote a value: 7 at location:2 at timestamp: 903.734seconds
-thread 6 wrote a value: 37 at location:8 at timestamp: 903.734seconds
-thread 5 wrote a value: 67 at location:9 at timestamp: 903.734seconds
-
-
-got 51th snapshot at timestamp: 903.734 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 59 at location:9 at timestamp: 903.734seconds
-thread 4 wrote a value: 71 at location:1 at timestamp: 903.734seconds
-thread 2 wrote a value: 34 at location:5 at timestamp: 903.734seconds
-thread 1 wrote a value: 87 at location:3 at timestamp: 903.734seconds
-thread 0 wrote a value: 24 at location:1 at timestamp: 903.734seconds
-thread 3 wrote a value: 29 at location:7 at timestamp: 903.734seconds
-thread 8 wrote a value: 38 at location:7 at timestamp: 903.734seconds
-thread 7 wrote a value: 35 at location:3 at timestamp: 903.734seconds
-thread 6 wrote a value: 88 at location:2 at timestamp: 903.734seconds
-thread 5 wrote a value: 81 at location:9 at timestamp: 903.734seconds
-
-
-got 52th snapshot at timestamp: 903.734 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 52 at location:6 at timestamp: 903.734seconds
-thread 4 wrote a value: 38 at location:8 at timestamp: 903.734seconds
-thread 2 wrote a value: 37 at location:8 at timestamp: 903.734seconds
-thread 1 wrote a value: 22 at location:2 at timestamp: 903.734seconds
-thread 0 wrote a value: 65 at location:4 at timestamp: 903.734seconds
-thread 3 wrote a value: 97 at location:7 at timestamp: 903.734seconds
-thread 8 wrote a value: 52 at location:4 at timestamp: 903.734seconds
-thread 7 wrote a value: 5 at location:0 at timestamp: 903.734seconds
-thread 6 wrote a value: 31 at location:1 at timestamp: 903.734seconds
-thread 5 wrote a value: 64 at location:9 at timestamp: 903.734seconds
-
-
-got 53th snapshot at timestamp: 903.734 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 56 at location:9 at timestamp: 903.734seconds
-thread 4 wrote a value: 9 at location:0 at timestamp: 903.734seconds
-thread 2 wrote a value: 64 at location:0 at timestamp: 903.734seconds
-thread 1 wrote a value: 4 at location:6 at timestamp: 903.734seconds
-thread 0 wrote a value: 71 at location:5 at timestamp: 903.734seconds
-thread 3 wrote a value: 81 at location:2 at timestamp: 903.734seconds
-thread 8 wrote a value: 97 at location:6 at timestamp: 903.734seconds
-thread 7 wrote a value: 40 at location:3 at timestamp: 903.735seconds
-thread 6 wrote a value: 2 at location:8 at timestamp: 903.735seconds
-thread 5 wrote a value: 19 at location:7 at timestamp: 903.735seconds
-
-
-got 54th snapshot at timestamp: 903.735 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 58 at location:3 at timestamp: 903.735seconds
-thread 4 wrote a value: 79 at location:5 at timestamp: 903.735seconds
-thread 2 wrote a value: 25 at location:8 at timestamp: 903.735seconds
-thread 1 wrote a value: 70 at location:4 at timestamp: 903.735seconds
-thread 0 wrote a value: 70 at location:0 at timestamp: 903.735seconds
-thread 3 wrote a value: 83 at location:7 at timestamp: 903.735seconds
-thread 8 wrote a value: 10 at location:3 at timestamp: 903.735seconds
-thread 7 wrote a value: 81 at location:7 at timestamp: 903.735seconds
-thread 6 wrote a value: 4 at location:2 at timestamp: 903.735seconds
-thread 5 wrote a value: 96 at location:8 at timestamp: 903.735seconds
-
-
-got 55th snapshot at timestamp: 903.735 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 0 at location:4 at timestamp: 903.735seconds
-thread 4 wrote a value: 16 at location:6 at timestamp: 903.735seconds
-thread 2 wrote a value: 84 at location:8 at timestamp: 903.735seconds
-thread 1 wrote a value: 0 at location:5 at timestamp: 903.735seconds
-thread 0 wrote a value: 79 at location:4 at timestamp: 903.735seconds
-thread 3 wrote a value: 66 at location:1 at timestamp: 903.735seconds
-thread 8 wrote a value: 8 at location:7 at timestamp: 903.735seconds
-thread 7 wrote a value: 27 at location:3 at timestamp: 903.735seconds
-thread 6 wrote a value: 2 at location:1 at timestamp: 903.735seconds
-thread 5 wrote a value: 59 at location:5 at timestamp: 903.735seconds
-
-
-got 56th snapshot at timestamp: 903.735 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 88 at location:6 at timestamp: 903.735seconds
-thread 4 wrote a value: 68 at location:9 at timestamp: 903.735seconds
-thread 2 wrote a value: 94 at location:7 at timestamp: 903.735seconds
-thread 1 wrote a value: 12 at location:2 at timestamp: 903.735seconds
-thread 0 wrote a value: 91 at location:5 at timestamp: 903.735seconds
-thread 3 wrote a value: 68 at location:0 at timestamp: 903.735seconds
-thread 8 wrote a value: 56 at location:6 at timestamp: 903.735seconds
-thread 7 wrote a value: 80 at location:2 at timestamp: 903.735seconds
-thread 6 wrote a value: 62 at location:9 at timestamp: 903.735seconds
-thread 5 wrote a value: 13 at location:9 at timestamp: 903.735seconds
-
-
-got 57th snapshot at timestamp: 903.735 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 68 at location:1 at timestamp: 903.735seconds
-thread 4 wrote a value: 83 at location:0 at timestamp: 903.735seconds
-thread 2 wrote a value: 89 at location:6 at timestamp: 903.735seconds
-thread 1 wrote a value: 3 at location:9 at timestamp: 903.735seconds
-thread 0 wrote a value: 38 at location:2 at timestamp: 903.735seconds
-thread 3 wrote a value: 34 at location:0 at timestamp: 903.735seconds
-thread 8 wrote a value: 65 at location:6 at timestamp: 903.735seconds
-thread 7 wrote a value: 68 at location:8 at timestamp: 903.735seconds
-thread 6 wrote a value: 58 at location:3 at timestamp: 903.735seconds
-thread 5 wrote a value: 67 at location:4 at timestamp: 903.735seconds
-
-
-got 58th snapshot at timestamp: 903.735 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 81 at location:1 at timestamp: 903.735seconds
-thread 4 wrote a value: 75 at location:6 at timestamp: 903.735seconds
-thread 2 wrote a value: 33 at location:7 at timestamp: 903.735seconds
-thread 1 wrote a value: 78 at location:7 at timestamp: 903.735seconds
-thread 0 wrote a value: 63 at location:2 at timestamp: 903.735seconds
-thread 3 wrote a value: 70 at location:6 at timestamp: 903.735seconds
-thread 8 wrote a value: 79 at location:7 at timestamp: 903.735seconds
-thread 7 wrote a value: 17 at location:8 at timestamp: 903.735seconds
-thread 6 wrote a value: 77 at location:9 at timestamp: 903.735seconds
-thread 5 wrote a value: 68 at location:3 at timestamp: 903.735seconds
-
-
-got 59th snapshot at timestamp: 903.735 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 9 at location:1 at timestamp: 903.735seconds
-thread 4 wrote a value: 28 at location:9 at timestamp: 903.735seconds
-thread 2 wrote a value: 61 at location:2 at timestamp: 903.736seconds
-thread 1 wrote a value: 44 at location:4 at timestamp: 903.736seconds
-thread 0 wrote a value: 10 at location:5 at timestamp: 903.736seconds
-thread 3 wrote a value: 32 at location:6 at timestamp: 903.736seconds
-thread 8 wrote a value: 25 at location:3 at timestamp: 903.736seconds
-thread 7 wrote a value: 3 at location:7 at timestamp: 903.736seconds
-thread 6 wrote a value: 93 at location:9 at timestamp: 903.736seconds
-thread 5 wrote a value: 60 at location:6 at timestamp: 903.736seconds
-
-
-got 60th snapshot at timestamp: 903.736 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 65 at location:0 at timestamp: 903.736seconds
-thread 4 wrote a value: 77 at location:3 at timestamp: 903.736seconds
-thread 2 wrote a value: 41 at location:2 at timestamp: 903.736seconds
-thread 1 wrote a value: 53 at location:8 at timestamp: 903.736seconds
-thread 0 wrote a value: 23 at location:4 at timestamp: 903.736seconds
-thread 3 wrote a value: 15 at location:2 at timestamp: 903.736seconds
-thread 8 wrote a value: 81 at location:9 at timestamp: 903.736seconds
-thread 7 wrote a value: 23 at location:2 at timestamp: 903.736seconds
-thread 6 wrote a value: 11 at location:9 at timestamp: 903.736seconds
-thread 5 wrote a value: 41 at location:0 at timestamp: 903.736seconds
-
-
-got 61th snapshot at timestamp: 903.736 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 88 at location:4 at timestamp: 903.736seconds
-thread 4 wrote a value: 96 at location:7 at timestamp: 903.736seconds
-thread 2 wrote a value: 77 at location:1 at timestamp: 903.736seconds
-thread 1 wrote a value: 58 at location:5 at timestamp: 903.736seconds
-thread 0 wrote a value: 8 at location:4 at timestamp: 903.736seconds
-thread 3 wrote a value: 7 at location:5 at timestamp: 903.736seconds
-thread 8 wrote a value: 91 at location:8 at timestamp: 903.736seconds
-thread 7 wrote a value: 22 at location:4 at timestamp: 903.736seconds
-thread 6 wrote a value: 30 at location:5 at timestamp: 903.736seconds
-thread 5 wrote a value: 6 at location:6 at timestamp: 903.736seconds
-
-
-got 62th snapshot at timestamp: 903.736 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 9 at location:8 at timestamp: 903.736seconds
-thread 4 wrote a value: 4 at location:5 at timestamp: 903.736seconds
-thread 2 wrote a value: 56 at location:0 at timestamp: 903.736seconds
-thread 1 wrote a value: 61 at location:3 at timestamp: 903.736seconds
-thread 0 wrote a value: 98 at location:2 at timestamp: 903.736seconds
-thread 3 wrote a value: 10 at location:9 at timestamp: 903.736seconds
-thread 8 wrote a value: 52 at location:1 at timestamp: 903.736seconds
-thread 7 wrote a value: 65 at location:3 at timestamp: 903.736seconds
-thread 6 wrote a value: 77 at location:5 at timestamp: 903.736seconds
-thread 5 wrote a value: 49 at location:4 at timestamp: 903.736seconds
-
-
-got 63th snapshot at timestamp: 903.736 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 38 at location:8 at timestamp: 903.736seconds
-thread 4 wrote a value: 83 at location:9 at timestamp: 903.736seconds
-thread 2 wrote a value: 74 at location:5 at timestamp: 903.736seconds
-thread 1 wrote a value: 0 at location:4 at timestamp: 903.736seconds
-thread 0 wrote a value: 26 at location:7 at timestamp: 903.736seconds
-thread 3 wrote a value: 22 at location:1 at timestamp: 903.736seconds
-thread 8 wrote a value: 20 at location:1 at timestamp: 903.736seconds
-thread 7 wrote a value: 62 at location:5 at timestamp: 903.736seconds
-thread 6 wrote a value: 77 at location:9 at timestamp: 903.736seconds
-thread 5 wrote a value: 14 at location:4 at timestamp: 903.736seconds
-
-
-got 64th snapshot at timestamp: 903.736 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 14 at location:5 at timestamp: 903.736seconds
-thread 4 wrote a value: 30 at location:3 at timestamp: 903.736seconds
-thread 2 wrote a value: 15 at location:2 at timestamp: 903.736seconds
-thread 1 wrote a value: 11 at location:8 at timestamp: 903.736seconds
-thread 0 wrote a value: 45 at location:7 at timestamp: 903.736seconds
-thread 3 wrote a value: 12 at location:3 at timestamp: 903.736seconds
-thread 8 wrote a value: 49 at location:1 at timestamp: 903.736seconds
-thread 7 wrote a value: 66 at location:2 at timestamp: 903.736seconds
-thread 6 wrote a value: 90 at location:1 at timestamp: 903.736seconds
-thread 5 wrote a value: 41 at location:6 at timestamp: 903.736seconds
-
-
-got 65th snapshot at timestamp: 903.737 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 84 at location:0 at timestamp: 903.737seconds
-thread 4 wrote a value: 41 at location:9 at timestamp: 903.737seconds
-thread 2 wrote a value: 27 at location:2 at timestamp: 903.737seconds
-thread 1 wrote a value: 67 at location:8 at timestamp: 903.737seconds
-thread 0 wrote a value: 68 at location:4 at timestamp: 903.737seconds
-thread 3 wrote a value: 4 at location:0 at timestamp: 903.737seconds
-thread 8 wrote a value: 97 at location:6 at timestamp: 903.737seconds
-thread 7 wrote a value: 47 at location:5 at timestamp: 903.737seconds
-thread 6 wrote a value: 22 at location:7 at timestamp: 903.737seconds
-thread 5 wrote a value: 46 at location:5 at timestamp: 903.737seconds
-
-
-got 66th snapshot at timestamp: 903.737 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 5 at location:6 at timestamp: 903.737seconds
-thread 4 wrote a value: 54 at location:1 at timestamp: 903.737seconds
-thread 2 wrote a value: 70 at location:5 at timestamp: 903.737seconds
-thread 1 wrote a value: 73 at location:6 at timestamp: 903.737seconds
-thread 0 wrote a value: 71 at location:9 at timestamp: 903.737seconds
-thread 3 wrote a value: 49 at location:8 at timestamp: 903.737seconds
-thread 8 wrote a value: 37 at location:0 at timestamp: 903.737seconds
-thread 7 wrote a value: 90 at location:7 at timestamp: 903.737seconds
-thread 6 wrote a value: 39 at location:3 at timestamp: 903.737seconds
-thread 5 wrote a value: 48 at location:5 at timestamp: 903.737seconds
-
-
-got 67th snapshot at timestamp: 903.737 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 97 at location:4 at timestamp: 903.737seconds
-thread 4 wrote a value: 53 at location:0 at timestamp: 903.737seconds
-thread 2 wrote a value: 5 at location:6 at timestamp: 903.737seconds
-thread 1 wrote a value: 54 at location:9 at timestamp: 903.737seconds
-thread 0 wrote a value: 88 at location:6 at timestamp: 903.737seconds
-thread 3 wrote a value: 4 at location:4 at timestamp: 903.737seconds
-thread 8 wrote a value: 78 at location:4 at timestamp: 903.737seconds
-thread 7 wrote a value: 69 at location:7 at timestamp: 903.737seconds
-thread 6 wrote a value: 99 at location:5 at timestamp: 903.737seconds
-thread 5 wrote a value: 29 at location:5 at timestamp: 903.737seconds
-
-
-got 68th snapshot at timestamp: 903.737 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 12 at location:2 at timestamp: 903.737seconds
-thread 4 wrote a value: 82 at location:3 at timestamp: 903.737seconds
-thread 2 wrote a value: 88 at location:8 at timestamp: 903.737seconds
-thread 1 wrote a value: 66 at location:8 at timestamp: 903.737seconds
-thread 0 wrote a value: 11 at location:5 at timestamp: 903.737seconds
-thread 3 wrote a value: 4 at location:0 at timestamp: 903.737seconds
-thread 8 wrote a value: 0 at location:8 at timestamp: 903.737seconds
-thread 7 wrote a value: 15 at location:6 at timestamp: 903.737seconds
-thread 6 wrote a value: 60 at location:6 at timestamp: 903.737seconds
-thread 5 wrote a value: 97 at location:4 at timestamp: 903.737seconds
-
-
-got 69th snapshot at timestamp: 903.737 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 58 at location:7 at timestamp: 903.737seconds
-thread 4 wrote a value: 17 at location:9 at timestamp: 903.737seconds
-thread 2 wrote a value: 21 at location:8 at timestamp: 903.737seconds
-thread 1 wrote a value: 12 at location:0 at timestamp: 903.737seconds
-thread 0 wrote a value: 26 at location:0 at timestamp: 903.737seconds
-thread 3 wrote a value: 94 at location:7 at timestamp: 903.737seconds
-thread 8 wrote a value: 47 at location:7 at timestamp: 903.737seconds
-thread 7 wrote a value: 76 at location:0 at timestamp: 903.737seconds
-thread 6 wrote a value: 12 at location:3 at timestamp: 903.737seconds
-thread 5 wrote a value: 40 at location:1 at timestamp: 903.737seconds
-
-
-got 70th snapshot at timestamp: 903.737 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 16 at location:0 at timestamp: 903.737seconds
-thread 4 wrote a value: 27 at location:9 at timestamp: 903.737seconds
-thread 2 wrote a value: 98 at location:1 at timestamp: 903.737seconds
-thread 1 wrote a value: 70 at location:0 at timestamp: 903.737seconds
-thread 0 wrote a value: 5 at location:4 at timestamp: 903.737seconds
-thread 3 wrote a value: 13 at location:5 at timestamp: 903.737seconds
-thread 8 wrote a value: 94 at location:1 at timestamp: 903.738seconds
-thread 7 wrote a value: 13 at location:2 at timestamp: 903.738seconds
-thread 6 wrote a value: 26 at location:1 at timestamp: 903.738seconds
-thread 5 wrote a value: 82 at location:5 at timestamp: 903.738seconds
-
-
-got 71th snapshot at timestamp: 903.738 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 91 at location:1 at timestamp: 903.738seconds
-thread 4 wrote a value: 90 at location:1 at timestamp: 903.738seconds
-thread 2 wrote a value: 69 at location:4 at timestamp: 903.738seconds
-thread 1 wrote a value: 89 at location:3 at timestamp: 903.738seconds
-thread 0 wrote a value: 0 at location:8 at timestamp: 903.738seconds
-thread 3 wrote a value: 14 at location:7 at timestamp: 903.738seconds
-thread 8 wrote a value: 39 at location:3 at timestamp: 903.738seconds
-thread 7 wrote a value: 57 at location:1 at timestamp: 903.738seconds
-thread 6 wrote a value: 65 at location:8 at timestamp: 903.738seconds
-thread 5 wrote a value: 81 at location:8 at timestamp: 903.738seconds
-
-
-got 72th snapshot at timestamp: 903.738 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 3 at location:1 at timestamp: 903.738seconds
-thread 4 wrote a value: 98 at location:3 at timestamp: 903.738seconds
-thread 2 wrote a value: 5 at location:0 at timestamp: 903.738seconds
-thread 1 wrote a value: 33 at location:8 at timestamp: 903.738seconds
-thread 0 wrote a value: 76 at location:0 at timestamp: 903.738seconds
-thread 3 wrote a value: 28 at location:6 at timestamp: 903.738seconds
-thread 8 wrote a value: 7 at location:5 at timestamp: 903.738seconds
-thread 7 wrote a value: 50 at location:4 at timestamp: 903.738seconds
-thread 6 wrote a value: 49 at location:6 at timestamp: 903.738seconds
-thread 5 wrote a value: 37 at location:4 at timestamp: 903.738seconds
-
-
-got 73th snapshot at timestamp: 903.738 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 46 at location:0 at timestamp: 903.738seconds
-thread 4 wrote a value: 70 at location:7 at timestamp: 903.738seconds
-thread 2 wrote a value: 10 at location:6 at timestamp: 903.738seconds
-thread 1 wrote a value: 87 at location:7 at timestamp: 903.738seconds
-thread 0 wrote a value: 24 at location:3 at timestamp: 903.738seconds
-thread 3 wrote a value: 18 at location:9 at timestamp: 903.738seconds
-thread 8 wrote a value: 6 at location:3 at timestamp: 903.738seconds
-thread 7 wrote a value: 67 at location:1 at timestamp: 903.738seconds
-thread 6 wrote a value: 57 at location:9 at timestamp: 903.738seconds
-thread 5 wrote a value: 86 at location:8 at timestamp: 903.738seconds
-
-
-got 74th snapshot at timestamp: 903.738 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 80 at location:7 at timestamp: 903.738seconds
-thread 4 wrote a value: 10 at location:6 at timestamp: 903.738seconds
-thread 2 wrote a value: 88 at location:1 at timestamp: 903.738seconds
-thread 1 wrote a value: 22 at location:9 at timestamp: 903.738seconds
-thread 0 wrote a value: 55 at location:5 at timestamp: 903.738seconds
-thread 3 wrote a value: 94 at location:2 at timestamp: 903.738seconds
-thread 8 wrote a value: 41 at location:7 at timestamp: 903.738seconds
-thread 7 wrote a value: 69 at location:7 at timestamp: 903.738seconds
-thread 6 wrote a value: 4 at location:5 at timestamp: 903.738seconds
-thread 5 wrote a value: 10 at location:6 at timestamp: 903.738seconds
-
-
-got 75th snapshot at timestamp: 903.738 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 67 at location:4 at timestamp: 903.738seconds
-thread 4 wrote a value: 44 at location:1 at timestamp: 903.738seconds
-thread 2 wrote a value: 45 at location:1 at timestamp: 903.738seconds
-thread 1 wrote a value: 39 at location:3 at timestamp: 903.738seconds
-thread 0 wrote a value: 25 at location:8 at timestamp: 903.738seconds
-thread 3 wrote a value: 72 at location:2 at timestamp: 903.738seconds
-thread 8 wrote a value: 92 at location:5 at timestamp: 903.738seconds
-thread 7 wrote a value: 37 at location:0 at timestamp: 903.738seconds
-thread 6 wrote a value: 10 at location:5 at timestamp: 903.738seconds
-thread 5 wrote a value: 76 at location:9 at timestamp: 903.738seconds
-
-
-got 76th snapshot at timestamp: 903.738 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 88 at location:9 at timestamp: 903.738seconds
-thread 4 wrote a value: 68 at location:1 at timestamp: 903.739seconds
-thread 2 wrote a value: 34 at location:2 at timestamp: 903.739seconds
-thread 1 wrote a value: 21 at location:9 at timestamp: 903.739seconds
-thread 0 wrote a value: 80 at location:8 at timestamp: 903.739seconds
-thread 3 wrote a value: 30 at location:1 at timestamp: 903.739seconds
-thread 8 wrote a value: 11 at location:8 at timestamp: 903.739seconds
-thread 7 wrote a value: 55 at location:5 at timestamp: 903.739seconds
-thread 6 wrote a value: 47 at location:0 at timestamp: 903.739seconds
-thread 5 wrote a value: 84 at location:6 at timestamp: 903.739seconds
-
-
-got 77th snapshot at timestamp: 903.739 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 68 at location:5 at timestamp: 903.739seconds
-thread 4 wrote a value: 64 at location:6 at timestamp: 903.739seconds
-thread 2 wrote a value: 51 at location:2 at timestamp: 903.739seconds
-thread 1 wrote a value: 26 at location:7 at timestamp: 903.739seconds
-thread 0 wrote a value: 55 at location:3 at timestamp: 903.739seconds
-thread 3 wrote a value: 55 at location:5 at timestamp: 903.739seconds
-thread 8 wrote a value: 1 at location:7 at timestamp: 903.739seconds
-thread 7 wrote a value: 53 at location:4 at timestamp: 903.739seconds
-thread 6 wrote a value: 0 at location:2 at timestamp: 903.739seconds
-thread 5 wrote a value: 40 at location:5 at timestamp: 903.739seconds
-
-
-got 78th snapshot at timestamp: 903.739 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 48 at location:6 at timestamp: 903.739seconds
-thread 4 wrote a value: 15 at location:9 at timestamp: 903.739seconds
-thread 2 wrote a value: 36 at location:6 at timestamp: 903.739seconds
-thread 1 wrote a value: 87 at location:3 at timestamp: 903.739seconds
-thread 0 wrote a value: 20 at location:8 at timestamp: 903.739seconds
-thread 3 wrote a value: 14 at location:3 at timestamp: 903.739seconds
-thread 8 wrote a value: 56 at location:0 at timestamp: 903.739seconds
-thread 7 wrote a value: 13 at location:5 at timestamp: 903.739seconds
-thread 6 wrote a value: 10 at location:7 at timestamp: 903.739seconds
-thread 5 wrote a value: 71 at location:6 at timestamp: 903.739seconds
-
-
-got 79th snapshot at timestamp: 903.739 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 95 at location:5 at timestamp: 903.739seconds
-thread 4 wrote a value: 73 at location:4 at timestamp: 903.739seconds
-thread 2 wrote a value: 45 at location:0 at timestamp: 903.739seconds
-thread 1 wrote a value: 78 at location:8 at timestamp: 903.739seconds
-thread 0 wrote a value: 2 at location:5 at timestamp: 903.739seconds
-thread 3 wrote a value: 43 at location:5 at timestamp: 903.739seconds
-thread 8 wrote a value: 70 at location:8 at timestamp: 903.739seconds
-thread 7 wrote a value: 48 at location:1 at timestamp: 903.739seconds
-thread 6 wrote a value: 71 at location:1 at timestamp: 903.739seconds
-thread 5 wrote a value: 25 at location:2 at timestamp: 903.739seconds
-
-
-got 80th snapshot at timestamp: 903.739 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 95 at location:8 at timestamp: 903.739seconds
-thread 4 wrote a value: 78 at location:7 at timestamp: 903.739seconds
-thread 2 wrote a value: 42 at location:2 at timestamp: 903.739seconds
-thread 1 wrote a value: 83 at location:9 at timestamp: 903.739seconds
-thread 0 wrote a value: 2 at location:1 at timestamp: 903.739seconds
-thread 3 wrote a value: 89 at location:3 at timestamp: 903.739seconds
-thread 8 wrote a value: 34 at location:7 at timestamp: 903.739seconds
-thread 7 wrote a value: 30 at location:4 at timestamp: 903.739seconds
-thread 6 wrote a value: 7 at location:4 at timestamp: 903.739seconds
-thread 5 wrote a value: 68 at location:9 at timestamp: 903.739seconds
-
-
-got 81th snapshot at timestamp: 903.739 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 50 at location:8 at timestamp: 903.739seconds
-thread 4 wrote a value: 55 at location:3 at timestamp: 903.739seconds
-thread 2 wrote a value: 18 at location:7 at timestamp: 903.739seconds
-thread 1 wrote a value: 52 at location:4 at timestamp: 903.739seconds
-thread 0 wrote a value: 84 at location:5 at timestamp: 903.739seconds
-thread 3 wrote a value: 98 at location:9 at timestamp: 903.739seconds
-thread 8 wrote a value: 98 at location:8 at timestamp: 903.739seconds
-thread 7 wrote a value: 64 at location:3 at timestamp: 903.74seconds
-thread 6 wrote a value: 95 at location:9 at timestamp: 903.74seconds
-thread 5 wrote a value: 91 at location:8 at timestamp: 903.74seconds
-
-
-got 82th snapshot at timestamp: 903.74 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 73 at location:4 at timestamp: 903.74seconds
-thread 4 wrote a value: 96 at location:6 at timestamp: 903.74seconds
-thread 2 wrote a value: 48 at location:8 at timestamp: 903.74seconds
-thread 1 wrote a value: 26 at location:1 at timestamp: 903.74seconds
-thread 0 wrote a value: 89 at location:6 at timestamp: 903.74seconds
-thread 3 wrote a value: 92 at location:3 at timestamp: 903.74seconds
-thread 8 wrote a value: 62 at location:4 at timestamp: 903.74seconds
-thread 7 wrote a value: 84 at location:5 at timestamp: 903.74seconds
-thread 6 wrote a value: 70 at location:8 at timestamp: 903.74seconds
-thread 5 wrote a value: 30 at location:5 at timestamp: 903.74seconds
-
-
-got 83th snapshot at timestamp: 903.74 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 88 at location:1 at timestamp: 903.74seconds
-thread 4 wrote a value: 83 at location:1 at timestamp: 903.74seconds
-thread 2 wrote a value: 12 at location:5 at timestamp: 903.74seconds
-thread 1 wrote a value: 18 at location:5 at timestamp: 903.74seconds
-thread 0 wrote a value: 23 at location:1 at timestamp: 903.74seconds
-thread 3 wrote a value: 74 at location:7 at timestamp: 903.74seconds
-thread 8 wrote a value: 56 at location:0 at timestamp: 903.74seconds
-thread 7 wrote a value: 67 at location:1 at timestamp: 903.74seconds
-thread 6 wrote a value: 88 at location:5 at timestamp: 903.74seconds
-thread 5 wrote a value: 86 at location:0 at timestamp: 903.74seconds
-
-
-got 84th snapshot at timestamp: 903.74 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 36 at location:6 at timestamp: 903.74seconds
-thread 4 wrote a value: 17 at location:4 at timestamp: 903.74seconds
-thread 2 wrote a value: 83 at location:8 at timestamp: 903.74seconds
-thread 1 wrote a value: 90 at location:2 at timestamp: 903.74seconds
-thread 0 wrote a value: 62 at location:7 at timestamp: 903.74seconds
-thread 3 wrote a value: 40 at location:1 at timestamp: 903.74seconds
-thread 8 wrote a value: 66 at location:7 at timestamp: 903.74seconds
-thread 7 wrote a value: 81 at location:0 at timestamp: 903.74seconds
-thread 6 wrote a value: 58 at location:6 at timestamp: 903.74seconds
-thread 5 wrote a value: 34 at location:7 at timestamp: 903.74seconds
-
-
-got 85th snapshot at timestamp: 903.74 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 15 at location:7 at timestamp: 903.74seconds
-thread 4 wrote a value: 66 at location:8 at timestamp: 903.74seconds
-thread 2 wrote a value: 11 at location:9 at timestamp: 903.74seconds
-thread 1 wrote a value: 59 at location:4 at timestamp: 903.74seconds
-thread 0 wrote a value: 12 at location:7 at timestamp: 903.74seconds
-thread 3 wrote a value: 10 at location:2 at timestamp: 903.74seconds
-thread 8 wrote a value: 51 at location:2 at timestamp: 903.74seconds
-thread 7 wrote a value: 6 at location:9 at timestamp: 903.74seconds
-thread 6 wrote a value: 71 at location:8 at timestamp: 903.74seconds
-thread 5 wrote a value: 15 at location:5 at timestamp: 903.74seconds
-
-
-got 86th snapshot at timestamp: 903.74 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 1 at location:3 at timestamp: 903.74seconds
-thread 4 wrote a value: 14 at location:3 at timestamp: 903.74seconds
-thread 2 wrote a value: 85 at location:3 at timestamp: 903.74seconds
-thread 1 wrote a value: 33 at location:2 at timestamp: 903.74seconds
-thread 0 wrote a value: 80 at location:4 at timestamp: 903.74seconds
-thread 3 wrote a value: 83 at location:2 at timestamp: 903.74seconds
-thread 8 wrote a value: 23 at location:3 at timestamp: 903.74seconds
-thread 7 wrote a value: 13 at location:4 at timestamp: 903.74seconds
-thread 6 wrote a value: 74 at location:2 at timestamp: 903.74seconds
-thread 5 wrote a value: 10 at location:3 at timestamp: 903.74seconds
-
-
-got 87th snapshot at timestamp: 903.741 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 69 at location:9 at timestamp: 903.741seconds
-thread 4 wrote a value: 73 at location:1 at timestamp: 903.741seconds
-thread 2 wrote a value: 60 at location:6 at timestamp: 903.741seconds
-thread 1 wrote a value: 37 at location:7 at timestamp: 903.741seconds
-thread 0 wrote a value: 10 at location:7 at timestamp: 903.741seconds
-thread 3 wrote a value: 27 at location:5 at timestamp: 903.741seconds
-thread 8 wrote a value: 21 at location:0 at timestamp: 903.741seconds
-thread 7 wrote a value: 35 at location:0 at timestamp: 903.741seconds
-thread 6 wrote a value: 82 at location:3 at timestamp: 903.741seconds
-thread 5 wrote a value: 96 at location:8 at timestamp: 903.741seconds
-
-
-got 88th snapshot at timestamp: 903.741 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 59 at location:5 at timestamp: 903.741seconds
-thread 4 wrote a value: 75 at location:4 at timestamp: 903.741seconds
-thread 2 wrote a value: 41 at location:9 at timestamp: 903.741seconds
-thread 1 wrote a value: 20 at location:0 at timestamp: 903.741seconds
-thread 0 wrote a value: 6 at location:6 at timestamp: 903.741seconds
-thread 3 wrote a value: 10 at location:1 at timestamp: 903.741seconds
-thread 8 wrote a value: 15 at location:4 at timestamp: 903.741seconds
-thread 7 wrote a value: 6 at location:8 at timestamp: 903.741seconds
-thread 6 wrote a value: 10 at location:9 at timestamp: 903.741seconds
-thread 5 wrote a value: 34 at location:5 at timestamp: 903.741seconds
-
-
-got 89th snapshot at timestamp: 903.741 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 32 at location:4 at timestamp: 903.741seconds
-thread 4 wrote a value: 71 at location:9 at timestamp: 903.741seconds
-thread 2 wrote a value: 42 at location:8 at timestamp: 903.741seconds
-thread 1 wrote a value: 66 at location:9 at timestamp: 903.741seconds
-thread 0 wrote a value: 70 at location:1 at timestamp: 903.741seconds
-thread 3 wrote a value: 30 at location:1 at timestamp: 903.741seconds
-thread 8 wrote a value: 63 at location:9 at timestamp: 903.741seconds
-thread 7 wrote a value: 91 at location:4 at timestamp: 903.741seconds
-thread 6 wrote a value: 80 at location:5 at timestamp: 903.741seconds
-thread 5 wrote a value: 7 at location:8 at timestamp: 903.741seconds
-
-
-got 90th snapshot at timestamp: 903.741 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 20 at location:2 at timestamp: 903.741seconds
-thread 4 wrote a value: 58 at location:8 at timestamp: 903.741seconds
-thread 2 wrote a value: 41 at location:5 at timestamp: 903.741seconds
-thread 1 wrote a value: 60 at location:6 at timestamp: 903.741seconds
-thread 0 wrote a value: 57 at location:4 at timestamp: 903.741seconds
-thread 3 wrote a value: 65 at location:5 at timestamp: 903.741seconds
-thread 8 wrote a value: 32 at location:7 at timestamp: 903.741seconds
-thread 7 wrote a value: 21 at location:0 at timestamp: 903.741seconds
-thread 6 wrote a value: 46 at location:4 at timestamp: 903.741seconds
-thread 5 wrote a value: 61 at location:6 at timestamp: 903.741seconds
-
-
-got 91th snapshot at timestamp: 903.741 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 57 at location:9 at timestamp: 903.741seconds
-thread 4 wrote a value: 86 at location:3 at timestamp: 903.741seconds
-thread 2 wrote a value: 74 at location:4 at timestamp: 903.741seconds
-thread 1 wrote a value: 42 at location:8 at timestamp: 903.741seconds
-thread 0 wrote a value: 64 at location:8 at timestamp: 903.741seconds
-thread 3 wrote a value: 50 at location:2 at timestamp: 903.741seconds
-thread 8 wrote a value: 93 at location:7 at timestamp: 903.741seconds
-thread 7 wrote a value: 26 at location:1 at timestamp: 903.741seconds
-thread 6 wrote a value: 56 at location:8 at timestamp: 903.742seconds
-thread 5 wrote a value: 13 at location:0 at timestamp: 903.742seconds
-
-
-got 92th snapshot at timestamp: 903.742 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 51 at location:7 at timestamp: 903.742seconds
-thread 4 wrote a value: 66 at location:6 at timestamp: 903.742seconds
-thread 2 wrote a value: 27 at location:4 at timestamp: 903.742seconds
-thread 1 wrote a value: 17 at location:0 at timestamp: 903.742seconds
-thread 0 wrote a value: 21 at location:2 at timestamp: 903.742seconds
-thread 3 wrote a value: 27 at location:4 at timestamp: 903.742seconds
-thread 8 wrote a value: 77 at location:6 at timestamp: 903.742seconds
-thread 7 wrote a value: 45 at location:1 at timestamp: 903.742seconds
-thread 6 wrote a value: 11 at location:4 at timestamp: 903.742seconds
-thread 5 wrote a value: 34 at location:0 at timestamp: 903.742seconds
-
-
-got 93th snapshot at timestamp: 903.742 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 12 at location:3 at timestamp: 903.742seconds
-thread 4 wrote a value: 27 at location:4 at timestamp: 903.742seconds
-thread 2 wrote a value: 25 at location:1 at timestamp: 903.742seconds
-thread 1 wrote a value: 67 at location:6 at timestamp: 903.742seconds
-thread 0 wrote a value: 84 at location:0 at timestamp: 903.742seconds
-thread 3 wrote a value: 41 at location:9 at timestamp: 903.742seconds
-thread 8 wrote a value: 68 at location:0 at timestamp: 903.742seconds
-thread 7 wrote a value: 5 at location:5 at timestamp: 903.742seconds
-thread 6 wrote a value: 54 at location:4 at timestamp: 903.742seconds
-thread 5 wrote a value: 41 at location:4 at timestamp: 903.742seconds
-
-
-got 94th snapshot at timestamp: 903.742 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 93 at location:2 at timestamp: 903.742seconds
-thread 4 wrote a value: 51 at location:0 at timestamp: 903.742seconds
-thread 2 wrote a value: 63 at location:5 at timestamp: 903.742seconds
-thread 1 wrote a value: 43 at location:4 at timestamp: 903.742seconds
-thread 0 wrote a value: 40 at location:7 at timestamp: 903.742seconds
-thread 3 wrote a value: 35 at location:2 at timestamp: 903.742seconds
-thread 8 wrote a value: 69 at location:2 at timestamp: 903.742seconds
-thread 7 wrote a value: 63 at location:5 at timestamp: 903.742seconds
-thread 6 wrote a value: 94 at location:4 at timestamp: 903.742seconds
-thread 5 wrote a value: 51 at location:4 at timestamp: 903.742seconds
-
-
-got 95th snapshot at timestamp: 903.742 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 38 at location:4 at timestamp: 903.742seconds
-thread 4 wrote a value: 26 at location:7 at timestamp: 903.742seconds
-thread 2 wrote a value: 91 at location:9 at timestamp: 903.742seconds
-thread 1 wrote a value: 97 at location:2 at timestamp: 903.742seconds
-thread 0 wrote a value: 52 at location:7 at timestamp: 903.742seconds
-thread 3 wrote a value: 40 at location:5 at timestamp: 903.742seconds
-thread 8 wrote a value: 66 at location:7 at timestamp: 903.742seconds
-thread 7 wrote a value: 12 at location:2 at timestamp: 903.742seconds
-thread 6 wrote a value: 8 at location:6 at timestamp: 903.742seconds
-thread 5 wrote a value: 37 at location:9 at timestamp: 903.742seconds
-
-
-got 96th snapshot at timestamp: 903.742 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 20 at location:2 at timestamp: 903.742seconds
-thread 4 wrote a value: 25 at location:5 at timestamp: 903.742seconds
-thread 2 wrote a value: 46 at location:6 at timestamp: 903.742seconds
-thread 1 wrote a value: 47 at location:1 at timestamp: 903.742seconds
-thread 0 wrote a value: 37 at location:1 at timestamp: 903.742seconds
-thread 3 wrote a value: 69 at location:5 at timestamp: 903.742seconds
-thread 8 wrote a value: 8 at location:7 at timestamp: 903.743seconds
-thread 7 wrote a value: 16 at location:5 at timestamp: 903.743seconds
-thread 6 wrote a value: 35 at location:5 at timestamp: 903.743seconds
-thread 5 wrote a value: 59 at location:9 at timestamp: 903.743seconds
-
-
-got 97th snapshot at timestamp: 903.743 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 20 at location:7 at timestamp: 903.743seconds
-thread 4 wrote a value: 8 at location:1 at timestamp: 903.743seconds
-thread 2 wrote a value: 49 at location:1 at timestamp: 903.743seconds
-thread 1 wrote a value: 53 at location:0 at timestamp: 903.743seconds
-thread 0 wrote a value: 17 at location:9 at timestamp: 903.743seconds
-thread 3 wrote a value: 80 at location:9 at timestamp: 903.743seconds
-thread 8 wrote a value: 34 at location:1 at timestamp: 903.743seconds
-thread 7 wrote a value: 29 at location:2 at timestamp: 903.743seconds
-thread 6 wrote a value: 99 at location:4 at timestamp: 903.743seconds
-thread 5 wrote a value: 80 at location:1 at timestamp: 903.743seconds
-
-
-got 98th snapshot at timestamp: 903.743 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 14 at location:1 at timestamp: 903.743seconds
-thread 4 wrote a value: 99 at location:3 at timestamp: 903.743seconds
-thread 2 wrote a value: 99 at location:4 at timestamp: 903.743seconds
-thread 1 wrote a value: 55 at location:7 at timestamp: 903.743seconds
-thread 0 wrote a value: 35 at location:3 at timestamp: 903.743seconds
-thread 3 wrote a value: 26 at location:1 at timestamp: 903.743seconds
-thread 8 wrote a value: 5 at location:0 at timestamp: 903.743seconds
-thread 7 wrote a value: 76 at location:8 at timestamp: 903.743seconds
-thread 6 wrote a value: 90 at location:4 at timestamp: 903.743seconds
-thread 5 wrote a value: 99 at location:0 at timestamp: 903.743seconds
-
-
-got 99th snapshot at timestamp: 903.743 as:
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-thread 9 wrote a value: 64 at location:1 at timestamp: 903.743seconds
-thread 4 wrote a value: 45 at location:7 at timestamp: 903.743seconds
-thread 2 wrote a value: 19 at location:4 at timestamp: 903.743seconds
-thread 1 wrote a value: 64 at location:5 at timestamp: 903.743seconds
-thread 0 wrote a value: 41 at location:2 at timestamp: 903.743seconds
-thread 3 wrote a value: 82 at location:5 at timestamp: 903.743seconds
-thread 8 wrote a value: 94 at location:4 at timestamp: 903.743seconds
-thread 7 wrote a value: 88 at location:7 at timestamp: 903.743seconds
-thread 6 wrote a value: 0 at location:2 at timestamp: 903.743seconds
-thread 5 wrote a value: 20 at location:2 at timestamp: 903.743seconds
+thread 5 wrote a value: 23 at location:8 at timestamp: 803.294seconds
+thread 2 wrote a value: 99 at location:0 at timestamp: 803.304seconds
+thread 8 wrote a value: 62 at location:7 at timestamp: 803.304seconds
+thread 0 wrote a value: 7 at location:0 at timestamp: 803.306seconds
+thread 3 wrote a value: 80 at location:5 at timestamp: 803.306seconds
+thread 7 wrote a value: 93 at location:3 at timestamp: 803.306seconds
+thread 4 wrote a value: 99 at location:9 at timestamp: 803.306seconds
+thread 9 wrote a value: 58 at location:9 at timestamp: 803.306seconds
+thread 1 wrote a value: 95 at location:9 at timestamp: 803.306seconds
+thread 6 wrote a value: 8 at location:5 at timestamp: 803.306seconds
+thread 6 wrote a value: 33 at location:7 at timestamp: 803.337seconds
+thread 9 wrote a value: 35 at location:1 at timestamp: 803.337seconds
+thread 7 wrote a value: 24 at location:9 at timestamp: 803.349seconds
+thread 5 wrote a value: 14 at location:1 at timestamp: 803.349seconds
+thread 3 wrote a value: 77 at location:7 at timestamp: 803.349seconds
+thread 4 wrote a value: 77 at location:1 at timestamp: 803.349seconds
+thread 0 wrote a value: 52 at location:6 at timestamp: 803.349seconds
+thread 2 wrote a value: 88 at location:7 at timestamp: 803.349seconds
+thread 8 wrote a value: 0 at location:0 at timestamp: 803.349seconds
+thread 1 wrote a value: 45 at location:3 at timestamp: 803.349seconds
+thread 9 wrote a value: 36 at location:7 at timestamp: 803.369seconds
+thread 1 wrote a value: 27 at location:4 at timestamp: 803.384seconds
+thread 8 wrote a value: 9 at location:9 at timestamp: 803.384seconds
+thread 6 wrote a value: 14 at location:5 at timestamp: 803.39seconds
+thread 9 wrote a value: 94 at location:9 at timestamp: 803.401seconds
+thread 3 wrote a value: 72 at location:2 at timestamp: 803.408seconds
+thread 0 wrote a value: 0 at location:9 at timestamp: 803.408seconds
+thread 7 wrote a value: 66 at location:3 at timestamp: 803.408seconds
+thread 4 wrote a value: 66 at location:3 at timestamp: 803.408seconds
+thread 2 wrote a value: 67 at location:1 at timestamp: 803.408seconds
+thread 6 wrote a value: 38 at location:6 at timestamp: 803.426seconds
+thread 2 wrote a value: 59 at location:9 at timestamp: 803.445seconds
+thread 1 wrote a value: 2 at location:4 at timestamp: 803.445seconds
+thread 5 wrote a value: 72 at location:2 at timestamp: 803.445seconds
+thread 9 wrote a value: 74 at location:2 at timestamp: 803.451seconds
+thread 0 wrote a value: 18 at location:4 at timestamp: 803.457seconds
+thread 8 wrote a value: 0 at location:9 at timestamp: 803.457seconds
+thread 6 wrote a value: 74 at location:1 at timestamp: 803.463seconds
+thread 7 wrote a value: 40 at location:7 at timestamp: 803.468seconds
+thread 4 wrote a value: 42 at location:2 at timestamp: 803.468seconds
+thread 3 wrote a value: 88 at location:1 at timestamp: 803.468seconds
+thread 3 wrote a value: 1 at location:3 at timestamp: 803.5seconds
+thread 9 wrote a value: 45 at location:2 at timestamp: 803.509seconds
+thread 6 wrote a value: 84 at location:4 at timestamp: 803.509seconds
+thread 2 wrote a value: 96 at location:7 at timestamp: 803.509seconds
+thread 4 wrote a value: 91 at location:6 at timestamp: 803.509seconds
+thread 0 wrote a value: 26 at location:6 at timestamp: 803.51seconds
+thread 1 wrote a value: 84 at location:3 at timestamp: 803.51seconds
+thread 7 wrote a value: 74 at location:8 at timestamp: 803.51seconds
+
+
+got 0th snapshot at timestamp: 803.51 as:
+0, 67, 72, 66, 2, 14, 38, 36, 23, 0, 
+
+thread 5 wrote a value: 12 at location:7 at timestamp: 803.51seconds
+thread 8 wrote a value: 74 at location:1 at timestamp: 803.51seconds
+thread 8 wrote a value: 38 at location:3 at timestamp: 803.544seconds
+thread 0 wrote a value: 81 at location:1 at timestamp: 803.551seconds
+thread 9 wrote a value: 94 at location:1 at timestamp: 803.551seconds
+thread 6 wrote a value: 3 at location:9 at timestamp: 803.551seconds
+thread 5 wrote a value: 35 at location:3 at timestamp: 803.555seconds
+thread 7 wrote a value: 1 at location:0 at timestamp: 803.555seconds
+thread 4 wrote a value: 17 at location:0 at timestamp: 803.555seconds
+thread 3 wrote a value: 46 at location:3 at timestamp: 803.555seconds
+thread 2 wrote a value: 50 at location:5 at timestamp: 803.555seconds
+thread 1 wrote a value: 22 at location:6 at timestamp: 803.555seconds
+thread 1 wrote a value: 0 at location:4 at timestamp: 803.588seconds
+thread 8 wrote a value: 36 at location:1 at timestamp: 803.588seconds
+thread 9 wrote a value: 86 at location:1 at timestamp: 803.596seconds
+thread 0 wrote a value: 86 at location:1 at timestamp: 803.596seconds
+thread 6 wrote a value: 70 at location:0 at timestamp: 803.596seconds
+thread 5 wrote a value: 1 at location:3 at timestamp: 803.598seconds
+thread 7 wrote a value: 58 at location:8 at timestamp: 803.598seconds
+thread 3 wrote a value: 67 at location:3 at timestamp: 803.598seconds
+thread 4 wrote a value: 15 at location:0 at timestamp: 803.598seconds
+thread 2 wrote a value: 75 at location:5 at timestamp: 803.6seconds
+thread 3 wrote a value: 83 at location:5 at timestamp: 803.632seconds
+thread 0 wrote a value: 34 at location:0 at timestamp: 803.638seconds
+thread 6 wrote a value: 21 at location:0 at timestamp: 803.638seconds
+thread 9 wrote a value: 29 at location:9 at timestamp: 803.638seconds
+thread 2 wrote a value: 74 at location:8 at timestamp: 803.645seconds
+thread 4 wrote a value: 90 at location:3 at timestamp: 803.645seconds
+thread 8 wrote a value: 48 at location:5 at timestamp: 803.645seconds
+thread 5 wrote a value: 82 at location:7 at timestamp: 803.645seconds
+thread 1 wrote a value: 46 at location:4 at timestamp: 803.645seconds
+thread 7 wrote a value: 22 at location:6 at timestamp: 803.645seconds
+thread 4 wrote a value: 81 at location:7 at timestamp: 803.678seconds
+thread 3 wrote a value: 62 at location:9 at timestamp: 803.678seconds
+thread 9 wrote a value: 71 at location:0 at timestamp: 803.684seconds
+thread 6 wrote a value: 71 at location:0 at timestamp: 803.684seconds
+thread 0 wrote a value: 13 at location:7 at timestamp: 803.684seconds
+thread 5 wrote a value: 18 at location:0 at timestamp: 803.689seconds
+thread 1 wrote a value: 45 at location:1 at timestamp: 803.689seconds
+thread 2 wrote a value: 29 at location:6 at timestamp: 803.689seconds
+thread 7 wrote a value: 37 at location:6 at timestamp: 803.689seconds
+thread 8 wrote a value: 26 at location:1 at timestamp: 803.689seconds
+thread 7 wrote a value: 14 at location:2 at timestamp: 803.721seconds
+thread 9 wrote a value: 17 at location:1 at timestamp: 803.727seconds
+thread 0 wrote a value: 10 at location:9 at timestamp: 803.727seconds
+thread 6 wrote a value: 71 at location:6 at timestamp: 803.727seconds
+thread 2 wrote a value: 74 at location:5 at timestamp: 803.731seconds
+thread 3 wrote a value: 43 at location:6 at timestamp: 803.731seconds
+thread 5 wrote a value: 74 at location:5 at timestamp: 803.731seconds
+thread 1 wrote a value: 74 at location:5 at timestamp: 803.731seconds
+thread 8 wrote a value: 36 at location:6 at timestamp: 803.731seconds
+thread 4 wrote a value: 9 at location:2 at timestamp: 803.733seconds
+thread 4 wrote a value: 17 at location:8 at timestamp: 803.767seconds
+thread 0 wrote a value: 7 at location:2 at timestamp: 803.772seconds
+thread 6 wrote a value: 57 at location:8 at timestamp: 803.772seconds
+thread 9 wrote a value: 7 at location:2 at timestamp: 803.772seconds
+thread 2 wrote a value: 76 at location:6 at timestamp: 803.774seconds
+thread 3 wrote a value: 30 at location:9 at timestamp: 803.774seconds
+thread 5 wrote a value: 76 at location:6 at timestamp: 803.774seconds
+thread 8 wrote a value: 98 at location:5 at timestamp: 803.774seconds
+thread 1 wrote a value: 30 at location:9 at timestamp: 803.774seconds
+thread 7 wrote a value: 37 at location:7 at timestamp: 803.779seconds
+thread 7 wrote a value: 36 at location:7 at timestamp: 803.812seconds
+thread 9 wrote a value: 31 at location:3 at timestamp: 803.816seconds
+thread 0 wrote a value: 64 at location:6 at timestamp: 803.816seconds
+thread 6 wrote a value: 18 at location:6 at timestamp: 803.817seconds
+thread 8 wrote a value: 32 at location:3 at timestamp: 803.82seconds
+thread 2 wrote a value: 9 at location:0 at timestamp: 803.82seconds
+thread 5 wrote a value: 67 at location:4 at timestamp: 803.82seconds
+thread 1 wrote a value: 5 at location:6 at timestamp: 803.821seconds
+thread 3 wrote a value: 9 at location:4 at timestamp: 803.821seconds
+thread 4 wrote a value: 50 at location:9 at timestamp: 803.822seconds
+thread 4 wrote a value: 73 at location:0 at timestamp: 803.855seconds
+thread 7 wrote a value: 13 at location:1 at timestamp: 803.855seconds
+thread 0 wrote a value: 67 at location:0 at timestamp: 803.861seconds
+thread 9 wrote a value: 17 at location:3 at timestamp: 803.861seconds
+thread 6 wrote a value: 26 at location:7 at timestamp: 803.861seconds
+thread 5 wrote a value: 77 at location:1 at timestamp: 803.867seconds
+thread 1 wrote a value: 14 at location:6 at timestamp: 803.867seconds
+thread 2 wrote a value: 89 at location:2 at timestamp: 803.867seconds
+thread 3 wrote a value: 52 at location:2 at timestamp: 803.867seconds
+thread 8 wrote a value: 8 at location:5 at timestamp: 803.867seconds
+thread 8 wrote a value: 92 at location:9 at timestamp: 803.9seconds
+thread 6 wrote a value: 32 at location:1 at timestamp: 803.903seconds
+thread 0 wrote a value: 72 at location:9 at timestamp: 803.904seconds
+thread 9 wrote a value: 22 at location:8 at timestamp: 803.904seconds
+thread 1 wrote a value: 99 at location:8 at timestamp: 803.911seconds
+thread 5 wrote a value: 99 at location:8 at timestamp: 803.911seconds
+thread 7 wrote a value: 46 at location:6 at timestamp: 803.911seconds
+thread 3 wrote a value: 24 at location:6 at timestamp: 803.911seconds
+thread 4 wrote a value: 65 at location:6 at timestamp: 803.911seconds
+thread 2 wrote a value: 46 at location:0 at timestamp: 803.916seconds
+thread 0 wrote a value: 40 at location:8 at timestamp: 803.95seconds
+thread 2 wrote a value: 76 at location:1 at timestamp: 803.95seconds
+thread 6 wrote a value: 40 at location:8 at timestamp: 803.95seconds
+thread 9 wrote a value: 22 at location:6 at timestamp: 803.95seconds
+thread 3 wrote a value: 26 at location:2 at timestamp: 803.955seconds
+thread 7 wrote a value: 28 at location:2 at timestamp: 803.955seconds
+thread 5 wrote a value: 43 at location:6 at timestamp: 803.955seconds
+thread 8 wrote a value: 56 at location:8 at timestamp: 803.955seconds
+thread 1 wrote a value: 5 at location:8 at timestamp: 803.956seconds
+thread 4 wrote a value: 24 at location:1 at timestamp: 803.956seconds
+thread 8 wrote a value: 5 at location:7 at timestamp: 803.988seconds
+thread 6 wrote a value: 20 at location:0 at timestamp: 803.995seconds
+thread 9 wrote a value: 47 at location:3 at timestamp: 803.995seconds
+thread 2 wrote a value: 81 at location:6 at timestamp: 803.995seconds
+thread 0 wrote a value: 50 at location:0 at timestamp: 803.995seconds
+thread 4 wrote a value: 39 at location:3 at timestamp: 804seconds
+thread 1 wrote a value: 49 at location:8 at timestamp: 804seconds
+thread 3 wrote a value: 79 at location:8 at timestamp: 804.001seconds
+thread 5 wrote a value: 58 at location:4 at timestamp: 804.001seconds
+thread 7 wrote a value: 93 at location:7 at timestamp: 804.001seconds
+thread 8 wrote a value: 60 at location:4 at timestamp: 804.033seconds
+thread 7 wrote a value: 60 at location:9 at timestamp: 804.033seconds
+thread 9 wrote a value: 60 at location:6 at timestamp: 804.037seconds
+thread 0 wrote a value: 50 at location:0 at timestamp: 804.04seconds
+thread 6 wrote a value: 98 at location:4 at timestamp: 804.04seconds
+thread 2 wrote a value: 68 at location:3 at timestamp: 804.043seconds
+thread 1 wrote a value: 16 at location:4 at timestamp: 804.043seconds
+thread 5 wrote a value: 38 at location:9 at timestamp: 804.043seconds
+thread 3 wrote a value: 89 at location:2 at timestamp: 804.044seconds
+thread 4 wrote a value: 37 at location:0 at timestamp: 804.044seconds
+thread 2 wrote a value: 33 at location:9 at timestamp: 804.077seconds
+thread 8 wrote a value: 72 at location:0 at timestamp: 804.077seconds
+thread 7 wrote a value: 51 at location:3 at timestamp: 804.077seconds
+thread 9 wrote a value: 92 at location:4 at timestamp: 804.082seconds
+thread 0 wrote a value: 4 at location:6 at timestamp: 804.082seconds
+thread 6 wrote a value: 29 at location:3 at timestamp: 804.083seconds
+thread 4 wrote a value: 10 at location:6 at timestamp: 804.086seconds
+thread 3 wrote a value: 56 at location:7 at timestamp: 804.086seconds
+thread 1 wrote a value: 92 at location:9 at timestamp: 804.087seconds
+thread 5 wrote a value: 93 at location:6 at timestamp: 804.089seconds
+thread 5 wrote a value: 18 at location:3 at timestamp: 804.121seconds
+thread 0 wrote a value: 12 at location:8 at timestamp: 804.127seconds
+thread 6 wrote a value: 16 at location:0 at timestamp: 804.127seconds
+thread 9 wrote a value: 37 at location:9 at timestamp: 804.128seconds
+thread 3 wrote a value: 45 at location:6 at timestamp: 804.129seconds
+thread 1 wrote a value: 38 at location:6 at timestamp: 804.129seconds
+thread 2 wrote a value: 71 at location:7 at timestamp: 804.13seconds
+thread 4 wrote a value: 45 at location:6 at timestamp: 804.13seconds
+thread 8 wrote a value: 5 at location:6 at timestamp: 804.131seconds
+thread 7 wrote a value: 22 at location:7 at timestamp: 804.135seconds
+thread 7 wrote a value: 17 at location:0 at timestamp: 804.17seconds
+thread 1 wrote a value: 14 at location:7 at timestamp: 804.173seconds
+thread 3 wrote a value: 12 at location:2 at timestamp: 804.173seconds
+thread 9 wrote a value: 41 at location:4 at timestamp: 804.173seconds
+thread 2 wrote a value: 4 at location:3 at timestamp: 804.173seconds
+thread 0 wrote a value: 15 at location:1 at timestamp: 804.173seconds
+thread 6 wrote a value: 43 at location:3 at timestamp: 804.173seconds
+thread 8 wrote a value: 37 at location:8 at timestamp: 804.174seconds
+thread 4 wrote a value: 75 at location:8 at timestamp: 804.174seconds
+thread 5 wrote a value: 54 at location:1 at timestamp: 804.176seconds
+thread 5 wrote a value: 88 at location:3 at timestamp: 804.209seconds
+thread 3 wrote a value: 91 at location:6 at timestamp: 804.216seconds
+thread 2 wrote a value: 50 at location:7 at timestamp: 804.216seconds
+thread 6 wrote a value: 55 at location:5 at timestamp: 804.216seconds
+thread 1 wrote a value: 16 at location:2 at timestamp: 804.216seconds
+thread 9 wrote a value: 20 at location:6 at timestamp: 804.216seconds
+thread 7 wrote a value: 24 at location:0 at timestamp: 804.216seconds
+thread 0 wrote a value: 77 at location:1 at timestamp: 804.216seconds
+thread 8 wrote a value: 74 at location:4 at timestamp: 804.22seconds
+thread 4 wrote a value: 19 at location:2 at timestamp: 804.22seconds
+thread 4 wrote a value: 81 at location:0 at timestamp: 804.254seconds
+thread 3 wrote a value: 71 at location:8 at timestamp: 804.261seconds
+thread 2 wrote a value: 53 at location:2 at timestamp: 804.261seconds
+thread 0 wrote a value: 2 at location:1 at timestamp: 804.261seconds
+thread 7 wrote a value: 38 at location:9 at timestamp: 804.261seconds
+thread 6 wrote a value: 88 at location:9 at timestamp: 804.261seconds
+thread 1 wrote a value: 37 at location:2 at timestamp: 804.261seconds
+thread 9 wrote a value: 59 at location:1 at timestamp: 804.261seconds
+thread 8 wrote a value: 18 at location:7 at timestamp: 804.266seconds
+thread 5 wrote a value: 22 at location:7 at timestamp: 804.266seconds
+thread 8 wrote a value: 19 at location:5 at timestamp: 804.298seconds
+
+
+got 1th snapshot at timestamp: 804.303 as:
+81, 2, 37, 88, 74, 55, 20, 18, 71, 38, 
+
+thread 1 wrote a value: 87 at location:8 at timestamp: 804.305seconds
+thread 3 wrote a value: 98 at location:6 at timestamp: 804.305seconds
+thread 7 wrote a value: 88 at location:0 at timestamp: 804.305seconds
+thread 0 wrote a value: 98 at location:5 at timestamp: 804.305seconds
+thread 6 wrote a value: 86 at location:8 at timestamp: 804.305seconds
+thread 2 wrote a value: 74 at location:7 at timestamp: 804.305seconds
+thread 9 wrote a value: 63 at location:3 at timestamp: 804.305seconds
+thread 5 wrote a value: 93 at location:3 at timestamp: 804.31seconds
+thread 4 wrote a value: 59 at location:2 at timestamp: 804.31seconds
+thread 5 wrote a value: 6 at location:2 at timestamp: 804.343seconds
+thread 2 wrote a value: 50 at location:7 at timestamp: 804.351seconds
+thread 3 wrote a value: 60 at location:7 at timestamp: 804.351seconds
+thread 9 wrote a value: 8 at location:4 at timestamp: 804.351seconds
+thread 0 wrote a value: 5 at location:7 at timestamp: 804.351seconds
+thread 6 wrote a value: 71 at location:7 at timestamp: 804.351seconds
+thread 7 wrote a value: 4 at location:9 at timestamp: 804.351seconds
+thread 1 wrote a value: 15 at location:8 at timestamp: 804.351seconds
+thread 4 wrote a value: 81 at location:8 at timestamp: 804.356seconds
+thread 8 wrote a value: 5 at location:7 at timestamp: 804.356seconds
+thread 8 wrote a value: 93 at location:7 at timestamp: 804.387seconds
+thread 2 wrote a value: 2 at location:2 at timestamp: 804.396seconds
+thread 3 wrote a value: 67 at location:7 at timestamp: 804.4seconds
+thread 4 wrote a value: 56 at location:0 at timestamp: 804.4seconds
+thread 7 wrote a value: 17 at location:2 at timestamp: 804.4seconds
+thread 9 wrote a value: 99 at location:8 at timestamp: 804.4seconds
+thread 0 wrote a value: 92 at location:8 at timestamp: 804.4seconds
+thread 1 wrote a value: 25 at location:6 at timestamp: 804.4seconds
+thread 5 wrote a value: 14 at location:5 at timestamp: 804.4seconds
+thread 6 wrote a value: 67 at location:7 at timestamp: 804.4seconds
+thread 6 wrote a value: 95 at location:2 at timestamp: 804.434seconds
+thread 5 wrote a value: 12 at location:3 at timestamp: 804.447seconds
+thread 8 wrote a value: 5 at location:8 at timestamp: 804.447seconds
+thread 7 wrote a value: 47 at location:7 at timestamp: 804.447seconds
+thread 2 wrote a value: 85 at location:5 at timestamp: 804.447seconds
+thread 0 wrote a value: 38 at location:1 at timestamp: 804.447seconds
+thread 9 wrote a value: 69 at location:4 at timestamp: 804.447seconds
+thread 1 wrote a value: 49 at location:2 at timestamp: 804.447seconds
+thread 3 wrote a value: 27 at location:1 at timestamp: 804.447seconds
+thread 4 wrote a value: 49 at location:2 at timestamp: 804.447seconds
+thread 6 wrote a value: 47 at location:5 at timestamp: 804.472seconds
+thread 1 wrote a value: 38 at location:9 at timestamp: 804.484seconds
+thread 3 wrote a value: 21 at location:8 at timestamp: 804.484seconds
+thread 5 wrote a value: 37 at location:8 at timestamp: 804.494seconds
+thread 8 wrote a value: 57 at location:2 at timestamp: 804.495seconds
+thread 0 wrote a value: 89 at location:2 at timestamp: 804.495seconds
+thread 7 wrote a value: 78 at location:8 at timestamp: 804.495seconds
+thread 9 wrote a value: 18 at location:3 at timestamp: 804.495seconds
+thread 2 wrote a value: 92 at location:9 at timestamp: 804.495seconds
+thread 4 wrote a value: 15 at location:3 at timestamp: 804.495seconds
+thread 3 wrote a value: 95 at location:6 at timestamp: 804.517seconds
+thread 2 wrote a value: 13 at location:2 at timestamp: 804.529seconds
+thread 5 wrote a value: 54 at location:2 at timestamp: 804.54seconds
+thread 1 wrote a value: 58 at location:4 at timestamp: 804.541seconds
+thread 6 wrote a value: 35 at location:0 at timestamp: 804.541seconds
+thread 9 wrote a value: 58 at location:8 at timestamp: 804.55seconds
+thread 8 wrote a value: 28 at location:7 at timestamp: 804.551seconds
+thread 4 wrote a value: 42 at location:7 at timestamp: 804.551seconds
+thread 7 wrote a value: 54 at location:2 at timestamp: 804.551seconds
+thread 0 wrote a value: 28 at location:7 at timestamp: 804.551seconds
+thread 3 wrote a value: 42 at location:8 at timestamp: 804.562seconds
+thread 2 wrote a value: 34 at location:6 at timestamp: 804.562seconds
+thread 5 wrote a value: 8 at location:6 at timestamp: 804.582seconds
+thread 0 wrote a value: 20 at location:6 at timestamp: 804.583seconds
+thread 2 wrote a value: 80 at location:2 at timestamp: 804.597seconds
+thread 9 wrote a value: 2 at location:3 at timestamp: 804.605seconds
+thread 7 wrote a value: 62 at location:0 at timestamp: 804.605seconds
+thread 5 wrote a value: 22 at location:8 at timestamp: 804.617seconds
+thread 1 wrote a value: 79 at location:1 at timestamp: 804.618seconds
+thread 6 wrote a value: 86 at location:9 at timestamp: 804.618seconds
+thread 4 wrote a value: 39 at location:4 at timestamp: 804.628seconds
+thread 8 wrote a value: 86 at location:8 at timestamp: 804.628seconds
+thread 0 wrote a value: 95 at location:7 at timestamp: 804.65seconds
+thread 7 wrote a value: 20 at location:7 at timestamp: 804.65seconds
+thread 3 wrote a value: 93 at location:4 at timestamp: 804.65seconds
+thread 8 wrote a value: 41 at location:1 at timestamp: 804.662seconds
+thread 4 wrote a value: 13 at location:9 at timestamp: 804.662seconds
+thread 2 wrote a value: 18 at location:9 at timestamp: 804.666seconds
+thread 6 wrote a value: 44 at location:5 at timestamp: 804.666seconds
+thread 1 wrote a value: 54 at location:3 at timestamp: 804.666seconds
+thread 5 wrote a value: 40 at location:4 at timestamp: 804.674seconds
+thread 7 wrote a value: 95 at location:9 at timestamp: 804.684seconds
+thread 5 wrote a value: 42 at location:2 at timestamp: 804.708seconds
+thread 9 wrote a value: 40 at location:3 at timestamp: 804.708seconds
+thread 3 wrote a value: 10 at location:4 at timestamp: 804.708seconds
+thread 4 wrote a value: 97 at location:5 at timestamp: 804.709seconds
+thread 8 wrote a value: 68 at location:9 at timestamp: 804.709seconds
+thread 7 wrote a value: 79 at location:6 at timestamp: 804.718seconds
+thread 1 wrote a value: 34 at location:1 at timestamp: 804.724seconds
+thread 2 wrote a value: 31 at location:0 at timestamp: 804.724seconds
+thread 6 wrote a value: 85 at location:2 at timestamp: 804.724seconds
+thread 0 wrote a value: 18 at location:1 at timestamp: 804.731seconds
+thread 0 wrote a value: 17 at location:4 at timestamp: 804.766seconds
+thread 7 wrote a value: 61 at location:9 at timestamp: 804.766seconds
+thread 5 wrote a value: 76 at location:6 at timestamp: 804.767seconds
+thread 9 wrote a value: 91 at location:5 at timestamp: 804.769seconds
+thread 4 wrote a value: 84 at location:0 at timestamp: 804.769seconds
+thread 3 wrote a value: 91 at location:5 at timestamp: 804.769seconds
+thread 1 wrote a value: 51 at location:1 at timestamp: 804.769seconds
+thread 2 wrote a value: 28 at location:8 at timestamp: 804.769seconds
+thread 8 wrote a value: 70 at location:7 at timestamp: 804.769seconds
+thread 6 wrote a value: 71 at location:4 at timestamp: 804.771seconds
+thread 6 wrote a value: 87 at location:7 at timestamp: 804.807seconds
+thread 0 wrote a value: 24 at location:2 at timestamp: 804.812seconds
+thread 7 wrote a value: 24 at location:2 at timestamp: 804.812seconds
+thread 3 wrote a value: 0 at location:5 at timestamp: 804.816seconds
+thread 1 wrote a value: 0 at location:5 at timestamp: 804.816seconds
+thread 9 wrote a value: 8 at location:8 at timestamp: 804.817seconds
+thread 5 wrote a value: 73 at location:6 at timestamp: 804.817seconds
+thread 4 wrote a value: 27 at location:4 at timestamp: 804.817seconds
+thread 8 wrote a value: 3 at location:7 at timestamp: 804.817seconds
+thread 2 wrote a value: 12 at location:5 at timestamp: 804.817seconds
+thread 2 wrote a value: 29 at location:2 at timestamp: 804.85seconds
+thread 6 wrote a value: 75 at location:1 at timestamp: 804.855seconds
+thread 0 wrote a value: 38 at location:8 at timestamp: 804.859seconds
+thread 4 wrote a value: 77 at location:2 at timestamp: 804.862seconds
+thread 8 wrote a value: 26 at location:4 at timestamp: 804.862seconds
+thread 3 wrote a value: 61 at location:8 at timestamp: 804.862seconds
+thread 7 wrote a value: 68 at location:4 at timestamp: 804.862seconds
+thread 9 wrote a value: 61 at location:8 at timestamp: 804.862seconds
+thread 1 wrote a value: 76 at location:0 at timestamp: 804.862seconds
+thread 5 wrote a value: 94 at location:6 at timestamp: 804.862seconds
+thread 5 wrote a value: 44 at location:6 at timestamp: 804.897seconds
+thread 7 wrote a value: 44 at location:6 at timestamp: 804.897seconds
+thread 6 wrote a value: 49 at location:6 at timestamp: 804.9seconds
+thread 0 wrote a value: 94 at location:5 at timestamp: 804.904seconds
+thread 1 wrote a value: 11 at location:1 at timestamp: 804.91seconds
+thread 9 wrote a value: 29 at location:2 at timestamp: 804.91seconds
+thread 2 wrote a value: 81 at location:8 at timestamp: 804.91seconds
+thread 3 wrote a value: 30 at location:9 at timestamp: 804.91seconds
+thread 8 wrote a value: 85 at location:1 at timestamp: 804.91seconds
+thread 4 wrote a value: 40 at location:1 at timestamp: 804.91seconds
+thread 8 wrote a value: 86 at location:6 at timestamp: 804.943seconds
+thread 3 wrote a value: 85 at location:6 at timestamp: 804.943seconds
+thread 9 wrote a value: 57 at location:5 at timestamp: 804.954seconds
+thread 0 wrote a value: 19 at location:2 at timestamp: 804.954seconds
+thread 6 wrote a value: 22 at location:8 at timestamp: 804.954seconds
+thread 5 wrote a value: 14 at location:0 at timestamp: 804.954seconds
+thread 2 wrote a value: 3 at location:7 at timestamp: 804.954seconds
+thread 4 wrote a value: 85 at location:7 at timestamp: 804.955seconds
+thread 7 wrote a value: 44 at location:1 at timestamp: 804.955seconds
+thread 1 wrote a value: 22 at location:3 at timestamp: 804.955seconds
+thread 5 wrote a value: 65 at location:1 at timestamp: 804.991seconds
+thread 2 wrote a value: 65 at location:1 at timestamp: 804.991seconds
+thread 8 wrote a value: 72 at location:5 at timestamp: 804.997seconds
+thread 9 wrote a value: 17 at location:2 at timestamp: 804.997seconds
+thread 7 wrote a value: 94 at location:1 at timestamp: 804.997seconds
+thread 4 wrote a value: 33 at location:5 at timestamp: 804.998seconds
+thread 0 wrote a value: 44 at location:2 at timestamp: 804.998seconds
+thread 6 wrote a value: 46 at location:0 at timestamp: 804.998seconds
+thread 1 wrote a value: 43 at location:9 at timestamp: 804.998seconds
+
+
+got 2th snapshot at timestamp: 804.998 as:
+46, 65, 17, 9, 26, 33, 86, 3, 22, 43, 
+
+thread 3 wrote a value: 9 at location:3 at timestamp: 805.001seconds
+thread 3 wrote a value: 95 at location:0 at timestamp: 805.033seconds
+thread 5 wrote a value: 81 at location:2 at timestamp: 805.034seconds
+thread 2 wrote a value: 41 at location:6 at timestamp: 805.034seconds
+thread 1 wrote a value: 77 at location:4 at timestamp: 805.042seconds
+thread 7 wrote a value: 72 at location:8 at timestamp: 805.042seconds
+thread 0 wrote a value: 31 at location:4 at timestamp: 805.042seconds
+thread 4 wrote a value: 92 at location:7 at timestamp: 805.042seconds
+thread 9 wrote a value: 72 at location:8 at timestamp: 805.042seconds
+thread 6 wrote a value: 61 at location:4 at timestamp: 805.042seconds
+thread 8 wrote a value: 12 at location:2 at timestamp: 805.043seconds
+thread 5 wrote a value: 45 at location:0 at timestamp: 805.078seconds
+thread 3 wrote a value: 82 at location:5 at timestamp: 805.078seconds
+thread 6 wrote a value: 62 at location:7 at timestamp: 805.078seconds
+thread 2 wrote a value: 23 at location:6 at timestamp: 805.078seconds
+thread 0 wrote a value: 10 at location:0 at timestamp: 805.088seconds
+thread 4 wrote a value: 62 at location:6 at timestamp: 805.088seconds
+thread 8 wrote a value: 93 at location:9 at timestamp: 805.088seconds
+thread 1 wrote a value: 38 at location:5 at timestamp: 805.088seconds
+thread 9 wrote a value: 45 at location:0 at timestamp: 805.088seconds
+thread 7 wrote a value: 60 at location:2 at timestamp: 805.088seconds
+thread 9 wrote a value: 75 at location:0 at timestamp: 805.126seconds
+thread 6 wrote a value: 36 at location:5 at timestamp: 805.126seconds
+thread 3 wrote a value: 19 at location:9 at timestamp: 805.126seconds
+thread 7 wrote a value: 31 at location:7 at timestamp: 805.134seconds
+thread 0 wrote a value: 80 at location:4 at timestamp: 805.134seconds
+thread 8 wrote a value: 83 at location:2 at timestamp: 805.134seconds
+thread 4 wrote a value: 4 at location:7 at timestamp: 805.139seconds
+thread 1 wrote a value: 4 at location:7 at timestamp: 805.139seconds
+thread 2 wrote a value: 90 at location:3 at timestamp: 805.139seconds
+thread 5 wrote a value: 37 at location:0 at timestamp: 805.139seconds
+thread 5 wrote a value: 5 at location:6 at timestamp: 805.174seconds
+thread 0 wrote a value: 79 at location:0 at timestamp: 805.18seconds
+thread 8 wrote a value: 28 at location:3 at timestamp: 805.18seconds
+thread 7 wrote a value: 79 at location:0 at timestamp: 805.18seconds
+thread 1 wrote a value: 12 at location:5 at timestamp: 805.184seconds
+thread 2 wrote a value: 66 at location:4 at timestamp: 805.184seconds
+thread 3 wrote a value: 98 at location:4 at timestamp: 805.184seconds
+thread 6 wrote a value: 33 at location:6 at timestamp: 805.184seconds
+thread 4 wrote a value: 23 at location:2 at timestamp: 805.184seconds
+thread 9 wrote a value: 33 at location:6 at timestamp: 805.184seconds
+thread 5 wrote a value: 40 at location:2 at timestamp: 805.22seconds
+thread 4 wrote a value: 60 at location:5 at timestamp: 805.22seconds
+thread 9 wrote a value: 34 at location:8 at timestamp: 805.22seconds
+thread 0 wrote a value: 10 at location:0 at timestamp: 805.228seconds
+thread 7 wrote a value: 52 at location:8 at timestamp: 805.228seconds
+thread 8 wrote a value: 54 at location:8 at timestamp: 805.228seconds
+thread 2 wrote a value: 8 at location:1 at timestamp: 805.23seconds
+thread 6 wrote a value: 88 at location:4 at timestamp: 805.23seconds
+thread 1 wrote a value: 99 at location:9 at timestamp: 805.23seconds
+thread 3 wrote a value: 8 at location:1 at timestamp: 805.23seconds
+thread 6 wrote a value: 51 at location:2 at timestamp: 805.262seconds
+thread 4 wrote a value: 90 at location:7 at timestamp: 805.275seconds
+thread 8 wrote a value: 89 at location:6 at timestamp: 805.275seconds
+thread 3 wrote a value: 84 at location:9 at timestamp: 805.275seconds
+thread 5 wrote a value: 37 at location:7 at timestamp: 805.275seconds
+thread 7 wrote a value: 45 at location:8 at timestamp: 805.275seconds
+thread 2 wrote a value: 66 at location:9 at timestamp: 805.275seconds
+thread 9 wrote a value: 0 at location:4 at timestamp: 805.275seconds
+thread 1 wrote a value: 19 at location:5 at timestamp: 805.275seconds
+thread 0 wrote a value: 54 at location:1 at timestamp: 805.275seconds
+thread 0 wrote a value: 6 at location:6 at timestamp: 805.312seconds
+thread 1 wrote a value: 91 at location:6 at timestamp: 805.323seconds
+thread 9 wrote a value: 23 at location:0 at timestamp: 805.323seconds
+thread 5 wrote a value: 41 at location:2 at timestamp: 805.323seconds
+thread 4 wrote a value: 0 at location:8 at timestamp: 805.323seconds
+thread 6 wrote a value: 25 at location:9 at timestamp: 805.323seconds
+thread 7 wrote a value: 55 at location:9 at timestamp: 805.323seconds
+thread 2 wrote a value: 68 at location:8 at timestamp: 805.323seconds
+thread 3 wrote a value: 38 at location:2 at timestamp: 805.323seconds
+thread 8 wrote a value: 61 at location:7 at timestamp: 805.323seconds
+thread 0 wrote a value: 53 at location:7 at timestamp: 805.345seconds
+thread 8 wrote a value: 60 at location:1 at timestamp: 805.357seconds
+thread 3 wrote a value: 45 at location:3 at timestamp: 805.368seconds
+thread 6 wrote a value: 26 at location:7 at timestamp: 805.368seconds
+thread 9 wrote a value: 51 at location:7 at timestamp: 805.368seconds
+thread 1 wrote a value: 65 at location:7 at timestamp: 805.378seconds
+thread 5 wrote a value: 59 at location:1 at timestamp: 805.378seconds
+thread 7 wrote a value: 63 at location:2 at timestamp: 805.378seconds
+thread 4 wrote a value: 11 at location:7 at timestamp: 805.378seconds
+thread 2 wrote a value: 75 at location:8 at timestamp: 805.379seconds
+thread 0 wrote a value: 43 at location:8 at timestamp: 805.379seconds
+thread 8 wrote a value: 63 at location:6 at timestamp: 805.388seconds
+thread 6 wrote a value: 68 at location:7 at timestamp: 805.423seconds
+thread 1 wrote a value: 4 at location:4 at timestamp: 805.423seconds
+thread 9 wrote a value: 93 at location:3 at timestamp: 805.423seconds
+thread 7 wrote a value: 93 at location:8 at timestamp: 805.423seconds
+thread 4 wrote a value: 75 at location:8 at timestamp: 805.423seconds
+thread 2 wrote a value: 63 at location:7 at timestamp: 805.423seconds
+thread 8 wrote a value: 27 at location:3 at timestamp: 805.423seconds
+thread 3 wrote a value: 3 at location:9 at timestamp: 805.423seconds
+thread 0 wrote a value: 36 at location:3 at timestamp: 805.423seconds
+thread 5 wrote a value: 38 at location:0 at timestamp: 805.423seconds
+thread 0 wrote a value: 79 at location:5 at timestamp: 805.458seconds
+thread 9 wrote a value: 46 at location:3 at timestamp: 805.469seconds
+thread 8 wrote a value: 69 at location:9 at timestamp: 805.469seconds
+thread 7 wrote a value: 65 at location:4 at timestamp: 805.469seconds
+thread 3 wrote a value: 57 at location:9 at timestamp: 805.469seconds
+thread 5 wrote a value: 32 at location:2 at timestamp: 805.469seconds
+thread 4 wrote a value: 63 at location:2 at timestamp: 805.469seconds
+thread 2 wrote a value: 28 at location:5 at timestamp: 805.469seconds
+thread 1 wrote a value: 20 at location:3 at timestamp: 805.469seconds
+thread 6 wrote a value: 25 at location:3 at timestamp: 805.469seconds
+thread 0 wrote a value: 4 at location:9 at timestamp: 805.492seconds
+thread 1 wrote a value: 9 at location:3 at timestamp: 805.502seconds
+thread 2 wrote a value: 12 at location:9 at timestamp: 805.502seconds
+thread 6 wrote a value: 28 at location:4 at timestamp: 805.502seconds
+thread 8 wrote a value: 41 at location:4 at timestamp: 805.513seconds
+thread 9 wrote a value: 62 at location:1 at timestamp: 805.513seconds
+thread 4 wrote a value: 42 at location:8 at timestamp: 805.513seconds
+thread 5 wrote a value: 97 at location:8 at timestamp: 805.513seconds
+thread 3 wrote a value: 33 at location:2 at timestamp: 805.513seconds
+thread 7 wrote a value: 48 at location:0 at timestamp: 805.513seconds
+thread 0 wrote a value: 6 at location:0 at timestamp: 805.523seconds
+thread 6 wrote a value: 50 at location:6 at timestamp: 805.534seconds
+thread 7 wrote a value: 93 at location:4 at timestamp: 805.546seconds
+thread 0 wrote a value: 50 at location:9 at timestamp: 805.556seconds
+thread 2 wrote a value: 36 at location:1 at timestamp: 805.556seconds
+thread 4 wrote a value: 83 at location:0 at timestamp: 805.567seconds
+thread 3 wrote a value: 25 at location:8 at timestamp: 805.567seconds
+thread 5 wrote a value: 20 at location:3 at timestamp: 805.567seconds
+thread 6 wrote a value: 60 at location:0 at timestamp: 805.567seconds
+thread 1 wrote a value: 13 at location:3 at timestamp: 805.58seconds
+thread 8 wrote a value: 4 at location:1 at timestamp: 805.58seconds
+thread 9 wrote a value: 29 at location:5 at timestamp: 805.58seconds
+thread 6 wrote a value: 93 at location:7 at timestamp: 805.601seconds
+thread 8 wrote a value: 57 at location:5 at timestamp: 805.616seconds
+thread 1 wrote a value: 57 at location:5 at timestamp: 805.616seconds
+thread 9 wrote a value: 71 at location:7 at timestamp: 805.616seconds
+thread 4 wrote a value: 33 at location:9 at timestamp: 805.626seconds
+thread 5 wrote a value: 13 at location:3 at timestamp: 805.626seconds
+thread 3 wrote a value: 33 at location:9 at timestamp: 805.626seconds
+thread 7 wrote a value: 20 at location:0 at timestamp: 805.626seconds
+thread 0 wrote a value: 30 at location:8 at timestamp: 805.626seconds
+thread 2 wrote a value: 40 at location:8 at timestamp: 805.626seconds
+thread 6 wrote a value: 82 at location:3 at timestamp: 805.636seconds
+thread 2 wrote a value: 28 at location:5 at timestamp: 805.674seconds
+thread 0 wrote a value: 67 at location:8 at timestamp: 805.674seconds
+thread 6 wrote a value: 54 at location:4 at timestamp: 805.674seconds
+thread 8 wrote a value: 27 at location:9 at timestamp: 805.674seconds
+thread 7 wrote a value: 55 at location:3 at timestamp: 805.674seconds
+thread 3 wrote a value: 6 at location:2 at timestamp: 805.674seconds
+thread 5 wrote a value: 5 at location:0 at timestamp: 805.674seconds
+thread 1 wrote a value: 94 at location:7 at timestamp: 805.684seconds
+thread 4 wrote a value: 32 at location:4 at timestamp: 805.684seconds
+thread 9 wrote a value: 91 at location:3 at timestamp: 805.684seconds
+
+
+got 3th snapshot at timestamp: 805.692 as:
+5, 4, 6, 55, 54, 28, 50, 94, 67, 27, 
+
+thread 6 wrote a value: 97 at location:3 at timestamp: 805.722seconds
+thread 8 wrote a value: 5 at location:1 at timestamp: 805.722seconds
+thread 3 wrote a value: 65 at location:7 at timestamp: 805.722seconds
+thread 0 wrote a value: 99 at location:3 at timestamp: 805.722seconds
+thread 7 wrote a value: 27 at location:9 at timestamp: 805.722seconds
+thread 9 wrote a value: 92 at location:3 at timestamp: 805.722seconds
+thread 5 wrote a value: 99 at location:8 at timestamp: 805.722seconds
+thread 1 wrote a value: 54 at location:8 at timestamp: 805.733seconds
+thread 2 wrote a value: 16 at location:8 at timestamp: 805.733seconds
+thread 4 wrote a value: 63 at location:9 at timestamp: 805.733seconds
+thread 4 wrote a value: 25 at location:7 at timestamp: 805.769seconds
+thread 5 wrote a value: 20 at location:8 at timestamp: 805.769seconds
+thread 3 wrote a value: 85 at location:1 at timestamp: 805.77seconds
+thread 6 wrote a value: 33 at location:3 at timestamp: 805.782seconds
+thread 9 wrote a value: 9 at location:8 at timestamp: 805.782seconds
+thread 1 wrote a value: 33 at location:0 at timestamp: 805.782seconds
+thread 0 wrote a value: 84 at location:1 at timestamp: 805.782seconds
+thread 2 wrote a value: 16 at location:0 at timestamp: 805.782seconds
+thread 8 wrote a value: 86 at location:5 at timestamp: 805.782seconds
+thread 7 wrote a value: 15 at location:5 at timestamp: 805.782seconds
+thread 3 wrote a value: 87 at location:6 at timestamp: 805.805seconds
+thread 7 wrote a value: 39 at location:7 at timestamp: 805.817seconds
+thread 8 wrote a value: 81 at location:4 at timestamp: 805.83seconds
+thread 9 wrote a value: 16 at location:6 at timestamp: 805.83seconds
+thread 1 wrote a value: 23 at location:9 at timestamp: 805.842seconds
+thread 2 wrote a value: 98 at location:0 at timestamp: 805.842seconds
+thread 3 wrote a value: 11 at location:2 at timestamp: 805.842seconds
+thread 4 wrote a value: 29 at location:6 at timestamp: 805.842seconds
+thread 0 wrote a value: 52 at location:1 at timestamp: 805.843seconds
+thread 7 wrote a value: 59 at location:3 at timestamp: 805.853seconds
+thread 5 wrote a value: 94 at location:5 at timestamp: 805.853seconds
+thread 6 wrote a value: 2 at location:5 at timestamp: 805.853seconds
+thread 9 wrote a value: 42 at location:0 at timestamp: 805.877seconds
+thread 5 wrote a value: 71 at location:3 at timestamp: 805.888seconds
+thread 4 wrote a value: 50 at location:5 at timestamp: 805.901seconds
+thread 0 wrote a value: 4 at location:4 at timestamp: 805.901seconds
+thread 8 wrote a value: 78 at location:2 at timestamp: 805.901seconds
+thread 3 wrote a value: 13 at location:2 at timestamp: 805.901seconds
+thread 6 wrote a value: 70 at location:9 at timestamp: 805.901seconds
+thread 7 wrote a value: 27 at location:1 at timestamp: 805.901seconds
+thread 2 wrote a value: 5 at location:6 at timestamp: 805.901seconds
+thread 1 wrote a value: 95 at location:9 at timestamp: 805.901seconds
+thread 9 wrote a value: 23 at location:6 at timestamp: 805.912seconds
+thread 5 wrote a value: 23 at location:5 at timestamp: 805.925seconds
+thread 1 wrote a value: 4 at location:1 at timestamp: 805.937seconds
+thread 9 wrote a value: 49 at location:4 at timestamp: 805.949seconds
+thread 3 wrote a value: 79 at location:8 at timestamp: 805.961seconds
+thread 0 wrote a value: 67 at location:5 at timestamp: 805.961seconds
+thread 5 wrote a value: 22 at location:4 at timestamp: 805.961seconds
+thread 4 wrote a value: 60 at location:0 at timestamp: 805.961seconds
+thread 7 wrote a value: 9 at location:6 at timestamp: 805.962seconds
+thread 8 wrote a value: 97 at location:6 at timestamp: 805.962seconds
+thread 2 wrote a value: 23 at location:1 at timestamp: 805.962seconds
+thread 6 wrote a value: 79 at location:8 at timestamp: 805.962seconds
+thread 9 wrote a value: 62 at location:8 at timestamp: 805.986seconds
+thread 7 wrote a value: 83 at location:6 at timestamp: 805.996seconds
+thread 1 wrote a value: 61 at location:8 at timestamp: 805.996seconds
+thread 4 wrote a value: 85 at location:1 at timestamp: 806.008seconds
+thread 3 wrote a value: 24 at location:5 at timestamp: 806.009seconds
+thread 5 wrote a value: 95 at location:7 at timestamp: 806.009seconds
+thread 8 wrote a value: 17 at location:4 at timestamp: 806.009seconds
+thread 6 wrote a value: 24 at location:9 at timestamp: 806.009seconds
+thread 2 wrote a value: 53 at location:1 at timestamp: 806.009seconds
+thread 0 wrote a value: 19 at location:8 at timestamp: 806.009seconds
+thread 9 wrote a value: 79 at location:5 at timestamp: 806.021seconds
+thread 1 wrote a value: 8 at location:4 at timestamp: 806.033seconds
+
+
+got 4th snapshot at timestamp: 806.033 as:
+60, 53, 13, 71, 17, 24, 83, 95, 19, 24, 
+
+thread 0 wrote a value: 66 at location:4 at timestamp: 806.057seconds
+thread 7 wrote a value: 69 at location:6 at timestamp: 806.057seconds
+thread 9 wrote a value: 16 at location:8 at timestamp: 806.057seconds
+thread 8 wrote a value: 46 at location:8 at timestamp: 806.057seconds
+thread 6 wrote a value: 56 at location:2 at timestamp: 806.067seconds
+thread 1 wrote a value: 87 at location:1 at timestamp: 806.067seconds
+thread 3 wrote a value: 99 at location:3 at timestamp: 806.067seconds
+thread 4 wrote a value: 99 at location:3 at timestamp: 806.067seconds
+thread 2 wrote a value: 29 at location:7 at timestamp: 806.068seconds
+thread 5 wrote a value: 89 at location:4 at timestamp: 806.078seconds
+thread 4 wrote a value: 83 at location:3 at timestamp: 806.114seconds
+thread 7 wrote a value: 94 at location:4 at timestamp: 806.114seconds
+thread 3 wrote a value: 90 at location:7 at timestamp: 806.114seconds
+thread 5 wrote a value: 49 at location:4 at timestamp: 806.114seconds
+thread 2 wrote a value: 17 at location:0 at timestamp: 806.114seconds
+thread 8 wrote a value: 63 at location:4 at timestamp: 806.117seconds
+thread 9 wrote a value: 63 at location:4 at timestamp: 806.117seconds
+thread 6 wrote a value: 82 at location:9 at timestamp: 806.124seconds
+thread 1 wrote a value: 82 at location:9 at timestamp: 806.125seconds
+thread 0 wrote a value: 29 at location:1 at timestamp: 806.125seconds
+thread 1 wrote a value: 81 at location:6 at timestamp: 806.159seconds
+thread 0 wrote a value: 7 at location:6 at timestamp: 806.159seconds
+thread 9 wrote a value: 19 at location:9 at timestamp: 806.162seconds
+thread 8 wrote a value: 7 at location:1 at timestamp: 806.162seconds
+thread 2 wrote a value: 7 at location:9 at timestamp: 806.172seconds
+thread 4 wrote a value: 17 at location:1 at timestamp: 806.172seconds
+thread 6 wrote a value: 25 at location:9 at timestamp: 806.172seconds
+thread 5 wrote a value: 59 at location:8 at timestamp: 806.172seconds
+thread 7 wrote a value: 75 at location:1 at timestamp: 806.172seconds
+thread 3 wrote a value: 33 at location:3 at timestamp: 806.172seconds
+thread 3 wrote a value: 52 at location:7 at timestamp: 806.206seconds
+thread 6 wrote a value: 96 at location:3 at timestamp: 806.216seconds
+thread 4 wrote a value: 11 at location:6 at timestamp: 806.217seconds
+thread 2 wrote a value: 5 at location:5 at timestamp: 806.217seconds
+thread 9 wrote a value: 18 at location:6 at timestamp: 806.217seconds
+thread 5 wrote a value: 25 at location:4 at timestamp: 806.217seconds
+thread 0 wrote a value: 8 at location:3 at timestamp: 806.217seconds
+thread 8 wrote a value: 98 at location:2 at timestamp: 806.217seconds
+thread 7 wrote a value: 44 at location:6 at timestamp: 806.217seconds
+thread 1 wrote a value: 77 at location:9 at timestamp: 806.217seconds
+thread 3 wrote a value: 46 at location:0 at timestamp: 806.24seconds
+thread 1 wrote a value: 92 at location:6 at timestamp: 806.25seconds
+thread 8 wrote a value: 73 at location:6 at timestamp: 806.262seconds
+thread 4 wrote a value: 55 at location:8 at timestamp: 806.262seconds
+thread 9 wrote a value: 88 at location:4 at timestamp: 806.263seconds
+thread 6 wrote a value: 18 at location:1 at timestamp: 806.263seconds
+thread 2 wrote a value: 7 at location:6 at timestamp: 806.263seconds
+thread 5 wrote a value: 99 at location:1 at timestamp: 806.263seconds
+thread 7 wrote a value: 62 at location:2 at timestamp: 806.263seconds
+thread 0 wrote a value: 69 at location:2 at timestamp: 806.263seconds
+thread 1 wrote a value: 88 at location:9 at timestamp: 806.286seconds
+thread 0 wrote a value: 33 at location:9 at timestamp: 806.296seconds
+thread 8 wrote a value: 70 at location:9 at timestamp: 806.307seconds
+thread 2 wrote a value: 7 at location:8 at timestamp: 806.307seconds
+thread 4 wrote a value: 7 at location:6 at timestamp: 806.307seconds
+thread 5 wrote a value: 64 at location:9 at timestamp: 806.307seconds
+thread 9 wrote a value: 77 at location:7 at timestamp: 806.307seconds
+thread 3 wrote a value: 71 at location:3 at timestamp: 806.307seconds
+thread 1 wrote a value: 63 at location:0 at timestamp: 806.317seconds
+thread 7 wrote a value: 32 at location:1 at timestamp: 806.317seconds
+thread 0 wrote a value: 39 at location:0 at timestamp: 806.33seconds
+thread 6 wrote a value: 79 at location:2 at timestamp: 806.33seconds
+thread 3 wrote a value: 20 at location:3 at timestamp: 806.353seconds
+thread 5 wrote a value: 20 at location:0 at timestamp: 806.353seconds
+thread 9 wrote a value: 34 at location:9 at timestamp: 806.353seconds
+thread 7 wrote a value: 45 at location:7 at timestamp: 806.353seconds
+thread 0 wrote a value: 54 at location:7 at timestamp: 806.364seconds
+thread 6 wrote a value: 73 at location:0 at timestamp: 806.377seconds
+thread 4 wrote a value: 41 at location:4 at timestamp: 806.377seconds
+thread 8 wrote a value: 77 at location:0 at timestamp: 806.377seconds
+thread 2 wrote a value: 2 at location:6 at timestamp: 806.377seconds
+thread 7 wrote a value: 45 at location:0 at timestamp: 806.389seconds
+thread 1 wrote a value: 50 at location:4 at timestamp: 806.4seconds
+thread 0 wrote a value: 86 at location:7 at timestamp: 806.4seconds
+thread 3 wrote a value: 11 at location:6 at timestamp: 806.411seconds
+thread 5 wrote a value: 62 at location:1 at timestamp: 806.421seconds
+thread 9 wrote a value: 45 at location:4 at timestamp: 806.421seconds
+thread 7 wrote a value: 14 at location:4 at timestamp: 806.421seconds
+thread 8 wrote a value: 49 at location:0 at timestamp: 806.421seconds
+thread 4 wrote a value: 44 at location:8 at timestamp: 806.422seconds
+thread 6 wrote a value: 44 at location:8 at timestamp: 806.422seconds
+thread 0 wrote a value: 87 at location:0 at timestamp: 806.434seconds
+thread 2 wrote a value: 46 at location:8 at timestamp: 806.434seconds
+thread 4 wrote a value: 73 at location:4 at timestamp: 806.459seconds
+thread 7 wrote a value: 69 at location:3 at timestamp: 806.471seconds
+thread 5 wrote a value: 93 at location:2 at timestamp: 806.471seconds
+thread 1 wrote a value: 21 at location:7 at timestamp: 806.471seconds
+thread 2 wrote a value: 55 at location:1 at timestamp: 806.471seconds
+thread 3 wrote a value: 81 at location:2 at timestamp: 806.471seconds
+thread 9 wrote a value: 85 at location:1 at timestamp: 806.471seconds
+thread 6 wrote a value: 45 at location:8 at timestamp: 806.481seconds
+thread 8 wrote a value: 34 at location:1 at timestamp: 806.481seconds
+thread 0 wrote a value: 6 at location:1 at timestamp: 806.481seconds
+thread 4 wrote a value: 78 at location:1 at timestamp: 806.493seconds
+thread 8 wrote a value: 13 at location:8 at timestamp: 806.515seconds
+thread 4 wrote a value: 39 at location:0 at timestamp: 806.527seconds
+thread 2 wrote a value: 96 at location:8 at timestamp: 806.54seconds
+thread 1 wrote a value: 81 at location:8 at timestamp: 806.54seconds
+thread 0 wrote a value: 97 at location:1 at timestamp: 806.54seconds
+thread 3 wrote a value: 26 at location:3 at timestamp: 806.54seconds
+thread 6 wrote a value: 70 at location:4 at timestamp: 806.54seconds
+thread 7 wrote a value: 21 at location:2 at timestamp: 806.54seconds
+thread 9 wrote a value: 57 at location:6 at timestamp: 806.54seconds
+thread 5 wrote a value: 60 at location:0 at timestamp: 806.54seconds
+thread 8 wrote a value: 79 at location:6 at timestamp: 806.55seconds
+thread 4 wrote a value: 17 at location:8 at timestamp: 806.56seconds
+thread 2 wrote a value: 88 at location:3 at timestamp: 806.588seconds
+thread 1 wrote a value: 96 at location:1 at timestamp: 806.589seconds
+thread 4 wrote a value: 4 at location:0 at timestamp: 806.596seconds
+thread 3 wrote a value: 23 at location:9 at timestamp: 806.6seconds
+thread 8 wrote a value: 91 at location:5 at timestamp: 806.6seconds
+thread 5 wrote a value: 21 at location:1 at timestamp: 806.6seconds
+thread 6 wrote a value: 61 at location:3 at timestamp: 806.6seconds
+thread 9 wrote a value: 63 at location:7 at timestamp: 806.6seconds
+thread 0 wrote a value: 11 at location:0 at timestamp: 806.6seconds
+thread 7 wrote a value: 55 at location:3 at timestamp: 806.6seconds
+thread 7 wrote a value: 40 at location:5 at timestamp: 806.631seconds
+thread 1 wrote a value: 91 at location:7 at timestamp: 806.631seconds
+thread 2 wrote a value: 74 at location:8 at timestamp: 806.631seconds
+thread 3 wrote a value: 12 at location:3 at timestamp: 806.643seconds
+thread 0 wrote a value: 4 at location:5 at timestamp: 806.643seconds
+thread 9 wrote a value: 41 at location:5 at timestamp: 806.643seconds
+thread 8 wrote a value: 11 at location:9 at timestamp: 806.643seconds
+thread 4 wrote a value: 32 at location:3 at timestamp: 806.643seconds
+thread 6 wrote a value: 19 at location:3 at timestamp: 806.643seconds
+thread 5 wrote a value: 55 at location:6 at timestamp: 806.643seconds
+thread 6 wrote a value: 47 at location:1 at timestamp: 806.675seconds
+thread 2 wrote a value: 56 at location:5 at timestamp: 806.685seconds
+thread 7 wrote a value: 80 at location:7 at timestamp: 806.685seconds
+thread 3 wrote a value: 39 at location:3 at timestamp: 806.685seconds
+thread 0 wrote a value: 10 at location:9 at timestamp: 806.685seconds
+thread 4 wrote a value: 57 at location:7 at timestamp: 806.685seconds
+thread 9 wrote a value: 5 at location:2 at timestamp: 806.686seconds
+thread 5 wrote a value: 11 at location:1 at timestamp: 806.686seconds
+thread 1 wrote a value: 31 at location:9 at timestamp: 806.69seconds
+thread 8 wrote a value: 1 at location:7 at timestamp: 806.69seconds
+thread 6 wrote a value: 71 at location:8 at timestamp: 806.708seconds
+thread 1 wrote a value: 20 at location:3 at timestamp: 806.726seconds
+
+
+got 5th snapshot at timestamp: 806.726 as:
+4, 47, 5, 39, 70, 56, 55, 57, 74, 10, 
+
+thread 4 wrote a value: 88 at location:0 at timestamp: 806.728seconds
+thread 7 wrote a value: 77 at location:5 at timestamp: 806.728seconds
+thread 9 wrote a value: 4 at location:5 at timestamp: 806.729seconds
+thread 3 wrote a value: 23 at location:4 at timestamp: 806.729seconds
+thread 0 wrote a value: 69 at location:6 at timestamp: 806.729seconds
+thread 2 wrote a value: 50 at location:2 at timestamp: 806.732seconds
+thread 5 wrote a value: 23 at location:8 at timestamp: 806.742seconds
+thread 6 wrote a value: 14 at location:5 at timestamp: 806.742seconds
+thread 8 wrote a value: 83 at location:5 at timestamp: 806.746seconds
+thread 8 wrote a value: 92 at location:4 at timestamp: 806.783seconds
+thread 9 wrote a value: 26 at location:6 at timestamp: 806.784seconds
+thread 1 wrote a value: 85 at location:2 at timestamp: 806.784seconds
+thread 7 wrote a value: 16 at location:6 at timestamp: 806.784seconds
+thread 4 wrote a value: 6 at location:4 at timestamp: 806.784seconds
+thread 2 wrote a value: 27 at location:8 at timestamp: 806.793seconds
+thread 5 wrote a value: 54 at location:8 at timestamp: 806.793seconds
+thread 6 wrote a value: 1 at location:0 at timestamp: 806.793seconds
+thread 0 wrote a value: 62 at location:7 at timestamp: 806.793seconds
+thread 3 wrote a value: 31 at location:9 at timestamp: 806.793seconds
+thread 7 wrote a value: 3 at location:6 at timestamp: 806.827seconds
+thread 3 wrote a value: 66 at location:2 at timestamp: 806.827seconds
+thread 1 wrote a value: 85 at location:5 at timestamp: 806.827seconds
+thread 4 wrote a value: 65 at location:0 at timestamp: 806.827seconds
+thread 9 wrote a value: 78 at location:2 at timestamp: 806.837seconds
+thread 0 wrote a value: 10 at location:3 at timestamp: 806.837seconds
+thread 5 wrote a value: 78 at location:3 at timestamp: 806.837seconds
+thread 2 wrote a value: 17 at location:3 at timestamp: 806.838seconds
+thread 8 wrote a value: 66 at location:6 at timestamp: 806.838seconds
+thread 6 wrote a value: 17 at location:3 at timestamp: 806.838seconds
+thread 4 wrote a value: 41 at location:5 at timestamp: 806.858seconds
+thread 6 wrote a value: 93 at location:3 at timestamp: 806.875seconds
+thread 8 wrote a value: 66 at location:8 at timestamp: 806.882seconds
+thread 5 wrote a value: 46 at location:0 at timestamp: 806.882seconds
+thread 1 wrote a value: 2 at location:6 at timestamp: 806.882seconds
+thread 7 wrote a value: 79 at location:8 at timestamp: 806.883seconds
+thread 3 wrote a value: 39 at location:7 at timestamp: 806.883seconds
+thread 4 wrote a value: 64 at location:2 at timestamp: 806.895seconds
+thread 0 wrote a value: 24 at location:1 at timestamp: 806.895seconds
+thread 2 wrote a value: 90 at location:3 at timestamp: 806.895seconds
+thread 9 wrote a value: 90 at location:3 at timestamp: 806.9seconds
+thread 7 wrote a value: 48 at location:9 at timestamp: 806.917seconds
+thread 9 wrote a value: 75 at location:6 at timestamp: 806.938seconds
+thread 1 wrote a value: 35 at location:3 at timestamp: 806.938seconds
+thread 3 wrote a value: 41 at location:7 at timestamp: 806.939seconds
+thread 8 wrote a value: 41 at location:7 at timestamp: 806.939seconds
+thread 0 wrote a value: 15 at location:4 at timestamp: 806.939seconds
+thread 5 wrote a value: 35 at location:7 at timestamp: 806.939seconds
+thread 2 wrote a value: 33 at location:2 at timestamp: 806.939seconds
+thread 4 wrote a value: 15 at location:4 at timestamp: 806.939seconds
+thread 7 wrote a value: 96 at location:3 at timestamp: 806.954seconds
+thread 6 wrote a value: 97 at location:5 at timestamp: 806.963seconds
+thread 2 wrote a value: 55 at location:5 at timestamp: 806.973seconds
+thread 2 wrote a value: 79 at location:3 at timestamp: 807.007seconds
+thread 4 wrote a value: 72 at location:0 at timestamp: 807.007seconds
+thread 8 wrote a value: 73 at location:4 at timestamp: 807.007seconds
+thread 6 wrote a value: 1 at location:4 at timestamp: 807.011seconds
+thread 7 wrote a value: 31 at location:1 at timestamp: 807.011seconds
+thread 1 wrote a value: 78 at location:0 at timestamp: 807.011seconds
+thread 5 wrote a value: 3 at location:7 at timestamp: 807.017seconds
+thread 3 wrote a value: 33 at location:0 at timestamp: 807.017seconds
+thread 9 wrote a value: 11 at location:3 at timestamp: 807.017seconds
+thread 0 wrote a value: 95 at location:2 at timestamp: 807.018seconds
+thread 9 wrote a value: 11 at location:3 at timestamp: 807.051seconds
+thread 2 wrote a value: 71 at location:4 at timestamp: 807.051seconds
+thread 6 wrote a value: 14 at location:3 at timestamp: 807.054seconds
+thread 1 wrote a value: 76 at location:1 at timestamp: 807.054seconds
+thread 7 wrote a value: 70 at location:8 at timestamp: 807.054seconds
+thread 4 wrote a value: 69 at location:5 at timestamp: 807.063seconds
+thread 5 wrote a value: 74 at location:3 at timestamp: 807.063seconds
+thread 0 wrote a value: 89 at location:4 at timestamp: 807.063seconds
+thread 3 wrote a value: 45 at location:7 at timestamp: 807.063seconds
+thread 8 wrote a value: 29 at location:2 at timestamp: 807.064seconds
+
+
+got 6th snapshot at timestamp: 807.067 as:
+72, 76, 29, 11, 89, 69, 75, 45, 70, 48, 
+
+thread 4 wrote a value: 58 at location:1 at timestamp: 807.1seconds
+thread 1 wrote a value: 17 at location:1 at timestamp: 807.101seconds
+thread 7 wrote a value: 94 at location:8 at timestamp: 807.101seconds
+thread 6 wrote a value: 85 at location:2 at timestamp: 807.101seconds
+thread 9 wrote a value: 77 at location:1 at timestamp: 807.108seconds
+thread 2 wrote a value: 77 at location:1 at timestamp: 807.108seconds
+thread 0 wrote a value: 25 at location:8 at timestamp: 807.112seconds
+thread 5 wrote a value: 50 at location:7 at timestamp: 807.112seconds
+thread 8 wrote a value: 23 at location:0 at timestamp: 807.112seconds
+thread 3 wrote a value: 20 at location:1 at timestamp: 807.112seconds
+thread 3 wrote a value: 58 at location:2 at timestamp: 807.143seconds
+thread 6 wrote a value: 8 at location:2 at timestamp: 807.143seconds
+thread 7 wrote a value: 8 at location:2 at timestamp: 807.143seconds
+thread 9 wrote a value: 34 at location:1 at timestamp: 807.154seconds
+thread 0 wrote a value: 77 at location:0 at timestamp: 807.154seconds
+thread 4 wrote a value: 47 at location:6 at timestamp: 807.154seconds
+thread 1 wrote a value: 1 at location:5 at timestamp: 807.154seconds
+thread 5 wrote a value: 36 at location:3 at timestamp: 807.154seconds
+thread 2 wrote a value: 34 at location:1 at timestamp: 807.154seconds
+thread 8 wrote a value: 63 at location:1 at timestamp: 807.154seconds
+thread 7 wrote a value: 27 at location:7 at timestamp: 807.175seconds
+thread 8 wrote a value: 73 at location:9 at timestamp: 807.187seconds
+thread 0 wrote a value: 15 at location:4 at timestamp: 807.199seconds
+thread 9 wrote a value: 15 at location:5 at timestamp: 807.199seconds
+thread 2 wrote a value: 78 at location:7 at timestamp: 807.199seconds
+thread 7 wrote a value: 2 at location:8 at timestamp: 807.209seconds
+thread 1 wrote a value: 62 at location:9 at timestamp: 807.209seconds
+thread 3 wrote a value: 60 at location:6 at timestamp: 807.209seconds
+thread 6 wrote a value: 60 at location:6 at timestamp: 807.21seconds
+thread 5 wrote a value: 70 at location:8 at timestamp: 807.21seconds
+thread 4 wrote a value: 59 at location:5 at timestamp: 807.21seconds
+thread 8 wrote a value: 67 at location:9 at timestamp: 807.222seconds
+thread 9 wrote a value: 56 at location:8 at timestamp: 807.246seconds
+thread 0 wrote a value: 13 at location:4 at timestamp: 807.246seconds
+thread 2 wrote a value: 42 at location:2 at timestamp: 807.258seconds
+thread 1 wrote a value: 11 at location:6 at timestamp: 807.259seconds
+thread 6 wrote a value: 91 at location:8 at timestamp: 807.259seconds
+thread 5 wrote a value: 90 at location:9 at timestamp: 807.259seconds
+thread 4 wrote a value: 42 at location:6 at timestamp: 807.259seconds
+thread 7 wrote a value: 16 at location:7 at timestamp: 807.259seconds
+thread 3 wrote a value: 47 at location:6 at timestamp: 807.259seconds
+thread 8 wrote a value: 82 at location:9 at timestamp: 807.259seconds
+thread 3 wrote a value: 88 at location:4 at timestamp: 807.293seconds
+thread 0 wrote a value: 89 at location:2 at timestamp: 807.293seconds
+thread 9 wrote a value: 58 at location:5 at timestamp: 807.293seconds
+thread 1 wrote a value: 91 at location:2 at timestamp: 807.303seconds
+thread 8 wrote a value: 70 at location:9 at timestamp: 807.303seconds
+thread 5 wrote a value: 77 at location:2 at timestamp: 807.303seconds
+thread 2 wrote a value: 33 at location:2 at timestamp: 807.303seconds
+thread 6 wrote a value: 94 at location:7 at timestamp: 807.303seconds
+thread 7 wrote a value: 86 at location:9 at timestamp: 807.303seconds
+thread 4 wrote a value: 79 at location:5 at timestamp: 807.303seconds
+thread 4 wrote a value: 21 at location:4 at timestamp: 807.337seconds
+thread 3 wrote a value: 4 at location:5 at timestamp: 807.349seconds
+thread 9 wrote a value: 68 at location:8 at timestamp: 807.349seconds
+thread 7 wrote a value: 39 at location:3 at timestamp: 807.349seconds
+thread 0 wrote a value: 83 at location:2 at timestamp: 807.349seconds
+thread 2 wrote a value: 76 at location:6 at timestamp: 807.349seconds
+thread 5 wrote a value: 55 at location:3 at timestamp: 807.349seconds
+thread 8 wrote a value: 55 at location:3 at timestamp: 807.349seconds
+thread 1 wrote a value: 56 at location:2 at timestamp: 807.349seconds
+thread 6 wrote a value: 84 at location:0 at timestamp: 807.349seconds
+thread 3 wrote a value: 56 at location:6 at timestamp: 807.382seconds
+thread 7 wrote a value: 23 at location:9 at timestamp: 807.393seconds
+thread 8 wrote a value: 23 at location:9 at timestamp: 807.393seconds
+thread 6 wrote a value: 1 at location:8 at timestamp: 807.393seconds
+thread 9 wrote a value: 43 at location:1 at timestamp: 807.393seconds
+thread 4 wrote a value: 49 at location:6 at timestamp: 807.393seconds
+thread 1 wrote a value: 68 at location:8 at timestamp: 807.393seconds
+thread 2 wrote a value: 66 at location:3 at timestamp: 807.393seconds
+thread 5 wrote a value: 23 at location:5 at timestamp: 807.393seconds
+thread 0 wrote a value: 6 at location:5 at timestamp: 807.393seconds
+thread 3 wrote a value: 21 at location:2 at timestamp: 807.425seconds
+thread 0 wrote a value: 42 at location:8 at timestamp: 807.429seconds
+thread 1 wrote a value: 89 at location:1 at timestamp: 807.435seconds
+thread 2 wrote a value: 70 at location:9 at timestamp: 807.435seconds
+thread 4 wrote a value: 98 at location:3 at timestamp: 807.435seconds
+thread 8 wrote a value: 13 at location:6 at timestamp: 807.435seconds
+thread 9 wrote a value: 16 at location:9 at timestamp: 807.435seconds
+thread 6 wrote a value: 51 at location:9 at timestamp: 807.435seconds
+thread 7 wrote a value: 69 at location:5 at timestamp: 807.438seconds
+thread 5 wrote a value: 11 at location:1 at timestamp: 807.442seconds
+thread 2 wrote a value: 36 at location:6 at timestamp: 807.48seconds
+thread 4 wrote a value: 26 at location:8 at timestamp: 807.48seconds
+thread 1 wrote a value: 80 at location:3 at timestamp: 807.48seconds
+thread 5 wrote a value: 85 at location:3 at timestamp: 807.481seconds
+thread 8 wrote a value: 35 at location:2 at timestamp: 807.484seconds
+thread 6 wrote a value: 35 at location:2 at timestamp: 807.484seconds
+thread 3 wrote a value: 65 at location:3 at timestamp: 807.484seconds
+thread 7 wrote a value: 91 at location:3 at timestamp: 807.485seconds
+thread 9 wrote a value: 9 at location:5 at timestamp: 807.485seconds
+thread 0 wrote a value: 64 at location:0 at timestamp: 807.493seconds
+thread 0 wrote a value: 6 at location:3 at timestamp: 807.528seconds
+thread 1 wrote a value: 19 at location:4 at timestamp: 807.528seconds
+thread 5 wrote a value: 20 at location:0 at timestamp: 807.528seconds
+thread 3 wrote a value: 73 at location:6 at timestamp: 807.533seconds
+thread 7 wrote a value: 80 at location:1 at timestamp: 807.534seconds
+thread 9 wrote a value: 71 at location:8 at timestamp: 807.534seconds
+thread 8 wrote a value: 13 at location:2 at timestamp: 807.534seconds
+thread 6 wrote a value: 71 at location:3 at timestamp: 807.534seconds
+thread 4 wrote a value: 40 at location:6 at timestamp: 807.538seconds
+thread 2 wrote a value: 99 at location:8 at timestamp: 807.538seconds
+thread 2 wrote a value: 68 at location:6 at timestamp: 807.573seconds
+thread 6 wrote a value: 78 at location:4 at timestamp: 807.579seconds
+thread 7 wrote a value: 65 at location:4 at timestamp: 807.579seconds
+thread 3 wrote a value: 12 at location:2 at timestamp: 807.579seconds
+thread 8 wrote a value: 88 at location:0 at timestamp: 807.579seconds
+thread 9 wrote a value: 88 at location:9 at timestamp: 807.583seconds
+thread 5 wrote a value: 43 at location:1 at timestamp: 807.584seconds
+thread 4 wrote a value: 43 at location:7 at timestamp: 807.584seconds
+thread 0 wrote a value: 92 at location:8 at timestamp: 807.584seconds
+thread 1 wrote a value: 45 at location:9 at timestamp: 807.584seconds
+thread 1 wrote a value: 18 at location:1 at timestamp: 807.615seconds
+thread 3 wrote a value: 34 at location:9 at timestamp: 807.625seconds
+thread 8 wrote a value: 19 at location:7 at timestamp: 807.625seconds
+thread 6 wrote a value: 87 at location:6 at timestamp: 807.625seconds
+thread 7 wrote a value: 87 at location:6 at timestamp: 807.625seconds
+thread 9 wrote a value: 84 at location:8 at timestamp: 807.625seconds
+thread 2 wrote a value: 3 at location:9 at timestamp: 807.625seconds
+thread 5 wrote a value: 79 at location:8 at timestamp: 807.625seconds
+thread 0 wrote a value: 82 at location:4 at timestamp: 807.625seconds
+thread 4 wrote a value: 28 at location:2 at timestamp: 807.625seconds
+thread 4 wrote a value: 80 at location:8 at timestamp: 807.663seconds
+thread 1 wrote a value: 89 at location:5 at timestamp: 807.673seconds
+thread 8 wrote a value: 78 at location:3 at timestamp: 807.673seconds
+thread 3 wrote a value: 96 at location:3 at timestamp: 807.673seconds
+thread 7 wrote a value: 10 at location:7 at timestamp: 807.673seconds
+thread 6 wrote a value: 87 at location:4 at timestamp: 807.673seconds
+thread 2 wrote a value: 41 at location:2 at timestamp: 807.674seconds
+thread 5 wrote a value: 83 at location:2 at timestamp: 807.674seconds
+thread 0 wrote a value: 31 at location:5 at timestamp: 807.674seconds
+thread 9 wrote a value: 87 at location:6 at timestamp: 807.674seconds
+thread 9 wrote a value: 0 at location:7 at timestamp: 807.708seconds
+thread 4 wrote a value: 94 at location:4 at timestamp: 807.708seconds
+thread 8 wrote a value: 37 at location:4 at timestamp: 807.719seconds
+thread 7 wrote a value: 55 at location:9 at timestamp: 807.719seconds
+thread 0 wrote a value: 91 at location:1 at timestamp: 807.719seconds
+thread 1 wrote a value: 99 at location:3 at timestamp: 807.719seconds
+thread 5 wrote a value: 91 at location:1 at timestamp: 807.719seconds
+thread 6 wrote a value: 40 at location:7 at timestamp: 807.719seconds
+thread 3 wrote a value: 31 at location:1 at timestamp: 807.719seconds
+thread 2 wrote a value: 48 at location:1 at timestamp: 807.719seconds
+thread 4 wrote a value: 11 at location:0 at timestamp: 807.742seconds
+thread 6 wrote a value: 23 at location:3 at timestamp: 807.752seconds
+thread 9 wrote a value: 4 at location:2 at timestamp: 807.752seconds
+
+
+got 7th snapshot at timestamp: 807.753 as:
+88, 91, 83, 99, 37, 31, 87, 0, 80, 55, 
+
+thread 3 wrote a value: 90 at location:2 at timestamp: 807.764seconds
+thread 7 wrote a value: 29 at location:2 at timestamp: 807.765seconds
+thread 5 wrote a value: 58 at location:7 at timestamp: 807.765seconds
+thread 0 wrote a value: 59 at location:6 at timestamp: 807.765seconds
+thread 2 wrote a value: 17 at location:0 at timestamp: 807.765seconds
+thread 1 wrote a value: 58 at location:1 at timestamp: 807.765seconds
+thread 8 wrote a value: 70 at location:0 at timestamp: 807.765seconds
+thread 4 wrote a value: 59 at location:3 at timestamp: 807.775seconds
+thread 6 wrote a value: 12 at location:7 at timestamp: 807.787seconds
+thread 2 wrote a value: 8 at location:0 at timestamp: 807.809seconds
+thread 5 wrote a value: 92 at location:3 at timestamp: 807.821seconds
+thread 9 wrote a value: 87 at location:4 at timestamp: 807.821seconds
+thread 4 wrote a value: 70 at location:4 at timestamp: 807.821seconds
+thread 8 wrote a value: 8 at location:0 at timestamp: 807.821seconds
+thread 7 wrote a value: 92 at location:3 at timestamp: 807.821seconds
+thread 1 wrote a value: 8 at location:0 at timestamp: 807.821seconds
+thread 0 wrote a value: 55 at location:0 at timestamp: 807.821seconds
+thread 6 wrote a value: 71 at location:8 at timestamp: 807.822seconds
+thread 3 wrote a value: 59 at location:4 at timestamp: 807.832seconds
+thread 6 wrote a value: 39 at location:1 at timestamp: 807.865seconds
+thread 2 wrote a value: 63 at location:6 at timestamp: 807.865seconds
+thread 1 wrote a value: 45 at location:6 at timestamp: 807.865seconds
+thread 5 wrote a value: 1 at location:6 at timestamp: 807.865seconds
+thread 0 wrote a value: 80 at location:7 at timestamp: 807.865seconds
+thread 7 wrote a value: 19 at location:7 at timestamp: 807.865seconds
+thread 9 wrote a value: 77 at location:0 at timestamp: 807.865seconds
+thread 3 wrote a value: 87 at location:9 at timestamp: 807.865seconds
+thread 8 wrote a value: 64 at location:0 at timestamp: 807.865seconds
+thread 4 wrote a value: 1 at location:6 at timestamp: 807.877seconds
+thread 7 wrote a value: 82 at location:5 at timestamp: 807.899seconds
+thread 6 wrote a value: 59 at location:7 at timestamp: 807.91seconds
+thread 2 wrote a value: 7 at location:7 at timestamp: 807.91seconds
+thread 5 wrote a value: 11 at location:6 at timestamp: 807.911seconds
+thread 0 wrote a value: 38 at location:8 at timestamp: 807.911seconds
+thread 1 wrote a value: 80 at location:5 at timestamp: 807.911seconds
+thread 3 wrote a value: 59 at location:5 at timestamp: 807.911seconds
+thread 9 wrote a value: 86 at location:6 at timestamp: 807.911seconds
+thread 4 wrote a value: 74 at location:4 at timestamp: 807.911seconds
+thread 8 wrote a value: 59 at location:9 at timestamp: 807.922seconds
+thread 7 wrote a value: 56 at location:4 at timestamp: 807.933seconds
+thread 9 wrote a value: 99 at location:1 at timestamp: 807.944seconds
+thread 2 wrote a value: 94 at location:3 at timestamp: 807.956seconds
+thread 8 wrote a value: 44 at location:9 at timestamp: 807.956seconds
+thread 1 wrote a value: 13 at location:9 at timestamp: 807.967seconds
+thread 6 wrote a value: 92 at location:8 at timestamp: 807.967seconds
+thread 5 wrote a value: 38 at location:7 at timestamp: 807.967seconds
+thread 3 wrote a value: 92 at location:0 at timestamp: 807.967seconds
+thread 4 wrote a value: 78 at location:4 at timestamp: 807.967seconds
+thread 0 wrote a value: 94 at location:3 at timestamp: 807.968seconds
+thread 7 wrote a value: 92 at location:8 at timestamp: 807.978seconds
+thread 9 wrote a value: 50 at location:4 at timestamp: 807.978seconds
+thread 0 wrote a value: 25 at location:1 at timestamp: 808.011seconds
+thread 7 wrote a value: 40 at location:9 at timestamp: 808.011seconds
+thread 3 wrote a value: 42 at location:9 at timestamp: 808.023seconds
+thread 6 wrote a value: 32 at location:9 at timestamp: 808.023seconds
+thread 8 wrote a value: 56 at location:1 at timestamp: 808.023seconds
+thread 4 wrote a value: 90 at location:0 at timestamp: 808.023seconds
+thread 5 wrote a value: 66 at location:9 at timestamp: 808.023seconds
+thread 1 wrote a value: 77 at location:8 at timestamp: 808.023seconds
+thread 2 wrote a value: 14 at location:2 at timestamp: 808.023seconds
+thread 9 wrote a value: 64 at location:9 at timestamp: 808.023seconds
+thread 7 wrote a value: 57 at location:5 at timestamp: 808.046seconds
+thread 9 wrote a value: 93 at location:8 at timestamp: 808.058seconds
+thread 4 wrote a value: 91 at location:7 at timestamp: 808.071seconds
+thread 2 wrote a value: 63 at location:7 at timestamp: 808.071seconds
+thread 5 wrote a value: 11 at location:8 at timestamp: 808.071seconds
+thread 8 wrote a value: 37 at location:6 at timestamp: 808.071seconds
+thread 1 wrote a value: 97 at location:7 at timestamp: 808.071seconds
+thread 3 wrote a value: 73 at location:4 at timestamp: 808.071seconds
+thread 6 wrote a value: 37 at location:6 at timestamp: 808.071seconds
+thread 0 wrote a value: 94 at location:5 at timestamp: 808.071seconds
+thread 7 wrote a value: 80 at location:6 at timestamp: 808.081seconds
+thread 9 wrote a value: 1 at location:2 at timestamp: 808.092seconds
+thread 7 wrote a value: 44 at location:4 at timestamp: 808.117seconds
+thread 1 wrote a value: 50 at location:2 at timestamp: 808.13seconds
+thread 0 wrote a value: 51 at location:6 at timestamp: 808.13seconds
+thread 5 wrote a value: 79 at location:3 at timestamp: 808.13seconds
+thread 3 wrote a value: 32 at location:0 at timestamp: 808.13seconds
+thread 8 wrote a value: 30 at location:0 at timestamp: 808.13seconds
+thread 2 wrote a value: 74 at location:8 at timestamp: 808.13seconds
+thread 6 wrote a value: 57 at location:9 at timestamp: 808.131seconds
+thread 9 wrote a value: 11 at location:8 at timestamp: 808.131seconds
+thread 4 wrote a value: 70 at location:2 at timestamp: 808.141seconds
+thread 6 wrote a value: 16 at location:3 at timestamp: 808.164seconds
+thread 4 wrote a value: 31 at location:2 at timestamp: 808.177seconds
+thread 5 wrote a value: 78 at location:8 at timestamp: 808.19seconds
+thread 7 wrote a value: 45 at location:5 at timestamp: 808.19seconds
+thread 1 wrote a value: 57 at location:3 at timestamp: 808.19seconds
+thread 0 wrote a value: 70 at location:4 at timestamp: 808.19seconds
+thread 3 wrote a value: 76 at location:1 at timestamp: 808.19seconds
+thread 9 wrote a value: 37 at location:9 at timestamp: 808.19seconds
+thread 8 wrote a value: 66 at location:0 at timestamp: 808.19seconds
+thread 2 wrote a value: 91 at location:9 at timestamp: 808.19seconds
+thread 6 wrote a value: 1 at location:3 at timestamp: 808.2seconds
+
+
+got 8th snapshot at timestamp: 808.208 as:
+66, 76, 31, 16, 70, 45, 51, 63, 78, 91, 
+
+thread 4 wrote a value: 83 at location:6 at timestamp: 808.212seconds
+thread 6 wrote a value: 1 at location:4 at timestamp: 808.233seconds
+thread 1 wrote a value: 46 at location:9 at timestamp: 808.233seconds
+thread 7 wrote a value: 46 at location:9 at timestamp: 808.233seconds
+thread 4 wrote a value: 37 at location:7 at timestamp: 808.244seconds
+thread 9 wrote a value: 88 at location:1 at timestamp: 808.244seconds
+thread 2 wrote a value: 80 at location:8 at timestamp: 808.244seconds
+thread 0 wrote a value: 76 at location:7 at timestamp: 808.244seconds
+thread 3 wrote a value: 75 at location:2 at timestamp: 808.244seconds
+thread 8 wrote a value: 65 at location:4 at timestamp: 808.244seconds
+thread 7 wrote a value: 6 at location:9 at timestamp: 808.268seconds
+thread 8 wrote a value: 69 at location:4 at timestamp: 808.28seconds
+thread 2 wrote a value: 49 at location:7 at timestamp: 808.29seconds
+thread 0 wrote a value: 2 at location:7 at timestamp: 808.29seconds
+thread 6 wrote a value: 84 at location:4 at timestamp: 808.29seconds
+thread 3 wrote a value: 66 at location:7 at timestamp: 808.29seconds
+thread 5 wrote a value: 26 at location:9 at timestamp: 808.29seconds
+thread 9 wrote a value: 90 at location:4 at timestamp: 808.29seconds
+thread 1 wrote a value: 26 at location:2 at timestamp: 808.29seconds
+thread 4 wrote a value: 90 at location:4 at timestamp: 808.29seconds
+thread 7 wrote a value: 44 at location:3 at timestamp: 808.301seconds
+thread 1 wrote a value: 94 at location:4 at timestamp: 808.326seconds
+thread 7 wrote a value: 49 at location:3 at timestamp: 808.337seconds
+thread 3 wrote a value: 83 at location:9 at timestamp: 808.348seconds
+thread 8 wrote a value: 86 at location:9 at timestamp: 808.348seconds
+thread 4 wrote a value: 77 at location:5 at timestamp: 808.348seconds
+thread 0 wrote a value: 95 at location:0 at timestamp: 808.348seconds
+thread 2 wrote a value: 94 at location:8 at timestamp: 808.348seconds
+thread 5 wrote a value: 53 at location:6 at timestamp: 808.348seconds
+thread 9 wrote a value: 56 at location:0 at timestamp: 808.348seconds
+thread 6 wrote a value: 17 at location:4 at timestamp: 808.348seconds
+thread 1 wrote a value: 34 at location:2 at timestamp: 808.358seconds
+thread 7 wrote a value: 80 at location:3 at timestamp: 808.394seconds
+thread 3 wrote a value: 1 at location:3 at timestamp: 808.394seconds
+thread 6 wrote a value: 39 at location:6 at timestamp: 808.394seconds
+thread 4 wrote a value: 29 at location:5 at timestamp: 808.395seconds
+thread 2 wrote a value: 20 at location:9 at timestamp: 808.395seconds
+thread 1 wrote a value: 10 at location:6 at timestamp: 808.395seconds
+thread 5 wrote a value: 23 at location:0 at timestamp: 808.395seconds
+thread 8 wrote a value: 80 at location:6 at timestamp: 808.405seconds
+thread 9 wrote a value: 80 at location:6 at timestamp: 808.405seconds
+thread 0 wrote a value: 50 at location:0 at timestamp: 808.405seconds
+thread 5 wrote a value: 13 at location:2 at timestamp: 808.427seconds
+thread 0 wrote a value: 83 at location:3 at timestamp: 808.44seconds
+thread 6 wrote a value: 30 at location:8 at timestamp: 808.45seconds
+thread 2 wrote a value: 61 at location:8 at timestamp: 808.45seconds
+thread 7 wrote a value: 74 at location:1 at timestamp: 808.45seconds
+thread 3 wrote a value: 61 at location:8 at timestamp: 808.45seconds
+thread 1 wrote a value: 16 at location:2 at timestamp: 808.45seconds
+thread 4 wrote a value: 54 at location:6 at timestamp: 808.451seconds
+thread 5 wrote a value: 62 at location:9 at timestamp: 808.463seconds
+thread 9 wrote a value: 14 at location:9 at timestamp: 808.463seconds
+thread 8 wrote a value: 70 at location:8 at timestamp: 808.463seconds
+thread 1 wrote a value: 53 at location:9 at timestamp: 808.488seconds
+thread 4 wrote a value: 17 at location:8 at timestamp: 808.488seconds
+thread 8 wrote a value: 27 at location:8 at timestamp: 808.499seconds
+thread 7 wrote a value: 16 at location:8 at timestamp: 808.499seconds
+thread 9 wrote a value: 27 at location:9 at timestamp: 808.499seconds
+thread 5 wrote a value: 27 at location:9 at timestamp: 808.499seconds
+thread 3 wrote a value: 48 at location:6 at timestamp: 808.499seconds
+thread 2 wrote a value: 53 at location:4 at timestamp: 808.509seconds
+thread 0 wrote a value: 43 at location:2 at timestamp: 808.51seconds
+thread 6 wrote a value: 80 at location:2 at timestamp: 808.51seconds
+thread 6 wrote a value: 70 at location:8 at timestamp: 808.545seconds
+thread 5 wrote a value: 90 at location:1 at timestamp: 808.545seconds
+thread 3 wrote a value: 98 at location:2 at timestamp: 808.557seconds
+thread 7 wrote a value: 11 at location:5 at timestamp: 808.557seconds
+thread 8 wrote a value: 17 at location:6 at timestamp: 808.557seconds
+thread 1 wrote a value: 38 at location:7 at timestamp: 808.557seconds
+thread 4 wrote a value: 14 at location:6 at timestamp: 808.557seconds
+thread 2 wrote a value: 96 at location:5 at timestamp: 808.557seconds
+thread 9 wrote a value: 34 at location:5 at timestamp: 808.557seconds
+thread 0 wrote a value: 2 at location:2 at timestamp: 808.557seconds
+
+
+got 9th snapshot at timestamp: 808.558 as:
+23, 74, 80, 83, 53, 29, 48, 66, 27, 27, 
+
+thread 2 wrote a value: 11 at location:6 at timestamp: 808.594seconds
+thread 3 wrote a value: 80 at location:1 at timestamp: 808.601seconds
+thread 4 wrote a value: 33 at location:5 at timestamp: 808.606seconds
+thread 6 wrote a value: 20 at location:6 at timestamp: 808.606seconds
+thread 7 wrote a value: 63 at location:8 at timestamp: 808.606seconds
+thread 8 wrote a value: 63 at location:8 at timestamp: 808.607seconds
+thread 0 wrote a value: 99 at location:2 at timestamp: 808.607seconds
+thread 9 wrote a value: 24 at location:6 at timestamp: 808.607seconds
+thread 1 wrote a value: 41 at location:9 at timestamp: 808.607seconds
+thread 5 wrote a value: 20 at location:6 at timestamp: 808.607seconds
+thread 5 wrote a value: 4 at location:0 at timestamp: 808.64seconds
+thread 3 wrote a value: 14 at location:1 at timestamp: 808.645seconds
+thread 0 wrote a value: 58 at location:5 at timestamp: 808.65seconds
+thread 2 wrote a value: 5 at location:6 at timestamp: 808.651seconds
+thread 6 wrote a value: 62 at location:0 at timestamp: 808.651seconds
+thread 1 wrote a value: 3 at location:8 at timestamp: 808.651seconds
+thread 8 wrote a value: 6 at location:0 at timestamp: 808.651seconds
+thread 9 wrote a value: 37 at location:8 at timestamp: 808.651seconds
+thread 7 wrote a value: 27 at location:8 at timestamp: 808.651seconds
+thread 4 wrote a value: 35 at location:6 at timestamp: 808.651seconds
+thread 5 wrote a value: 54 at location:8 at timestamp: 808.683seconds
+thread 3 wrote a value: 80 at location:0 at timestamp: 808.683seconds

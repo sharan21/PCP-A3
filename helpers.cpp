@@ -11,7 +11,7 @@ int default_int_array[] = {-1};
 
 void checkpoint(){
 
-  cout << "here";
+  cout << "here" << endl;;
   cout.flush();
   
 }
@@ -23,12 +23,12 @@ void copy_b_to_a(int a[], int b[], int size){
   
 }
 
-void copy_b_to_a_stdarray(array<int, MAX_MRMW_ARRAY_SIZE> a, array<int, MAX_MRMW_ARRAY_SIZE> b, int size){
-  for (int i = 0; i < size; i++){
-    a[i] = b[i];
-  }
+// void copy_b_to_a_stdarray(array<int, MAX_MRMW_ARRAY_SIZE> &a, array<int, MAX_MRMW_ARRAY_SIZE> &b, int size){
+//   for (int i = 0; i < size; i++){
+//     a[i] = b[i];
+//   }
   
-}
+// }
 
 double preprocess_timestamp(double time){ 
     //truncates the leading 8 digits in the timestamp for clarity

@@ -58,6 +58,8 @@ public:
         mrmw_entry dummy_entry(n_threads);
         array<int,  MAX_MRMW_ARRAY_SIZE> dummy_helpsnap;
 
+        
+
 
         // store dummy entries in s_table[m]
         for (int i = 0; i < m_slots; i++){   
@@ -78,7 +80,7 @@ public:
         }
     }
 
-    void update(int n, int me, int new_value, int loc) 
+    void update(int me, int new_value, int loc) 
     {
 
         //first update s_table[m]
@@ -90,80 +92,138 @@ public:
         array<int, MAX_MRMW_ARRAY_SIZE> clean_snap;
         scan(clean_snap);
 
+        cout << "thread: " << me << "got clean snap:" <<endl;
+        for (int i = 0; i < m_slots; i++)
+        {
+            cout << clean_snap[i] << ", ";
+        }
+        cout << endl;
+        
+
+
+
         //then store help snap in help_snaps[n_threads]
         help_snaps[me].store(clean_snap);
     }
 
-    void scan(array<int, MAX_MRMW_ARRAY_SIZE> clean_scan)
+    void scan(array<int, MAX_MRMW_ARRAY_SIZE> &clean_scan, bool debug=false)
     {
-
-        // int new_copy[n_threads], old_copy[n_threads];
+    
         array<int, MAX_MRMW_ARRAY_SIZE> new_copy, old_copy;
 
+
         int thread_that_moved;
-        bool moved[n_threads];
+        bool moved[n_threads], try_again = false;
         collect_stdarray(old_copy);
+
+    
 
         for (int i = 0; i < n_threads; i++){
             moved[i] = false;
         }
-
+        
+        
         while (true)
         {
-            while (true)
-            {
-                //get new collect
-                collect_stdarray(new_copy);
+            trythis:
 
-                for (int i = 0; i < m_slots; i++)
-                {
-                    if (old_copy[i] != new_copy[i])
-                    {
-                        //slot i in s_table[m_slots] has changed, get the pid of thread that moved 
-                        thread_that_moved = s_table[i].load().pid;
+                if(debug)
+                    cout << "in trythis" << endl;
 
-                        if (moved[thread_that_moved]) //second move, get snap  of this register
-                        { 
-                            cout << "found second move !" << endl;
-                            copy_b_to_a_stdarray(clean_scan, help_snaps[thread_that_moved], m_slots);
+                while (true)
+                {   
+                    if(debug)
+                        cout << "in the inner while" << endl;
+                    //get new collect
+                    if(debug)
+                        usleep(100000);
 
-                            return;
+                    collect_stdarray(new_copy);
+                    
+                    if(debug){
+
+                        cout << "moved array is: " << endl;
+                        for (int i = 0; i < m_slots; i++)
+                        {
+                            cout << moved[i] << ", ";
                         }
-                        else
-                        {   
-                            moved[thread_that_moved] = true;
-                            // cout << "someone moved!" << endl;
-                            copy_b_to_a_stdarray(old_copy, new_copy, m_slots); // old_copy = new_copy
+                        cout << endl;
 
-                            break;
-                        }
+
                     }
+
+                    for (int i = 0; i < m_slots; i++)
+                    {
+                        if (old_copy[i] != new_copy[i])
+                        {
+                            //slot i in s_table[m_slots] has changed, get the pid of thread that moved 
+                            thread_that_moved = s_table[i].load().pid;
+        
+                            if(debug)    
+                            {
+                                cout << "thread that moved is:" << thread_that_moved << endl;
+                                cout << "moved["  << thread_that_moved<<"] is "<<moved[thread_that_moved] << endl;
+
+                            }
+                                
+                            if (moved[thread_that_moved]) //second move, get snap  of this register
+                            { 
+                                if(debug)
+                                    cout << "found second move !" << endl;
+                                auto help_snap_chosen = help_snaps[thread_that_moved].load();
+                                clean_scan = help_snap_chosen;
+
+                                for (int i = 0; i < m_slots; i++)
+                                {
+                                    cout << help_snap_chosen[i] << ",";
+                                }
+                                cout << endl;
+                                // exit(0);
+                                
+                                // exit(0);
+                                return;
+                            }
+                            else
+                            {   
+                                moved[thread_that_moved] = true;
+                                if(debug)
+                                {   
+                                    cout << "thread " << thread_that_moved << " for the first time"  << endl;
+                                    cout << moved[thread_that_moved] << endl;
+                                }
+                                    
+                                old_copy = new_copy;
+                                // try_again = true;
+                                goto trythis;
+                                // break;
+                            }
+                        }
+                        if(debug)
+                        cout << "new copy matches old copy! returning scan" << endl;
+                    }
+                    // if(debug && try_again){
+                    //     cout << "trying again" << endl;
+                    //     break;
+                    // }
+                        
+                    if(debug)
+                        checkpoint();
+
+                    clean_scan = new_copy;
+                    return;
                 }
-                copy_b_to_a_stdarray(clean_scan, new_copy, m_slots);
-                return;
-            }
         }
     }
 
-    void collect(int collected[])
+
+    void collect_stdarray(array<int, MAX_MRMW_ARRAY_SIZE> &collected)
     { //returns the value states of s_table
 
         for (int i = 0; i < m_slots; i++)
         {
             collected[i] = s_table[i].load().value;
         }
-        // usleep(1000);
-        return;
-    }
-
-    void collect_stdarray(array<int, MAX_MRMW_ARRAY_SIZE> collected)
-    { //returns the value states of s_table
-
-        for (int i = 0; i < m_slots; i++)
-        {
-            collected[i] = s_table[i].load().value;
-        }
-        // usleep(1000);
+        usleep(10000);
         return;
     }
 
@@ -181,11 +241,6 @@ public:
             cout << "has value: " << s_table[i].load().value << endl;
             cout << "has seq_no: " << s_table[i].load().seq_no << endl;
 
-            // cout << "has snap: " << endl;
-            // for (int j = 0; j < n_threads; j++)
-            // {
-            //     cout << s_table_snap_values[i].load().snap[j] << ", ";
-            // }
 
             cout << endl
                  << "-------------------------------------------" << endl;
@@ -256,7 +311,9 @@ int main()
                 start_time = preprocess_timestamp(omp_get_wtime());
                 
                 //get a clean scan
-                ss.scan(clean_snap);
+                cout << "SCAN STARTTTT!!!!!" << endl;
+                ss.scan(clean_snap, true);
+                cout << "SCAN END" << endl;
                 time_now = preprocess_timestamp(omp_get_wtime());
                 write_to_file_2(snapshots_file, clean_snap, n, rand_loc, -1, time_now, -1, no_of_snapshots, true);
                 no_of_snapshots++;
@@ -270,7 +327,7 @@ int main()
 
                 //wait for rand time
                 rand_time = snapshot_delay(generator);
-                usleep(rand_time);
+                usleep(100000);
 
             }
 
@@ -291,14 +348,19 @@ int main()
                 //update rand val at rand loc
                 rand_val = rand()%100;          // 0 to 100
                 rand_loc = std::rand()%n; //0 to n-1
-                ss.update(id, m, rand_val, rand_loc);
+                ss.update(id, rand_val, rand_loc);
 
                 time_now = preprocess_timestamp(omp_get_wtime());
                 
                 write_to_file_2(snapshots_file, default_std_arr, n, rand_loc, id, time_now, rand_val, -1, false);
+
+                //sleep
+                rand_time = writer_delay(generator);
+                usleep(10000);
+
             }
         }
-        cout << "thread: " << id << " out!" << endl;
+        // cout << "thread: " << id << " out!" << endl;
         
     }
 
