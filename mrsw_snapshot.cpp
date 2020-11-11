@@ -175,7 +175,7 @@ int main()
   snapshots_file.open("snapshots_file.txt");
 
   input_file >> n;
-  input_file >> m;
+  // input_file >> m;
   input_file >> u_1;
   input_file >> u_2;
   input_file >> k;

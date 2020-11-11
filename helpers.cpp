@@ -1,5 +1,9 @@
 #include <iostream>
 #include <fstream>
+#include <array>
+
+#define MAX_THREADS 100
+#define MAX_MRMW_ARRAY_SIZE 100
 
 using namespace std;
 
@@ -13,6 +17,13 @@ void checkpoint(){
 }
 
 void copy_b_to_a(int a[], int b[], int size){
+  for (int i = 0; i < size; i++){
+    a[i] = b[i];
+  }
+  
+}
+
+void copy_b_to_a_stdarray(array<int, MAX_MRMW_ARRAY_SIZE> a, array<int, MAX_MRMW_ARRAY_SIZE> b, int size){
   for (int i = 0; i < size; i++){
     a[i] = b[i];
   }
@@ -46,7 +57,7 @@ void write_to_file(fstream &of, int n, int id = -1, int snapshot[] = default_int
   }
 }
 
-void write_to_file_2(fstream &of, int n, int loc = -1, int id = -1, int snapshot[] = default_int_array, double time_now = -1, int value = -1, int k = -1,  bool is_snapshot = false){
+void write_to_file_2(fstream &of, array<int, MAX_MRMW_ARRAY_SIZE> snapshot, int n, int loc = -1, int id = -1, double time_now = -1, int value = -1, int k = -1,  bool is_snapshot = false){
 
   #pragma omp critical
   {
@@ -62,7 +73,7 @@ void write_to_file_2(fstream &of, int n, int loc = -1, int id = -1, int snapshot
         
     }
     else{
-      of << "thread " << id << " wrote a value: "<< value << "at location:" << loc << " at timestamp: " << time_now << "seconds" << endl;
+      of << "thread " << id << " wrote a value: "<< value << " at location:" << loc << " at timestamp: " << time_now << "seconds" << endl;
 
     }
   }
