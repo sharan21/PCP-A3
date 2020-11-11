@@ -167,12 +167,12 @@ int main()
     bool stop_writing = false;
 
     ifstream input_file;
-    fstream writers_file;
+    fstream experiments_file;
     fstream snapshots_file;
 
-    input_file.open("inp-params.txt", ios::in);
-    writers_file.open("writers_file.txt");
-    snapshots_file.open("snapshots_file.txt");
+    input_file.open("inp-params-mrmw.txt", ios::in);
+    experiments_file.open("experiments_mrmw.txt", ios::app);
+    snapshots_file.open("snapshots_file_mrmw.txt");
 
     input_file >> n;
     input_file >> m;
@@ -184,6 +184,11 @@ int main()
     snapshots_file << "k: " << k << endl;
     snapshots_file << "u_1: " << u_1 << endl;
     snapshots_file << "u_2: " << u_2 << endl;
+
+    experiments_file << "n: " << n << endl;
+    experiments_file << "k: " << k << endl;
+    experiments_file << "u_1: " << u_1 << endl;
+    experiments_file << "u_2: " << u_2 << endl;
 
     //init snapshot object
     mrsw_snapshot_obj ss(n);
@@ -198,6 +203,7 @@ int main()
 
 #pragma omp parallel
     {
+        double start_time, tot_time, avg_time, worst_time=0;
         int id, no_of_snapshots = 0, rand_val, rand_loc;
         double time_now, rand_time;
 
@@ -211,17 +217,32 @@ int main()
             while (no_of_snapshots < k)
             {
 
-                //wait for rand time
-                rand_time = snapshot_delay(generator);
-
-                //scan
+                start_time = preprocess_timestamp(omp_get_wtime());
+                
+                //get a clean scan
                 ss.scan(clean_snap);
                 time_now = preprocess_timestamp(omp_get_wtime());
                 write_to_file_2(snapshots_file, n, rand_loc, -1, clean_snap, time_now, -1, no_of_snapshots, true);
                 no_of_snapshots++;
+
+                //update avg and worst times
+                tot_time = preprocess_timestamp(omp_get_wtime()) - start_time;
+                avg_time += tot_time;
+
+                if(tot_time > worst_time)
+                    worst_time = tot_time;
+
+                //wait for rand time
+                rand_time = snapshot_delay(generator);
+                usleep(rand_time);
+
             }
 
-            stop_writing = true; //make other threads stop writing
+            //make other threads stop writing
+            stop_writing = true; 
+
+            //write to exp file
+            experiments_file << "avg time: " << avg_time/k << ", worst time: "<< worst_time << endl;
         }
 
         else //writing thread executes her
@@ -241,11 +262,12 @@ int main()
             }
         }
         cout << "thread: " << id << " out!" << endl;
+        
     }
 
     ss.display();
 
     input_file.close();
-    writers_file.close();
+    experiments_file.close();
     snapshots_file.close();
 }

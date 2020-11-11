@@ -62,7 +62,7 @@ void write_to_file_2(fstream &of, int n, int loc = -1, int id = -1, int snapshot
         
     }
     else{
-      of << "thread " << id << " wrote a value: "<< value << " at location:" << loc << " at timestamp: " << time_now << "seconds" << endl;
+      of << "thread " << id << " wrote a value: "<< value << "at location:" << loc << " at timestamp: " << time_now << "seconds" << endl;
 
     }
   }
