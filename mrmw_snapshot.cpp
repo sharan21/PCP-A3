@@ -16,22 +16,19 @@ using namespace std;
 
 array<int, MAX_MRMW_ARRAY_SIZE> default_std_arr;
 
-
 class mrmw_entry
 {
 
 public:
-
     int value;
     int pid;
     int seq_no;
-    
 
     mrmw_entry(int n) //construction for dummy snap value
     {
         value = -1;
         pid = -1;
-        seq_no = -1;    
+        seq_no = -1;
     }
 
     mrmw_entry(int new_sn, int new_value, int new_pid) //constructor for actual snap value update
@@ -39,7 +36,6 @@ public:
         value = new_value;
         seq_no = new_sn;
         pid = new_pid;
-
     }
 };
 
@@ -49,21 +45,18 @@ public:
     int n_threads;
     int m_slots;
     atomic<mrmw_entry> s_table[MAX_MRMW_ARRAY_SIZE];
-    atomic<array<int, MAX_MRMW_ARRAY_SIZE> > help_snaps[MAX_THREADS]; //array of n_thread atomic std::arrays
+    atomic<array<int, MAX_MRMW_ARRAY_SIZE>> help_snaps[MAX_THREADS]; //array of n_thread atomic std::arrays
 
     mrmw_snapshot_obj(int n, int m)
     {
         n_threads = n;
         m_slots = m;
         mrmw_entry dummy_entry(n_threads);
-        array<int,  MAX_MRMW_ARRAY_SIZE> dummy_helpsnap;
-
-        
-
+        array<int, MAX_MRMW_ARRAY_SIZE> dummy_helpsnap;
 
         // store dummy entries in s_table[m]
-        for (int i = 0; i < m_slots; i++){   
-
+        for (int i = 0; i < m_slots; i++)
+        {
             s_table[i].store(dummy_entry);
         }
 
@@ -72,178 +65,97 @@ public:
         {
             dummy_helpsnap[i] = -1;
         }
-        
-        //store dummy helpsnap in each atomic help_snaps[i]
-        for (int i = 0; i < n_threads; i++){   
 
+        //store dummy helpsnap in each atomic help_snaps[i]
+        for (int i = 0; i < n_threads; i++)
+        {
             help_snaps[i].store(dummy_helpsnap);
         }
     }
 
-    void update(int me, int new_value, int loc) 
+    void update(int me, int new_value, int loc)
     {
 
         //first update s_table[m]
         mrmw_entry old_entry = s_table[loc].load();
-        mrmw_entry new_entry(old_entry.seq_no+1, new_value, me);
+        mrmw_entry new_entry(old_entry.seq_no + 1, new_value, me);
         s_table[loc].store(new_entry);
 
         // then get clean snap
         array<int, MAX_MRMW_ARRAY_SIZE> clean_snap;
         scan(clean_snap);
 
-        cout << "thread: " << me << "got clean snap:" <<endl;
-        for (int i = 0; i < m_slots; i++)
-        {
-            cout << clean_snap[i] << ", ";
-        }
-        cout << endl;
-        
-
-
-
         //then store help snap in help_snaps[n_threads]
         help_snaps[me].store(clean_snap);
     }
 
-    void scan(array<int, MAX_MRMW_ARRAY_SIZE> &clean_scan, bool debug=false)
+    void scan(array<int, MAX_MRMW_ARRAY_SIZE> &clean_scan)
     {
-    
-        array<int, MAX_MRMW_ARRAY_SIZE> new_copy, old_copy;
 
+        array<int, MAX_MRMW_ARRAY_SIZE> new_copy, old_copy;
 
         int thread_that_moved;
         bool moved[n_threads], try_again = false;
         collect_stdarray(old_copy);
 
-    
-
-        for (int i = 0; i < n_threads; i++){
+        for (int i = 0; i < n_threads; i++)
+        {
             moved[i] = false;
         }
-        
-        
+
         while (true)
         {
-            trythis:
+        trythis:
+            while (true)
+            {
+                collect_stdarray(new_copy);
 
-                if(debug)
-                    cout << "in trythis" << endl;
-
-                while (true)
-                {   
-                    if(debug)
-                        cout << "in the inner while" << endl;
-                    //get new collect
-                    if(debug)
-                        usleep(100000);
-
-                    collect_stdarray(new_copy);
-                    
-                    if(debug){
-
-                        cout << "moved array is: " << endl;
-                        for (int i = 0; i < m_slots; i++)
-                        {
-                            cout << moved[i] << ", ";
-                        }
-                        cout << endl;
-
-
-                    }
-
-                    for (int i = 0; i < m_slots; i++)
+                for (int i = 0; i < m_slots; i++)
+                {
+                    if (old_copy[i] != new_copy[i])
                     {
-                        if (old_copy[i] != new_copy[i])
+                        //slot i in s_table[m_slots] has changed, get the pid of thread that moved
+                        thread_that_moved = s_table[i].load().pid;
+
+                        if (moved[thread_that_moved]) //second move, get snap  of this register
                         {
-                            //slot i in s_table[m_slots] has changed, get the pid of thread that moved 
-                            thread_that_moved = s_table[i].load().pid;
-        
-                            if(debug)    
-                            {
-                                cout << "thread that moved is:" << thread_that_moved << endl;
-                                cout << "moved["  << thread_that_moved<<"] is "<<moved[thread_that_moved] << endl;
-
-                            }
-                                
-                            if (moved[thread_that_moved]) //second move, get snap  of this register
-                            { 
-                                if(debug)
-                                    cout << "found second move !" << endl;
-                                auto help_snap_chosen = help_snaps[thread_that_moved].load();
-                                clean_scan = help_snap_chosen;
-
-                                for (int i = 0; i < m_slots; i++)
-                                {
-                                    cout << help_snap_chosen[i] << ",";
-                                }
-                                cout << endl;
-                                // exit(0);
-                                
-                                // exit(0);
-                                return;
-                            }
-                            else
-                            {   
-                                moved[thread_that_moved] = true;
-                                if(debug)
-                                {   
-                                    cout << "thread " << thread_that_moved << " for the first time"  << endl;
-                                    cout << moved[thread_that_moved] << endl;
-                                }
-                                    
-                                old_copy = new_copy;
-                                // try_again = true;
-                                goto trythis;
-                                // break;
-                            }
+                            auto help_snap_chosen = help_snaps[thread_that_moved].load();
+                            clean_scan = help_snap_chosen;
+                            return;
                         }
-                        if(debug)
-                        cout << "new copy matches old copy! returning scan" << endl;
+                        else
+                        {
+                            moved[thread_that_moved] = true;
+                            old_copy = new_copy;
+                            goto trythis;
+                        }
                     }
-                    // if(debug && try_again){
-                    //     cout << "trying again" << endl;
-                    //     break;
-                    // }
-                        
-                    if(debug)
-                        checkpoint();
-
-                    clean_scan = new_copy;
-                    return;
                 }
+                clean_scan = new_copy;
+                return;
+            }
         }
     }
 
-
-    void collect_stdarray(array<int, MAX_MRMW_ARRAY_SIZE> &collected)
-    { //returns the value states of s_table
-
-        for (int i = 0; i < m_slots; i++)
-        {
+    void collect_stdarray(array<int, MAX_MRMW_ARRAY_SIZE> &collected) //returns the value states of s_table
+    { 
+        for (int i = 0; i < m_slots; i++){
             collected[i] = s_table[i].load().value;
         }
-        usleep(10000);
-        return;
     }
 
     void display()
     {
-        cout << endl
-             << "------------------printing state of object-----------------" << endl;
+        cout << endl << "------------------printing state of object-----------------" << endl;
         cout << "No of MRSW registers/threads: " << n_threads << endl;
-        cout << endl
-             << "-------------------------------------------" << endl;
+        cout << endl << "-------------------------------------------" << endl;
 
         for (int i = 0; i < n_threads; i++)
         {
             cout << "Register: " << i << endl;
             cout << "has value: " << s_table[i].load().value << endl;
             cout << "has seq_no: " << s_table[i].load().seq_no << endl;
-
-
-            cout << endl
-                 << "-------------------------------------------" << endl;
+            cout << endl << "-------------------------------------------" << endl;
         }
     }
 };
@@ -294,7 +206,7 @@ int main()
 
 #pragma omp parallel
     {
-        double start_time, tot_time, avg_time, worst_time=0;
+        double start_time, tot_time, avg_time, worst_time = 0;
         int id, no_of_snapshots = 0, rand_val, rand_loc;
         double time_now, rand_time;
 
@@ -307,13 +219,10 @@ int main()
 
             while (no_of_snapshots < k)
             {
-
                 start_time = preprocess_timestamp(omp_get_wtime());
-                
+
                 //get a clean scan
-                cout << "SCAN STARTTTT!!!!!" << endl;
-                ss.scan(clean_snap, true);
-                cout << "SCAN END" << endl;
+                ss.scan(clean_snap);
                 time_now = preprocess_timestamp(omp_get_wtime());
                 write_to_file_2(snapshots_file, clean_snap, n, rand_loc, -1, time_now, -1, no_of_snapshots, true);
                 no_of_snapshots++;
@@ -322,46 +231,38 @@ int main()
                 tot_time = preprocess_timestamp(omp_get_wtime()) - start_time;
                 avg_time += tot_time;
 
-                if(tot_time > worst_time)
+                if (tot_time > worst_time)
                     worst_time = tot_time;
 
                 //wait for rand time
                 rand_time = snapshot_delay(generator);
-                usleep(100000);
-
+                usleep(rand_time);
             }
 
             //make other threads stop writing
-            stop_writing = true; 
+            stop_writing = true;
 
             //write to exp file
-            experiments_file << "avg time: " << avg_time/k << ", worst time: "<< worst_time << endl;
+            experiments_file << "avg time: " << avg_time / k << ", worst time: " << worst_time << endl;
         }
 
         else //writing thread executes her
         {
             while (!stop_writing)
             {
-                //wait for rand time
-                rand_time = writer_delay(generator);
-
+            
                 //update rand val at rand loc
-                rand_val = rand()%100;          // 0 to 100
-                rand_loc = std::rand()%n; //0 to n-1
+                rand_val = rand() % 100;    // 0 to 100
+                rand_loc = std::rand() % n; //0 to n-1
                 ss.update(id, rand_val, rand_loc);
-
                 time_now = preprocess_timestamp(omp_get_wtime());
-                
                 write_to_file_2(snapshots_file, default_std_arr, n, rand_loc, id, time_now, rand_val, -1, false);
 
-                //sleep
+                //sleep for rand_time
                 rand_time = writer_delay(generator);
-                usleep(10000);
-
+                usleep(rand_time*100);
             }
         }
-        // cout << "thread: " << id << " out!" << endl;
-        
     }
 
     ss.display();
