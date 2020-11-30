@@ -196,19 +196,6 @@ int main()
     experiments_file << "u_s/u_w: " << u_s/u_w << endl;
 
 
-    // n = 10;
-    // m = 20;
-    // u_s = 100;
-    // k = 50;
-
-    // for (int z = 0; i < 5; z++)
-    // {
-    //     /* code */
-    // }
-    
-
-
-
     //init snapshot object
     mrmw_snapshot_obj ss(n, m);
 
